@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hi Silver AI</title>
-<meta name="description" content="Hi Silver AI는 노령층·초로기·가족이 의료·금융 마이데이터를 스스로 관리하고, 진료·보험 청구·치매 대비·생애 정리에 필요한 곳에만 제공하도록 돕는 AI 에이전트입니다.">
+<meta name="description" content="Hi Silver AI는 노령층·초로기·가족이 의료·금융 마이데이터를 스스로 관리하고, 진료·보험 청구·치매 대비·엔딩노트/장례에 필요한 곳에만 제공하도록 돕는 AI 에이전트입니다.">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="alternate" hreflang="ko" href="https://hisilver.ai/">
 <link rel="alternate" hreflang="en" href="https://hisilver.ai/en/">
@@ -173,7 +173,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="st"><b class="n">2</b><h3>보험 청구 준비</h3><p>진료비 영수증·세부내역서·진단서를 모아 보험 계약과 맞춰 보고, 청구할 수 있는 항목을 안내합니다.</p></div>
     <div class="st"><b class="n">3</b><h3>초로기·치매 대비</h3><p>일상 변화를 기록하고 검진받을 곳을 안내합니다.<br>디지털 유산 목록·치매안심신탁·후견 상담 준비를 돕습니다.</p></div>
     <div class="st"><b class="n">4</b><h3>보호자 연결</h3><p>본인이 동의한 범위에서 안부·복약·진료 일정을 보호자에게 요약해 알립니다.</p></div>
-    <div class="st"><b class="n">5</b><h3>생애 정리</h3><p>디지털 자산을 정리해 금고에 보관하고, 지정인 열람을 준비합니다.</p></div>
+    <div class="st"><b class="n">5</b><h3>엔딩노트/장례</h3><p>엔딩노트에 장례 방식과 남길 뜻을 적고, 디지털 자산을 정리해 금고에 보관하며 지정인 열람을 준비합니다.</p></div>
     <div class="st"><b class="n">6</b><h3>사후 대비·장례</h3><p>비상연락 순서와 장례 방식·연락할 사람을 미리 정해 둡니다.<br>안부가 끊기면 단계별로 확인하고, 장례·사후 절차를 안내합니다.</p></div>
   </div>
   <div class="grid g3">
@@ -207,7 +207,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="row"><div class="box">관제 AI(가드레일) · 응급 → 119 · 위기 → 109 · 의료 판단 → 의사·약사 · 금융 → 기관 대표번호</div></div>
     <div class="lab" style="margin-top:18px">Hi Silver AI Agent</div>
     <div class="row g3" style="display:grid;grid-template-columns:repeat(3,1fr)">
-      <div class="box core">생애 정리<small>디지털 유산 목록 · 엔딩노트</small></div>
+      <div class="box core">엔딩노트/장례<small>디지털 유산 목록 · 장례 의향</small></div>
       <div class="box core">안부·생활 감지<small>안부 대화 · 변화 알림</small></div>
       <div class="box core">건강 기록<small>복약 알림 · 기록표</small></div>
       <div class="box core">진료 준비<small>한 장 요약</small></div>
@@ -229,7 +229,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <p class="lead"><span class="ln">1~6단계는 시작·기록,</span><span class="ln">7~12단계는 준비·보관입니다.</span><span class="ln">모든 과정은 본인의 동의와 결정에 따릅니다.</span></p>
   <ol class="flow">
     <li>설치·동의</li><li>보호자 지정</li><li>안부 시작</li><li>기록 가져오기<br><small>마이데이터</small></li><li>복약 알림</li><li>변화 체크</li>
-    <li>진료 준비</li><li>보험·복지 안내</li><li>생애 정리</li><li>엔딩노트<br><small>장례·비상연락</small></li><li class="v">금고 보관<br><small>Hi Coffer</small></li><li class="v">지정인<br><small>연 1회 점검</small></li>
+    <li>진료 준비</li><li>보험·복지 안내</li><li>엔딩노트/장례</li><li>비상연락<br><small>지정인·보호자</small></li><li class="v">금고 보관<br><small>Hi Coffer</small></li><li class="v">지정인<br><small>연 1회 점검</small></li>
   </ol>
   <div class="grid g3">
     <div class="card"><h3>진단하지 않음</h3><p><span>병명이나 수치를 판단하지 않습니다.</span><span>의사·약사에게 확인하도록 안내합니다.</span></p></div>
@@ -249,7 +249,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <thead><tr><th>구분</th><th>제공</th><th>형태</th></tr></thead>
     <tbody>
       <tr><td><b>시험 버전</b></td><td>베타(β) 버전 전 기능</td><td>무료</td></tr>
-      <tr><td><b>기본</b></td><td>안부 · 복약 알림 · 진료 준비 요약 · 생애 정리 목록</td><td>무료</td></tr>
+      <tr><td><b>기본</b></td><td>안부 · 복약 알림 · 진료 준비 요약 · 엔딩노트/장례 목록</td><td>무료</td></tr>
       <tr><td class="sc"><b>취약계층</b><span class="sq">(지원)</span></td><td>구독 기능 포함 전 기능</td><td>무료</td></tr>
       <tr><td class="sc"><b>구독</b><span class="sq">(정기)</span></td><td>보호자 보고 · Hi Coffer 금고 · 마이데이터 연동 · 보험 청구 준비</td><td>유료</td></tr>
       <tr><td class="sc"><b>기관</b><span class="sq">(계약)</span></td><td>병원·요양기관·상조·은행용 관리 화면</td><td>협의</td></tr>
@@ -262,7 +262,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Roadmap</div>
   <h2>서비스 일정</h2>
   <div class="grid g3">
-    <div class="card"><h3>1차 · <span class="tag">2027년 상반기</span></h3><p><span>진료 준비 · 보험 청구 준비 · 생애 정리</span><span>시험 버전을 무료로 이용합니다.</span></p></div>
+    <div class="card"><h3>1차 · <span class="tag">2027년 상반기</span></h3><p><span>진료 준비 · 보험 청구 준비 · 엔딩노트/장례</span><span>시험 버전을 무료로 이용합니다.</span></p></div>
     <div class="card"><h3>2차 · <span class="tag">2027년 하반기</span></h3><p><span>안부 · 사기 보호 · 보호자 앱</span><span>병원·요양기관과 시범 운영합니다.</span></p></div>
     <div class="card off"><h3>3차 · <span class="tag tbd">별도 공지</span></h3><p><span>건강 기록 · 돌봄 기기 연동(예정)</span></p></div>
   </div>

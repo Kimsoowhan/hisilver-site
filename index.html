@@ -111,6 +111,17 @@ footer .wrap>a{justify-self:end}
 .dim{color:var(--faint)}
 .tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
 .card.off h3,.card.off p{color:#B8BCC6}
+.stat .num{font-size:44px;font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .num small{font-size:20px}
+.day{margin-top:36px;border-left:3px solid var(--c2);padding-left:22px}
+.day .t{position:relative;padding:4px 0 18px}
+.day .t:before{content:"";position:absolute;left:-30px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--grad)}
+.day .t b{display:block;font-size:14px;color:var(--c2);letter-spacing:.06em}
+.day .t h3{margin-top:2px}.day .t p{color:var(--sub);font-size:16px}
+.day .t.alert:before{background:#E5484D}.day .t.alert b{color:#E5484D}
+td.mk{text-align:center;font-weight:800;font-size:18px}td.mk.y{color:var(--c2)}td.mk.n{color:#B8BCC6}
+th.hs{color:var(--c2)}
+.card .go{display:inline-block;margin-top:14px;font-weight:700;color:var(--c2)}
 td.sc{text-align:center;vertical-align:top;line-height:1.3;white-space:nowrap}td.sc b,td.sc .sq{display:block}td.sc .sq{color:#B8BCC6;font-weight:700}
 footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;gap:6px}footer .fmail{color:#D3D6DE}
 @media(max-width:600px){footer .fr{justify-self:center;text-align:center;align-items:center}}
@@ -119,7 +130,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
 <body>
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="#top"><img src="assets/img/hiven-symbol.webp" alt=""><span class="bt">Hi Silver <span class="nw">AI Agent</span></span></a>
-  <nav><a href="#motto">모토</a><a href="#funeral">장례</a><a href="#service">서비스</a><a href="#data">마이데이터</a><a href="#agent">에이전트</a><a href="#how">이용 절차</a><a href="#plan">이용 형태</a><a href="#road">일정</a></nav><span class="langs"><b>한글</b> · <a href="/en/" hreflang="en" lang="en">EN</a> · <a href="/ru/" hreflang="ru" lang="ru">РУ</a> · <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a> · <a href="/ja/" hreflang="ja" lang="ja">日本</a></span>
+  <nav><a href="#motto">모토</a><a href="#funeral">장례</a><a href="#service">서비스</a><a href="#data">마이데이터</a><a href="#agent">에이전트</a><a href="#how">이용 절차</a><a href="#plan">이용 형태</a><a href="#road">일정</a><a href="#with">함께하기</a></nav><span class="langs"><b>한글</b> · <a href="/en/" hreflang="en" lang="en">EN</a> · <a href="/ru/" hreflang="ru" lang="ru">РУ</a> · <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a> · <a href="/ja/" hreflang="ja" lang="ja">日本</a></span>
 </div></header>
 
 <main id="top">
@@ -128,11 +139,23 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="eyebrow">Hi Silver · Care AI Agent</div>
   <h1 class="motto-ko"><span>혼자 두지 않고,</span> <span>항상 함께,</span><br><span><b>끝까지 지켜내 드리는 것</b></span></h1>
   <p class="motto-en" lang="en"><span class="s">Never alone,</span> <span class="s">With whole time,</span> <span class="s">Kept to the <b class="one" style="color:#B8BCC6">end...</b></span></p>
-  <p class="lead"><span class="ln">생애주기 마지막, 장례까지 함께하는 서비스 플랫폼입니다.</span><span class="ln">온라인과 오프라인, 디지털 데이터와 서류·유품을 잇는 브리지가 됩니다.</span></p>
+  <p class="lead"><span class="ln">생애주기 마지막, 장례까지 함께하는 서비스 플랫폼입니다.</span><span class="ln">온라인과 오프라인, 디지털 데이터와 서류·유산을 잇는 브리지가 됩니다.</span></p>
   <div class="cta"><a class="btn p" href="#service">서비스 보기</a><a class="btn g" href="https://hicoffer.ai/">Hi Coffer AI</a></div>
 </div></section>
 
-<section class="sec" id="motto"><div class="wrap">
+<section class="sec" id="why"><div class="wrap">
+  <div class="kicker">Why now</div>
+  <h2>홀로 맞는 마지막, 숫자로 봅니다</h2>
+  <p class="lead"><span class="ln">이 숫자를 줄이는 것이 Hi Silver AI의 첫 번째 일입니다.</span></p>
+  <div class="grid g3">
+    <div class="card stat"><div class="num">3,924<small>명</small></div><p><span>2024년 고독사 사망자 수</span></p></div>
+    <div class="card stat"><div class="num">약 60<small>%</small></div><p><span>그중 50·60대 비중</span><span>노령층만의 일이 아닙니다.</span></p></div>
+    <div class="card stat"><div class="num">43.1<small>%</small></div><p><span>처음 발견한 사람이 임대인인 비율</span><span>가족보다 집주인이 먼저 압니다.</span></p></div>
+  </div>
+  <p class="note"><span class="ln">출처: 보건복지부 고독사 실태조사(2024년 기준)</span></p>
+</div></section>
+
+<section class="sec alt" id="motto"><div class="wrap">
   <div class="kicker">Motto</div>
   <h2>세 구절의 뜻</h2>
   <p class="lead"><span class="ln">노령층·초로기·중장년과 가족의 일상, 진료, 준비, 마무리를 함께합니다.</span><span class="ln">불미스러운 상황에 대한 사후 예방·대비까지 준비합니다.</span></p>
@@ -143,7 +166,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   </div>
 </div></section>
 
-<section class="sec alt" id="funeral"><div class="wrap">
+<section class="sec" id="funeral"><div class="wrap">
   <div class="kicker">Funeral · Bridge</div>
   <h2>장례, 마지막까지 함께</h2>
   <p class="lead"><span class="ln">예고 없는 임종과 죽음 앞에서도 누군가는 장례와 유품 정리를 해야 합니다.</span><span class="ln">고인이 미처 처분하지 못한 정보와 데이터가 유품 속에 남습니다.</span><span class="ln">그래서 유언·신탁·위탁 같은 사전 조치와 그 기록·증빙이 중요합니다.</span></p>
@@ -162,9 +185,23 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="card"><h3>Hi Silver</h3><p><span>사람·기관·서류·현장을 잇습니다.</span><span>오프라인·온라인 혼합형 브리지입니다.</span></p></div>
     <div class="card"><h3>생애주기 마지막까지</h3><p><span>살핌·준비·임종·장례·유품 정리·사후 처분까지</span><span>끝까지 함께합니다.</span></p></div>
   </div>
+  <h3 style="margin-top:48px">사후 체크리스트 (1개월 ~ 1년)</h3>
+  <p class="lead"><span class="ln">남은 가족이 놓치기 쉬운 일을 기한과 근거에 맞춰 안내합니다.</span></p>
+  <table>
+    <thead><tr><th>할 일</th><th>기한 · 요건</th><th>근거</th><th>Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>사망신고</b></td><td>사망 사실을 안 날부터 1개월 이내<br>신고 의무: 동거 친족</td><td>가족관계등록법 제84조·제85조</td><td>기한 알림 · 서류 안내</td></tr>
+      <tr><td><b>진료기록 발급</b></td><td>가족이 환자 동의서·친족관계 증명서 등을 갖춰 요청</td><td>의료법 제21조</td><td>필요 서류 목록 · 발급처 안내</td></tr>
+      <tr><td><b>실손보험 청구</b></td><td>병원·의원·약국에서 보험사로 전자 전송</td><td>실손보험 청구 전산화(2024.10~, 의원·약국 2025.10~)</td><td>계약·영수증 대조 · 청구 준비</td></tr>
+      <tr><td><b>상속재산 통합 조회</b></td><td>사망일이 속한 달의 말일부터 1년 이내<br>사망신고 때 함께 신청 가능</td><td>안심상속 원스톱서비스</td><td>신청 순서·기한 알림</td></tr>
+      <tr><td><b>유언·신탁·위탁 확인</b></td><td>지정인 열람</td><td>본인이 미리 남긴 기록</td><td>Hi Coffer 금고에서 증빙 묶음 제공</td></tr>
+      <tr><td><b>유품·디지털 유품 정리</b></td><td>휴대폰·PC·USB·계정<br>삼성·애플 유산 관리자 · 카카오 추모·삭제</td><td>본인이 미리 정한 처분 방식 · 제조사·플랫폼 절차</td><td>처분하지 못한 정보 목록 · 정리 순서</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><span class="ln">법률·행정 절차는 대신하지 않고, 기한과 서류를 안내합니다.</span></p>
 </div></section>
 
-<section class="sec" id="service"><div class="wrap">
+<section class="sec alt" id="service"><div class="wrap">
   <div class="kicker">Service</div>
   <h2>Hi Silver AI가 하는 일</h2>
   <p class="lead"><span class="ln">진단하지 않고, 대신하지 않습니다.</span><span class="ln">본인이 결정할 수 있도록 기록을 모으고, 정리하고, 안내합니다.</span></p>
@@ -173,13 +210,26 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="st"><b class="n">2</b><h3>보험 청구 준비</h3><p>진료비 영수증·세부내역서·진단서를 모아 보험 계약과 맞춰 보고, 청구할 수 있는 항목을 안내합니다.</p></div>
     <div class="st"><b class="n">3</b><h3>초로기·치매 대비</h3><p>일상 변화를 기록하고 검진받을 곳을 안내합니다.<br>디지털 유산 목록·치매안심신탁·후견 상담 준비를 돕습니다.</p></div>
     <div class="st"><b class="n">4</b><h3>보호자 연결</h3><p>본인이 동의한 범위에서 안부·복약·진료 일정을 보호자에게 요약해 알립니다.</p></div>
-    <div class="st"><b class="n">5</b><h3>생애 정리</h3><p>디지털 자산을 정리해 금고에 보관하고, 지정인 열람을 준비합니다.</p></div>
+    <div class="st"><b class="n">5</b><h3>생애 정리</h3><p>디지털 자산을 정리해 금고에 보관하고, 지정인 열람을 준비합니다.<br>휴대폰 유산 관리자(삼성·애플) 지정을 미리 안내합니다.</p></div>
     <div class="st"><b class="n">6</b><h3>사후 대비·장례</h3><p>비상연락 순서와 장례 방식·연락할 사람을 미리 정해 둡니다.<br>안부가 끊기면 단계별로 확인하고, 장례·사후 절차를 안내합니다.</p></div>
   </div>
   <div class="grid g3">
     <div class="card"><h3>안부·생활</h3><p><span>정해진 안부 대화를 나눕니다.</span><span>평소와 다른 변화가 있으면 알립니다.</span></p></div>
     <div class="card"><h3>복약·건강 기록</h3><p><span>복약 시간을 알려 드립니다.</span><span>혈압·혈당 기록을 표로 정리합니다.</span></p></div>
     <div class="card"><h3>대상</h3><p><span>본인·가족에서 시작합니다.</span><span>병원·요양기관, 공공기관으로 넓혀 갑니다.</span></p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="day"><div class="wrap">
+  <div class="kicker">A day with Hi Silver AI</div>
+  <h2>에이전트의 하루</h2>
+  <p class="lead"><span class="ln">기능 목록이 아니라, 매일 이렇게 움직입니다.</span></p>
+  <div class="day">
+    <div class="t"><b>아침</b><h3>안부와 복약</h3><p>안부 대화를 나누고 복약 시간을 알립니다. 응답과 복약 여부를 기록합니다.</p></div>
+    <div class="t"><b>낮</b><h3>진료·일정 준비</h3><p>병원 예약과 일정을 확인하고, 진료 때 보여 줄 한 장 요약을 만듭니다.</p></div>
+    <div class="t"><b>저녁</b><h3>기록 정리·보호자 요약</h3><p>혈압·혈당·복약 기록을 표로 정리하고, 동의한 범위만 보호자에게 요약합니다.</p></div>
+    <div class="t alert"><b>응답이 없을 때</b><h3>단계별 확인</h3><p>다시 연락 → 보호자 확인 → 위험한 징후를 검증하여 신속한 예방/대비조치를 강구합니다.<br>응급은 119, 위기는 109로 연결합니다.</p></div>
+    <div class="t"><b>마지막까지</b><h3>장례·사후 정리</h3><p>미리 정한 뜻에 따라 지정인에게 알리고, 장례와 사후 1개월 할 일을 안내합니다.</p></div>
   </div>
 </div></section>
 
@@ -196,7 +246,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
       <tr><td class="sc"><b>금융</b><span class="sq">(마이데이터)</span></td><td>보험 계약·연금·계좌 목록<br>신탁·후견 서류</td><td>청구 안내 · 치매 대비 · 생애 정리</td></tr>
     </tbody>
   </table>
-  <ul class="ticks"><li>상담 내용은 본인이 고른 것만 금고에 보관합니다.</li><li>비밀번호·인증서·카드번호는 저장하지 않습니다.</li></ul>
+  <ul class="ticks"><li>본인의 전송 요구(개인정보 보호법 제35조의2)에 따라, 법이 정한 통로(API)로만 받아옵니다. 스크래핑하지 않습니다.</li><li>나의건강기록 앱으로 받은 진료 기록(12종 113개 항목)도 본인이 골라 금고에 담을 수 있습니다.</li><li>상담 내용은 본인이 고른 것만 금고에 보관합니다.</li><li>비밀번호·인증서·카드번호는 저장하지 않습니다.</li></ul>
 </div></section>
 
 <section class="sec" id="agent"><div class="wrap">
@@ -222,9 +272,41 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
       <div class="box">센서·돌봄 기기<small>제휴 기기 신호 연동(예정)</small></div>
     </div>
   </div>
+  <ul class="ticks"><li>위기 연결은 본인 동의를 받아 109·정신건강복지센터로 이어 드립니다.</li><li>동의 없는 정보 제공은 경찰·소방·자살예방센터의 법적 역할이며, Hi Silver AI는 그 역할을 대신하지 않습니다.</li></ul>
 </div></section>
 
-<section class="sec alt" id="how"><div class="wrap">
+<section class="sec alt" id="compare"><div class="wrap">
+  <div class="kicker">Landscape · Bridge</div>
+  <h2>이미 있는 서비스를, 끝까지 잇습니다</h2>
+  <p class="lead"><span class="ln">공공·민간 서비스는 단계마다 따로 있습니다.</span><span class="ln">Hi Silver AI는 대신하지 않고, 본인 동의로 그 사이를 잇습니다.</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>이미 있는 서비스</th><th>남는 빈틈</th><th class="hs">Hi Silver AI가 잇는 것</th></tr></thead>
+    <tbody>
+      <tr><td><b>살핌</b></td><td>응급안전안심서비스(화재·활동 감지, 119 연결, 약 27만 가구)<br>AI 안부전화(지자체·통신사·네이버 클로바 케어콜 등)</td><td>기록이 기관마다 흩어지고 가족·병원과 이어지지 않음</td><td>안부·복약·변화 기록을 한 곳에 · 동의 범위만 보호자 요약</td></tr>
+      <tr><td><b>위기</b></td><td>109 자살예방 상담전화 · 정신건강복지센터<br>경찰·소방 → 자살예방센터 정보 제공(2022.8~)</td><td>본인이 먼저 연락하기 어려움</td><td>위험한 징후를 검증하여 신속한 예방/대비조치 · 동의 후 109 연결</td></tr>
+      <tr><td><b>고립</b></td><td>고독사예방법(2024.3~) · 지자체 고독사 위험자 발굴</td><td>50·60대 중장년은 발굴망 밖에 놓이기 쉬움</td><td>중장년·초로기부터 이용 · 지자체 사업 연계(B2G)</td></tr>
+      <tr><td><b>치매 대비</b></td><td>치매안심센터 · 치매안심신탁 · 성년후견</td><td>인지가 있을 때 미리 정리하지 못함</td><td>일상 변화 기록 · 검진·신탁·후견 상담 준비</td></tr>
+      <tr><td><b>의료</b></td><td>나의건강기록 앱(860개 의료기관, 12종 113개 항목)<br>개인정보 전송요구권(2025.3~)</td><td>받은 기록을 진료·보험·가족에 쓰기 어려움</td><td>진료 한 장 요약 · 보험 청구 준비 · 보호자 보고</td></tr>
+      <tr><td><b>보험</b></td><td>실손보험 청구 전산화(병원 2024.10~, 의원·약국 2025.10~)</td><td>계약·특약과 맞춰 보는 일은 본인 몫</td><td>계약과 서류 대조 · 청구 가능 항목 안내</td></tr>
+      <tr><td><b>장례</b></td><td>상조 · 장례식장 · 무연고 사망자 공영장례</td><td>고인의 뜻·연락처·서류가 가족에게 없음</td><td>장례 의향·연락할 사람 미리 정리 · 지정인 알림</td></tr>
+      <tr><td><b>상속·행정</b></td><td>안심상속 원스톱서비스(금융·부채·세금·연금·부동산·자동차 통합 조회)</td><td>신청 기한·순서를 모름</td><td>사망신고와 함께 신청하도록 안내 · 기한 알림</td></tr>
+      <tr><td><b>디지털 유산</b></td><td>삼성·애플 유산 관리자 지정 · 카카오 추모·삭제 처리</td><td>미리 지정하지 않으면 유족이 열 수 없음 · 국내 법 근거 없음</td><td>생전 지정 안내 · 디지털 유산 목록 · Hi Coffer 금고 보관</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><span class="ln">각 서비스의 이용 조건은 운영 기관 기준을 따릅니다.</span></p>
+</div></section>
+
+<section class="sec" id="team"><div class="wrap">
+  <div class="kicker">Why HIVEN</div>
+  <h2>병원 시스템과 장례 현장을 모두 아는 팀</h2>
+  <div class="grid g3">
+    <div class="card"><h3>IT·ICT 25년</h3><p><span>공공 의료IT 사업 경험으로</span><span>병원 데이터 흐름을 압니다.</span></p></div>
+    <div class="card"><h3>장례지도사 자격</h3><p><span>임종·장례·유품 정리 현장을</span><span>직접 압니다.</span></p></div>
+    <div class="card"><h3>Hi Coffer와 한 몸</h3><p><span>기록 원본은 Hi Coffer 금고에,</span><span>연결과 실행은 Hi Silver AI가 맡습니다.</span></p></div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="how" style="background:var(--bg)"><div class="wrap">
   <div class="kicker">How it works</div>
   <h2>이용 절차</h2>
   <p class="lead"><span class="ln">1~6단계는 시작·기록,</span><span class="ln">7~12단계는 준비·보관입니다.</span><span class="ln">모든 과정은 본인의 동의와 결정에 따릅니다.</span></p>
@@ -268,6 +350,16 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="card off"><h3>3차 · <span class="tag tbd">별도 공지</span></h3><p><span>건강 기록 · 돌봄 기기 연동(예정)</span></p></div>
   </div>
   <p class="note"><span class="ln">일정은 시험 결과와 관련 법령 확인 후 공지합니다.</span></p>
+</div></section>
+
+<section class="sec" id="with"><div class="wrap">
+  <div class="kicker">Join</div>
+  <h2>함께하기</h2>
+  <div class="grid g3">
+    <div class="card"><h3>본인·가족</h3><p><span>보호자 사전 등록</span><span>시험 버전 출시 소식을 먼저 받습니다.</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%EB%B3%B4%ED%98%B8%EC%9E%90%20%EC%82%AC%EC%A0%84%20%EB%93%B1%EB%A1%9D">사전 등록 →</a></div>
+    <div class="card"><h3>병원·요양기관</h3><p><span>퇴원 후 연계 · 보호자 보고</span><span>실손보험 청구 준비 연계</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%EA%B8%B0%EA%B4%80%20%EC%A0%9C%ED%9C%B4">제휴 문의 →</a></div>
+    <div class="card"><h3>지자체·공공기관</h3><p><span>고독사 예방사업 연계</span><span>취약계층은 모든 기능 무료</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%EA%B3%B5%EA%B3%B5%20%EC%97%B0%EA%B3%84">공공 연계 문의 →</a></div>
+  </div>
 </div></section>
 
 <section class="sec dl" id="download"><div class="wrap">

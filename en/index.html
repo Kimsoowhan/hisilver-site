@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hi Silver AI</title>
+<meta name="description" content="Hi Silver AI is an AI agent that helps older adults, people in the presenile stage and their families manage their own medical and financial MyData and provide it only where it is needed for medical visits, insurance claims, dementia preparation and putting affairs in order.">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="alternate" hreflang="ko" href="https://hisilver.ai/">
+<link rel="alternate" hreflang="en" href="https://hisilver.ai/en/">
+<link rel="alternate" hreflang="ru" href="https://hisilver.ai/ru/">
+<link rel="alternate" hreflang="zh-Hans" href="https://hisilver.ai/zh/">
+<link rel="alternate" hreflang="ja" href="https://hisilver.ai/ja/">
+<link rel="alternate" hreflang="x-default" href="https://hisilver.ai/">
+<style>
+@font-face{font-family:"HanjaMotto";font-weight:400 800;font-display:swap;src:url(../assets/fonts/hanja-motto.woff2) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url(../assets/fonts/Pretendard-Regular.woff2) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:600;font-display:swap;src:url(../assets/fonts/Pretendard-SemiBold.woff2) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url(../assets/fonts/Pretendard-Bold.woff2) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:800;font-display:swap;src:url(../assets/fonts/Pretendard-ExtraBold.woff2) format("woff2")}
+:root{--navy:#10184A;--ink:#1A1F36;--sub:#4A5070;--faint:#7A8099;--line:#E3E6F0;--bg:#fff;--bg2:#F5F7FC;--c1:#088CF5;--c2:#2343D7;--c3:#7711FC;--grad:linear-gradient(120deg,var(--c1),var(--c2) 55%,var(--c3));--w:1120px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#E6E9F5;--sub:#B4BAD3;--faint:#8A90AA;--line:#2A3160;--bg:#0B1036;--bg2:#121947}}
+:root[data-theme="dark"]{--ink:#E6E9F5;--sub:#B4BAD3;--faint:#8A90AA;--line:#2A3160;--bg:#0B1036;--bg2:#121947}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:"Pretendard",system-ui,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;z-index:10;background:rgba(16,24,74,.94);backdrop-filter:blur(10px);color:#fff}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}
+.brand img{height:30px;width:30px}
+.brand .bt{line-height:1.1}.brand .nw{white-space:nowrap;color:var(--faint)}
+nav{display:flex;gap:24px;font-size:15px;font-weight:600;color:#C9D2F5}
+nav a:hover{color:#fff}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;text-align:center}
+.hero:before{content:"";position:absolute;inset:auto -10% -40% 40%;height:120%;background:radial-gradient(closest-side,rgba(119,17,252,.32),transparent);pointer-events:none}
+.hero-in{position:relative;padding:88px 24px 96px}
+.halo{position:relative;display:block;width:100%;max-width:240px;margin:0 auto 40px}
+.halo img{position:relative;z-index:1;width:100%;filter:drop-shadow(0 20px 60px rgba(8,140,245,.35))}
+.halo:before,.halo:after{content:"";position:absolute;pointer-events:none;z-index:0;border-radius:50%}
+.halo:before{inset:-45%;background:radial-gradient(closest-side,rgba(120,190,255,.30),rgba(8,140,245,.19) 30%,rgba(35,67,215,.11) 56%,rgba(119,17,252,.05) 80%,rgba(119,17,252,0) 100%)}
+.halo:after{inset:-70%;background:repeating-conic-gradient(from 6deg,rgba(170,200,255,.08) 0deg 4deg,rgba(170,200,255,0) 4deg 16deg);-webkit-mask:radial-gradient(closest-side,#000 20%,rgba(0,0,0,.4) 46%,transparent 88%);mask:radial-gradient(closest-side,#000 20%,rgba(0,0,0,.4) 46%,transparent 88%);filter:blur(6px)}
+.halo{isolation:isolate}
+.halo:after{z-index:-1}
+/* Dark disc layer directly behind the symbol (between halo and symbol) - selected 18:43 */
+.halo:before{background:radial-gradient(closest-side,rgba(3,5,22,.82) 36%,rgba(3,5,22,.55) 46%,rgba(3,5,22,0) 56%),radial-gradient(closest-side,rgba(120,190,255,.30),rgba(8,140,245,.19) 30%,rgba(35,67,215,.11) 56%,rgba(119,17,252,.05) 80%,rgba(119,17,252,0) 100%)}
+@media (max-width:600px){.card p span{white-space:normal}.st{grid-template-columns:44px 1fr}.st p{grid-column:2}.halo{max-width:150px}}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9FB4FF}
+.motto-ko{margin-top:22px;font-size:46px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.motto-ko span{display:inline-block}
+.motto-ko b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.motto-en{margin-top:18px;font-size:24px;font-weight:600;color:#C9D2F5}
+.motto-hj{margin-top:10px;font-size:24px;font-weight:600;color:var(--faint);letter-spacing:.12em;font-family:"Pretendard","HanjaMotto",sans-serif}
+.hero p.lead{margin:30px auto 0;max-width:36em;color:#C9D2F5;font-size:18px}
+.cta{display:flex;gap:12px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;font-weight:700}
+.btn.p{background:var(--grad);color:#fff}
+.btn.g{border:1px solid rgba(255,255,255,.4);color:#fff}
+.sec{padding:88px 0}
+.sec.alt{background:var(--bg2)}
+.kicker{font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--c1);margin-bottom:10px}
+h2{font-size:32px;line-height:1.3;font-weight:800}
+h3{font-size:19px;font-weight:700}
+.lead{margin-top:14px;font-size:18px;color:var(--sub)}.ln{display:block;white-space:nowrap}
+.grid{display:grid;gap:18px;margin-top:36px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:24px}
+.sec.alt .card{background:var(--bg)}
+.card p{margin-top:8px;color:var(--sub);font-size:16px}.card p span{display:block;white-space:nowrap}
+.card b.n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#fff;align-items:center;justify-content:center;font-size:15px;margin-bottom:12px}
+
+.motto3 .card p{margin-top:14px}.motto3 .card .en{color:var(--c2);font-weight:600;font-size:16px;margin-top:2px}
+.steps{margin-top:36px;border-top:1px solid var(--line)}.st{display:grid;grid-template-columns:44px 96px 1fr;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}.st .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#fff;align-items:center;justify-content:center;font-size:16px}.st p{color:var(--sub);font-size:16px}
+.flow{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:32px;counter-reset:s}
+.flow li{border:1px solid var(--line);border-radius:12px;padding:14px;font-size:16px;background:var(--bg)}
+.flow li{position:relative}.flow li:after{content:"#";position:absolute;top:14px;left:14px;width:.7em;font-weight:800;font-size:18px;line-height:1.7;color:#B8BCC6}
+.flow li:before{counter-increment:s;content:counter(s);display:block;padding-left:.7em;font-weight:800;color:var(--c2);font-size:18px}
+.flow li.v{border-color:var(--c3)}
+.note{margin-top:14px;font-size:14px;color:var(--faint)}
+.arch{margin-top:36px;border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--bg)}
+.arch .row{display:grid;gap:12px;margin-top:12px}
+.arch .lab{font-size:14px;font-weight:700;color:var(--faint);letter-spacing:.08em}
+.box{border-radius:10px;padding:12px 14px;font-size:16px;border:1px solid var(--line)}
+.box.core{background:var(--grad);color:#fff;border:0;font-weight:700;text-align:center}
+.box small{display:block;color:var(--sub);font-size:14px}
+.box.core small{color:#E8ECFF}
+table{width:100%;border-collapse:collapse;margin-top:32px;font-size:16px}
+th,td{border-bottom:1px solid var(--line);padding:14px 12px;text-align:left;vertical-align:top}
+th{font-size:14px;color:var(--faint);font-weight:700}
+td b{color:var(--ink)}
+.tag{display:inline-block;font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:999px;border:1px solid var(--c2);color:var(--c2);margin-left:6px;vertical-align:2px}
+.ticks{list-style:none;margin-top:10px}
+.ticks li{padding-left:22px;position:relative;margin-top:6px;color:var(--sub);font-size:16px}
+.ticks li:before{content:"";position:absolute;left:4px;top:.7em;width:8px;height:8px;border-radius:50%;background:var(--grad)}
+.dl{background:var(--navy);color:#fff;text-align:center}
+.dl h2{color:#fff}.dl .lead{color:#C9D2F5;margin-left:auto;margin-right:auto}
+footer{padding:36px 0;font-size:14px;color:var(--faint);border-top:1px solid var(--line)}
+footer .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+footer .fm{font-size:21px;font-weight:700;text-align:center;color:#B8BCC6}
+footer .wrap>a{justify-self:end}
+@media(max-width:600px){footer .wrap{grid-template-columns:1fr;justify-items:center;text-align:center}footer .wrap>a{justify-self:center}}
+@media (max-width:900px){.g4,.g5{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(3,1fr)}nav{display:none}}
+@media (max-width:600px){.card p span{white-space:normal}.st{grid-template-columns:44px 1fr}.st p{grid-column:2}.wrap{padding:0 16px}.g3,.g4,.g5{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}.motto-ko{font-size:32px}.motto-en,.motto-hj{font-size:18px}h2{font-size:26px}.sec{padding:64px 0}table{font-size:14px}th,td{padding:10px 6px}}
+@media (max-width:1100px){.ln,.card p span{white-space:normal}}
+@media (max-width:600px){.arch .row{grid-template-columns:1fr !important}}
+.motto-en .one{font-size:2em;font-weight:800;color:#7fe3ff;line-height:1;vertical-align:-.12em}
+@media(max-width:600px){.motto-en .s{display:block}}
+.langs{margin-left:14px;font-size:14px;color:var(--faint);white-space:nowrap}.langs a{margin:0!important}.langs b{color:#fff}
+.dim{color:var(--faint)}
+/* Latin/Cyrillic layout: allow natural wrapping (Korean-only nowrap line splits) */
+.ln,.card p span{white-space:normal}.st{grid-template-columns:44px 230px 1fr}.flow li,.box,h3{overflow-wrap:break-word;hyphens:auto}
+@media (max-width:600px){.st{grid-template-columns:44px 1fr}}
+p,.ln,.card p span,li,small,.box,td{text-wrap:pretty}h1,h2,h3{text-wrap:balance}
+.tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
+.card.off h3,.card.off p{color:#B8BCC6}
+td.sc{text-align:center;vertical-align:top;line-height:1.3;white-space:nowrap}td.sc b,td.sc .sq{display:block}td.sc .sq{color:#B8BCC6;font-weight:700}
+footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;gap:6px}footer .fmail{color:#D3D6DE}
+@media(max-width:600px){footer .fr{justify-self:center;text-align:center;align-items:center}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="#top"><img src="../assets/img/hiven-symbol.webp" alt=""><span class="bt">Hi Silver <span class="nw">AI Agent</span></span></a>
+  <nav><a href="#motto">Motto</a><a href="#service">Service</a><a href="#data">MyData</a><a href="#agent">Agent</a><a href="#how">Process</a><a href="#plan">Plans</a><a href="#road">Roadmap</a></nav><span class="langs"><a href="/" hreflang="ko" lang="ko">한글</a>&nbsp;· <b>EN</b>&nbsp;· <a href="/ru/" hreflang="ru" lang="ru">РУ</a>&nbsp;· <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>&nbsp;· <a href="/ja/" hreflang="ja" lang="ja">日本</a></span>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="hero-in">
+  <span class="halo" aria-hidden="true"><img src="../assets/img/hiven-symbol.webp" alt="" width="320" height="320"></span>
+  <div class="eyebrow">Hi Silver&nbsp;· Care AI Agent</div>
+  <h1 class="motto-ko"><span>Never left alone,</span> <span>prepared in advance,</span> <span><b>protected to the end</b></span></h1>
+  <p class="motto-en" lang="en"><span class="s">Never alone.</span> <span class="s">Ready early.</span> <span class="s">Kept to the <b class="one">END!</b></span></p>
+  <p class="lead"><span class="ln">You manage your own medical and financial MyData and provide it only where it is needed.</span><span class="ln">The AI agent helps you prepare for medical visits, insurance claims, dementia and putting your affairs in order.</span></p>
+  <div class="cta"><a class="btn p" href="#service">View service</a><a class="btn g" href="https://hicoffer.ai/">Hi Coffer AI</a></div>
+</div></section>
+
+<section class="sec" id="motto"><div class="wrap">
+  <div class="kicker">Motto</div>
+  <h2>Meaning of the three phrases</h2>
+  <p class="lead"><span class="ln">We accompany older adults, people in the presenile stage, the middle-aged and their families through daily life, medical care, preparation and the final chapter.</span><span class="ln">We also prepare follow-up prevention and preparedness for unfortunate situations.</span></p>
+  <div class="grid g3 motto3">
+    <div class="card"><h3>Never left alone</h3><div class="en" lang="en">Never alone.</div><p><span>We look in on wellbeing and changes in daily life.</span><span>We verify warning signs and work out prompt preventive/preparatory measures.</span><span>We keep watch together with caregivers. (Care)</span></p></div>
+    <div class="card"><h3>Prepared in advance</h3><div class="en" lang="en">Ready early.</div><p><span>Things are organized in advance while cognition is intact.</span><span>Medical, insurance and financial documents are gathered in one place.</span><span>We prepare for the presenile stage and dementia. (Preparation)</span></p></div>
+    <div class="card"><h3>Protected to the end</h3><div class="en" lang="en">Kept to the end.</div><p><span>Records are stored in the Hi Coffer vault.</span><span>They open only to the people you designate.</span><span>Your wishes are protected to the very end. (Protection)</span></p></div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="service"><div class="wrap">
+  <div class="kicker">Service</div>
+  <h2>What Hi Silver AI does</h2>
+  <p class="lead"><span class="ln">It does not diagnose, and it does not act on your behalf.</span><span class="ln">It gathers and organizes records and provides guidance so that you can make your own decisions.</span></p>
+  <div class="steps">
+    <div class="st"><b class="n">1</b><h3>Medical visit preparation</h3><p>Summarizes recent changes in medication, tests and symptoms on a single page to show at medical visits.</p></div>
+    <div class="st"><b class="n">2</b><h3>Insurance claim preparation</h3><p>Gathers medical bill receipts, itemized statements and medical certificates, checks them against your insurance policies, and points out the items that can be claimed.</p></div>
+    <div class="st"><b class="n">3</b><h3>Presenile stage&nbsp;· Dementia preparation</h3><p>Records changes in daily life and guides you to where you can be screened.<br>Helps prepare a digital legacy list, a dementia-care trust and guardianship consultations.</p></div>
+    <div class="st"><b class="n">4</b><h3>Caregiver connection</h3><p>Within the scope you have consented to, sends caregivers summaries of check-ins, medication and medical appointments.</p></div>
+    <div class="st"><b class="n">5</b><h3>Putting affairs in order</h3><p>Organizes digital assets and stores them in the vault, and prepares access by designated persons.</p></div>
+    <div class="st"><b class="n">6</b><h3>After-death preparation&nbsp;· Funeral</h3><p>Sets in advance the emergency contact order, funeral arrangements and the people to contact.<br>If check-ins stop, it checks step by step and provides guidance on funeral and after-death procedures.</p></div>
+  </div>
+  <div class="grid g3">
+    <div class="card"><h3>Check-ins&nbsp;· Daily life</h3><p><span>Holds scheduled check-in conversations.</span><span>Notifies when something differs from usual.</span></p></div>
+    <div class="card"><h3>Medication&nbsp;· Health records</h3><p><span>Reminds you when to take medication.</span><span>Organizes blood pressure and blood sugar records into a table.</span></p></div>
+    <div class="card"><h3>Target users</h3><p><span>It starts with individuals and families.</span><span>It will expand to hospitals, care facilities and public institutions.</span></p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="data"><div class="wrap">
+  <div class="kicker">MyData</div>
+  <h2>MyData</h2>
+  <p class="lead"><span class="ln">It handles medical MyData and financial MyData.</span><span class="ln">Originals are kept in the Hi Coffer vault, and Hi Silver AI manages where they are provided or entrusted.</span></p>
+  <table>
+    <thead><tr><th>Category</th><th>Data</th><th>Used for</th></tr></thead>
+    <tbody>
+      <tr><td class="sc"><b>Medical</b><span class="sq">(MyData)</span></td><td>Treatment, diagnosis, prescription and test history<br>Medication and vaccination history</td><td>Medical visit preparation&nbsp;· Caregiver summary</td></tr>
+      <tr><td class="sc"><b>Medical</b><span class="sq">(Documents)</span></td><td>Medical bill receipts, itemized statements, medical certificates</td><td>Insurance claim preparation</td></tr>
+      <tr><td class="sc"><b>Financial</b><span class="sq">(MyData)</span></td><td>Lists of insurance policies, pensions and accounts<br>Trust and guardianship documents</td><td>Claim guidance&nbsp;· Dementia preparation&nbsp;· Putting affairs in order</td></tr>
+    </tbody>
+  </table>
+  <ul class="ticks"><li>Passwords, certificates and card numbers are not stored.</li></ul>
+</div></section>
+
+<section class="sec alt" id="agent"><div class="wrap">
+  <div class="kicker">Hi Silver AI Agent</div>
+  <h2>Agent structure</h2>
+  <p class="lead"><span class="ln">Every request and answer passes through the supervisory AI.</span><span class="ln">It verifies warning signs and works out prompt preventive/preparatory measures.</span></p>
+  <div class="arch">
+    <div class="lab">Users (individual&nbsp;· caregiver&nbsp;· institution)</div>
+    <div class="row"><div class="box">Supervisory AI (guardrails)&nbsp;· Emergency → 119&nbsp;· Crisis → 109&nbsp;· Medical judgment → Doctor/pharmacist&nbsp;· Finance → Institution's main number</div></div>
+    <div class="lab" style="margin-top:18px">Hi Silver AI Agent</div>
+    <div class="row g3" style="display:grid;grid-template-columns:repeat(3,1fr)">
+      <div class="box core">Putting affairs in order<small>Digital legacy list&nbsp;· Ending note</small></div>
+      <div class="box core">Check-in&nbsp;· Daily-life sensing<small>Check-in conversations&nbsp;· Change alerts</small></div>
+      <div class="box core">Health records<small>Medication reminders&nbsp;· Record sheets</small></div>
+      <div class="box core">Medical visit preparation<small>One-page summary</small></div>
+      <div class="box core">Financial&nbsp;· Fraud protection<small>Suspected fraud alerts</small></div>
+      <div class="box core">Welfare guidance&nbsp;· Caregiver reports<small>Available services&nbsp;· Weekly summary</small></div>
+    </div>
+    <div class="lab" style="margin-top:18px">Connected to</div>
+    <div class="row" style="display:grid;grid-template-columns:repeat(3,1fr)">
+      <div class="box">Hi Coffer AI<small>Vault&nbsp;· Hi DAM classification&nbsp;· Original storage</small></div>
+      <div class="box">Hospitals&nbsp;· Care facilities<small>Medical records&nbsp;· Documents&nbsp;· Caregiver reports</small></div>
+      <div class="box">Sensors&nbsp;· Care devices<small>Partner device signal integration (planned)</small></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="how"><div class="wrap">
+  <div class="kicker">How it works</div>
+  <h2>Process</h2>
+  <p class="lead"><span class="ln">Steps 1–6 are getting started and recording,</span><span class="ln">steps 7–12 are preparation and storage.</span><span class="ln">Every step follows your own consent and decisions.</span></p>
+  <ol class="flow">
+    <li>Install&nbsp;· Consent</li><li>Designate caregiver</li><li>Start check-ins</li><li>Import records<br><small>MyData</small></li><li>Medication reminders</li><li>Change check</li>
+    <li>Medical visit preparation</li><li>Insurance&nbsp;· Welfare guidance</li><li>Putting affairs in order</li><li>Ending note<br><small>Funeral&nbsp;· Emergency contacts</small></li><li class="v">Vault storage<br><small>Hi Coffer</small></li><li class="v">Designated person<br><small>Annual check</small></li>
+  </ol>
+  <div class="grid g3">
+    <div class="card"><h3>No diagnosis</h3><p><span>It does not make judgments about illnesses or readings.</span><span>It advises you to check with a doctor or pharmacist.</span></p></div>
+    <div class="card"><h3>Warning sign verification&nbsp;· Prevention</h3><p><span>It verifies warning signs</span><span>and works out prompt preventive/preparatory measures.</span></p></div>
+    <div class="card"><h3>Does not act on your behalf</h3><p><span>It does not handle legal, financial or administrative matters on your behalf.</span><span>It guides you through procedures and documents.</span></p></div>
+    <div class="card"><h3>Records stay on your device</h3><p><span>Health and financial records are kept in the vault on the device.</span><span>Originals are not sent to a server.</span></p></div>
+    <div class="card"><h3>Your consent comes first</h3><p><span>Only what you consent to is shared with caregivers.</span><span>Consent can be withdrawn at any time.</span></p></div>
+    <div class="card"><h3>AI only guides</h3><p><span>Answers generated by AI are labeled as such.</span><span>You make the decisions.</span></p></div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="plan"><div class="wrap">
+  <div class="kicker">Plan</div>
+  <h2>Plans</h2>
+  <p class="lead"><span class="ln">Basic features are free.</span><span class="ln">People facing financial hardship can use all features free of charge.</span></p>
+  <table>
+    <thead><tr><th>Category</th><th>Included</th><th>Pricing</th></tr></thead>
+    <tbody>
+      <tr><td><b>Trial version</b></td><td>All features of the beta (β) version</td><td>Free</td></tr>
+      <tr><td><b>Basic</b></td><td>Check-ins&nbsp;· Medication reminders&nbsp;· Medical visit summary&nbsp;· Affairs checklist</td><td>Free</td></tr>
+      <tr><td class="sc"><b>Vulnerable groups</b><span class="sq">(Support)</span></td><td>All features, including subscription features</td><td>Free</td></tr>
+      <tr><td class="sc"><b>Subscription</b><span class="sq">(Regular)</span></td><td>Caregiver reports&nbsp;· Hi Coffer vault&nbsp;· MyData integration&nbsp;· Insurance claim preparation</td><td>Paid</td></tr>
+      <tr><td class="sc"><b>Institution</b><span class="sq">(Contract)</span></td><td>Management console for hospitals, care facilities, funeral service providers and banks</td><td>By arrangement</td></tr>
+    </tbody>
+  </table>
+  <ul class="ticks"><li>Supplied and provided by HIVEN.</li></ul>
+</div></section>
+
+<section class="sec" id="road"><div class="wrap">
+  <div class="kicker">Roadmap</div>
+  <h2>Service roadmap</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Phase 1&nbsp;· <span class="tag">H1 2027</span></h3><p><span>Medical visit preparation&nbsp;· Insurance claim preparation&nbsp;· Putting affairs in order</span><span>The trial version is available free of charge.</span></p></div>
+    <div class="card"><h3>Phase 2&nbsp;· <span class="tag">H2 2027</span></h3><p><span>Check-ins&nbsp;· Fraud protection&nbsp;· Caregiver app</span><span>Pilot operation with hospitals and care facilities.</span></p></div>
+    <div class="card off"><h3>Phase 3&nbsp;· <span class="tag tbd">To be announced</span></h3><p><span>Health records&nbsp;· Care device integration (planned)</span></p></div>
+  </div>
+  <p class="note"><span class="ln">The schedule will be announced after test results and a review of the relevant laws.</span></p>
+</div></section>
+
+<section class="sec dl" id="download"><div class="wrap">
+  <h2>Hi Silver AI Agent</h2>
+  <p class="lead"><span class="ln">HIVEN stands with you so that your records and wishes are protected to the end.</span></p>
+  <div class="cta"><a class="btn p" href="https://hicoffer.ai/">hicoffer.ai</a><a class="btn g" href="https://hiven.co.kr/">hiven.co.kr</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 HIVEN&nbsp;· HIVE-Group</span><span class="fm">Hi Silver&nbsp;· Hi Coffer</span><span class="fr"><a href="https://hiven.co.kr/">hiven.co.kr</a><a class="fmail" href="mailto:contact@hiven.co.kr">contact@hiven.co.kr</a></span></div></footer>
+</body>
+</html>

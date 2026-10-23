@@ -139,6 +139,15 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
 .chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
 @media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
 @media (max-width:600px){table.stk thead{display:none}table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}table.stk tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:12px;background:var(--bg)}table.stk td{border:0;padding:6px 0;text-align:left!important;white-space:normal}table.stk td:first-child{font-size:16px;padding-top:2px}table.stk td:not(:first-child):before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}table.stk td.sc b,table.stk td.sc .sq{display:inline;margin-right:4px}}
+.rel{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(8px,2vw,18px);align-items:stretch;margin-top:24px}
+.rel .node{border-radius:16px;padding:clamp(14px,2.4vw,24px);color:#fff;text-align:center}
+.rel .node h4{font-size:clamp(17px,2.2vw,22px);font-weight:800}
+.rel .node p{margin-top:6px;font-size:clamp(13px,1.6vw,15px);line-height:1.55;color:#E8ECFF}
+.rel .hc{background:linear-gradient(120deg,#088CF5,#2343D7)}.rel .hs{background:linear-gradient(120deg,#7711FC,#2343D7)}
+.rel .mid{display:flex;flex-direction:column;justify-content:center;gap:6px;min-width:clamp(90px,16vw,170px)}
+.rel .mid span{display:block;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:clamp(12px,1.4vw,13.5px);text-align:center;background:var(--bg);color:var(--sub);white-space:nowrap}
+.rel .mid span.r{color:var(--c3)}.rel .mid span.l{color:var(--c1)}
+@media(max-width:640px){.rel{grid-template-columns:1fr}.rel .mid{flex-direction:row;flex-wrap:wrap;justify-content:center}}
 </style>
 </head>
 <body>
@@ -400,6 +409,15 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="chain"><h3>After death · Belongings</h3><ol><li class="off"><i>On site</i>Death report · Inheritance · Sorting belongings (community center, home)</li><li><i>Data used</i>Evidence of wills, trusts and mandates · Digital legacy list</li><li class="hc"><i>Hi Coffer AI</i>Evidence bundle · Digital belongings list provided</li><li class="hs"><i>Hi Silver AI</i>After-death checklist · Deadline reminders</li><li class="off"><i>Next on site</i>Safe Inheritance application · Disposal of belongings and digital belongings</li></ol></div>
   </div>
   <ul class="ticks"><li>The two apps can be used separately; used together, they form one flow to the end of life.</li><li>Originals are not sent to servers. Passwords, certificates and card numbers are not stored.</li></ul>
+
+  <h3 style="margin-top:48px">Service linkage with Hi Coffer</h3>
+  <p class="lead"><span class="ln">Hi Coffer guards the originals; Hi Silver connects the services.</span></p>
+  <div class="rel">
+    <div class="node hc"><h4>Hi Coffer AI</h4><p>Online · digital<br>Vault · original storage · Hi DAM classification<br>Original fingerprint · history ledger</p></div>
+    <div class="mid"><span class="r">→ List lookup</span><span class="l">← Request for approved provision</span><span class="r">→ Approved materials provided</span><span class="l">← Result log · evidence</span><span class="">⇄ Revoke · stop at once</span></div>
+    <div class="node hs"><h4>Hi Silver AI</h4><p>Online · offline<br>People · institutions · documents · on-site<br>Care · crisis · funeral · aftermath</p></div>
+  </div>
+  <p class="note"><span class="ln">Only what the person approves moves between them; originals are not copied or kept outside the vault.</span></p>
 </div></section>
 
 <section class="sec" id="agent"><div class="wrap">

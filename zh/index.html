@@ -163,6 +163,7 @@ nav a{flex:none}
 .halolink{display:inline-block;cursor:pointer;position:relative;z-index:2}.halo{pointer-events:auto}
 .sec:not(.dark):not(.dl) h2{color:#10184A}.sec:not(.dark):not(.dl) h3{color:#10184A}.sec:not(.dark):not(.dl) .wrap>h3{color:#3949AB}
 th .bn{color:#2343D7}
+.mlab{display:none}.mlab .bn,td .bn{color:#2343D7}@media (max-width:960px){table.stk td.nl:before{content:none}.mlab{display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}}
 </style>
 </head>
 <body>
@@ -460,20 +461,20 @@ th .bn{color:#2343D7}
 
 <section class="sec alt" id="compare"><div class="wrap">
   <div class="kicker">Landscape · Bridge</div>
-  <h2>已有的服务，我们将把它们连接起来。</h2>
+  <h2>已有服务的连接</h2>
   <p class="lead"><span class="ln">公共·民间服务在各个阶段各自独立。</span><span class="ln">Hi Silver AI 不取而代之，而是经本人同意连接其间的空白。</span></p>
   <table class="stk">
-    <thead><tr><th>阶段</th><th>已有服务</th><th>仍存在的空白</th><th><span class="bn">Hi Silver AI</span> 连接的内容</th></tr></thead>
+    <thead><tr><th>阶段</th><th>已有服务</th><th>仍存在的空白</th><th><span class="bn">Hi Silver AI</span> 的连接</th></tr></thead>
     <tbody>
-      <tr><td data-label="阶段"><b>关照</b></td><td data-label="已有服务">应急安全安心服务（火灾·活动感知、连接 119，约 27 万户）<br>AI 问候电话（地方政府·通信运营商·Naver CLOVA CareCall 等）</td><td data-label="仍存在的空白">记录分散在各机构，未与家人·医院连通</td><td data-label="Hi Silver AI 连接的内容">问候·服药·变化记录集中一处 · 仅在同意范围内向监护人汇总</td></tr>
-      <tr><td data-label="阶段"><b>危机</b></td><td data-label="已有服务">109 自杀预防咨询电话 · 精神健康福利中心<br>警察·消防 → 向自杀预防中心提供信息（2022.8 起）</td><td data-label="仍存在的空白">本人难以主动联系</td><td data-label="Hi Silver AI 连接的内容">核实危险征兆，迅速采取预防/应对措施 · 经同意后连接 109</td></tr>
-      <tr><td data-label="阶段"><b>孤立</b></td><td data-label="已有服务">《孤独死预防法》（2024.3 起） · 地方政府发掘孤独死高危人群</td><td data-label="仍存在的空白">50·60 多岁中年人容易落在发掘网之外</td><td data-label="Hi Silver AI 连接的内容">从中年·初老期开始使用 · 对接地方政府项目（B2G）</td></tr>
-      <tr><td data-label="阶段"><b>痴呆应对</b></td><td data-label="已有服务">痴呆安心中心 · 痴呆安心信托 · 成年监护</td><td data-label="仍存在的空白">认知尚存时未能提前整理</td><td data-label="Hi Silver AI 连接的内容">记录日常变化 · 准备筛查·信托·监护咨询</td></tr>
-      <tr><td data-label="阶段"><b>医疗</b></td><td data-label="已有服务">“我的健康记录”应用（提供数据的医疗机构 1,269 家，2025 年 12 月）<br>个人信息传输请求权（2025.3 起）</td><td data-label="仍存在的空白">获取的记录难以用于就诊·保险·家人</td><td data-label="Hi Silver AI 连接的内容">就诊一页摘要 · 保险理赔准备 · 监护人报告</td></tr>
-      <tr><td data-label="阶段"><b>保险</b></td><td data-label="已有服务">实损保险理赔电子化（医院 2024.10 起，诊所·药店 2025.10 起）</td><td data-label="仍存在的空白">与合同·附加条款核对需由本人完成</td><td data-label="Hi Silver AI 连接的内容">核对合同与文件 · 可理赔项目指引</td></tr>
-      <tr><td data-label="阶段"><b>殡葬</b></td><td data-label="已有服务">殡葬互助 · 殡仪馆 · 无人认领逝者公营殡葬</td><td data-label="仍存在的空白">家人不掌握逝者的意愿·联系人·文件</td><td data-label="Hi Silver AI 连接的内容">提前整理殡葬意愿·需联系的人 · 通知指定人</td></tr>
-      <tr><td data-label="阶段"><b>继承·行政</b></td><td data-label="已有服务">安心继承一站式服务（金融·债务·税金·年金·不动产·汽车统一查询）</td><td data-label="仍存在的空白">不了解申请期限·顺序</td><td data-label="Hi Silver AI 连接的内容">指引在死亡申报时一并申请 · 期限提醒</td></tr>
-      <tr><td data-label="阶段"><b>数字遗产</b></td><td data-label="已有服务">指定三星·苹果遗产联系人 · Kakao 纪念·删除处理</td><td data-label="仍存在的空白">未提前指定则遗属无法打开 · 韩国国内法无依据</td><td data-label="Hi Silver AI 连接的内容">生前指定指引 · 数字遗产清单 · 存入 Hi Coffer 保险库</td></tr>
+      <tr><td data-label="阶段"><b>关照</b></td><td data-label="已有服务">应急安全安心服务（火灾·活动感知、连接 119，约 27 万户）<br>AI 问候电话（地方政府·通信运营商·Naver CLOVA CareCall 等）</td><td data-label="仍存在的空白">记录分散在各机构，未与家人·医院连通</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>问候·服药·变化记录集中一处 · 仅在同意范围内向监护人汇总</td></tr>
+      <tr><td data-label="阶段"><b>危机</b></td><td data-label="已有服务">109 自杀预防咨询电话 · 精神健康福利中心<br>警察·消防 → 向自杀预防中心提供信息（2022.8 起）</td><td data-label="仍存在的空白">本人难以主动联系</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>核实危险征兆，迅速采取预防/应对措施 · 经同意后连接 109</td></tr>
+      <tr><td data-label="阶段"><b>孤立</b></td><td data-label="已有服务">《孤独死预防法》（2024.3 起） · 地方政府发掘孤独死高危人群</td><td data-label="仍存在的空白">50·60 多岁中年人容易落在发掘网之外</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>从中年·初老期开始使用 · 对接地方政府项目（B2G）</td></tr>
+      <tr><td data-label="阶段"><b>痴呆应对</b></td><td data-label="已有服务">痴呆安心中心 · 痴呆安心信托 · 成年监护</td><td data-label="仍存在的空白">认知尚存时未能提前整理</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>记录日常变化 · 准备筛查·信托·监护咨询</td></tr>
+      <tr><td data-label="阶段"><b>医疗</b></td><td data-label="已有服务">“我的健康记录”应用（提供数据的医疗机构 1,269 家，2025 年 12 月）<br>个人信息传输请求权（2025.3 起）</td><td data-label="仍存在的空白">获取的记录难以用于就诊·保险·家人</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>就诊一页摘要 · 保险理赔准备 · 监护人报告</td></tr>
+      <tr><td data-label="阶段"><b>保险</b></td><td data-label="已有服务">实损保险理赔电子化（医院 2024.10 起，诊所·药店 2025.10 起）</td><td data-label="仍存在的空白">与合同·附加条款核对需由本人完成</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>核对合同与文件 · 可理赔项目指引</td></tr>
+      <tr><td data-label="阶段"><b>殡葬</b></td><td data-label="已有服务">殡葬互助 · 殡仪馆 · 无人认领逝者公营殡葬</td><td data-label="仍存在的空白">家人不掌握逝者的意愿·联系人·文件</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>提前整理殡葬意愿·需联系的人 · 通知指定人</td></tr>
+      <tr><td data-label="阶段"><b>继承·行政</b></td><td data-label="已有服务">安心继承一站式服务（金融·债务·税金·年金·不动产·汽车统一查询）</td><td data-label="仍存在的空白">不了解申请期限·顺序</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>指引在死亡申报时一并申请 · 期限提醒</td></tr>
+      <tr><td data-label="阶段"><b>数字遗产</b></td><td data-label="已有服务">指定三星·苹果遗产联系人 · Kakao 纪念·删除处理</td><td data-label="仍存在的空白">未提前指定则遗属无法打开 · 韩国国内法无依据</td><td class="nl" data-label=""><span class="mlab"><span class="bn">Hi Silver AI</span> 的连接</span>生前指定指引 · 数字遗产清单 · 存入 Hi Coffer 保险库</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">各项服务的使用条件以运营机构标准为准。</span></p>

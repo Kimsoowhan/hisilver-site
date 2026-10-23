@@ -115,150 +115,410 @@ footer .wrap>a{justify-self:end}
 p,.ln,.card p span,li,small,.box,td{text-wrap:pretty}h1,h2,h3{text-wrap:balance}
 .tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
 .card.off h3,.card.off p{color:#B8BCC6}
+.stat .num{font-size:44px;font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .num small{font-size:20px}
+.day{margin-top:36px;border-left:3px solid var(--c2);padding-left:22px}
+.day .t{position:relative;padding:4px 0 18px}
+.day .t:before{content:"";position:absolute;left:-30px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--grad)}
+.day .t b{display:block;font-size:14px;color:var(--c2);letter-spacing:.06em}
+.day .t h3{margin-top:2px}.day .t p{color:var(--sub);font-size:16px}
+.day .t.alert:before{background:#E5484D}.day .t.alert b{color:#E5484D}
+td.mk{text-align:center;font-weight:800;font-size:18px}td.mk.y{color:var(--c2)}td.mk.n{color:#B8BCC6}
+th.hs{color:var(--c2)}
+.card .go{display:inline-block;margin-top:14px;font-weight:700;color:var(--c2)}
 td.sc{text-align:center;vertical-align:top;line-height:1.3;white-space:nowrap}td.sc b,td.sc .sq{display:block}td.sc .sq{color:#B8BCC6;font-weight:700}
 footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;gap:6px}footer .fmail{color:#D3D6DE}
 @media(max-width:600px){footer .fr{justify-self:center;text-align:center;align-items:center}}
+.chains{display:grid;gap:14px;margin-top:28px}
+.chain{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg)}
+.chain ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.chain li{position:relative;border-radius:10px;padding:10px 12px;font-size:15px;line-height:1.5;background:var(--bg2);color:var(--sub)}
+.chain li i{display:block;font-style:normal;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--faint);margin-bottom:2px}
+.chain li.off{border:1px dashed var(--faint);background:transparent}
+.chain li.hc i{color:var(--c1)}.chain li.hs{background:var(--grad);color:#fff}.chain li.hs i{color:#E8ECFF}
+.chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
+@media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="#top"><img src="../assets/img/hiven-symbol.webp" alt=""><span class="bt">Hi Silver <span class="nw">AI Agent</span></span></a>
-  <nav><a href="#motto">Motto</a><a href="#service">Service</a><a href="#data">MyData</a><a href="#agent">Agent</a><a href="#how">Process</a><a href="#plan">Plans</a><a href="#road">Roadmap</a></nav><span class="langs"><a href="/" hreflang="ko" lang="ko">한글</a>&nbsp;· <b>EN</b>&nbsp;· <a href="/ru/" hreflang="ru" lang="ru">РУ</a>&nbsp;· <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>&nbsp;· <a href="/ja/" hreflang="ja" lang="ja">日本</a></span>
+  <nav><a href="#motto">Motto</a><a href="#funeral">Funeral</a><a href="#service">Service</a><a href="#data">MyData</a><a href="#ops">Operations</a><a href="#link">Hi Coffer link</a><a href="#agent">Agent</a><a href="#how">How it works</a><a href="#plan">Plans</a><a href="#road">Roadmap</a><a href="#with">Join</a></nav><span class="langs"><a href="/" hreflang="ko" lang="ko">한글</a> · <b>EN</b> · <a href="/ru/" hreflang="ru" lang="ru">РУ</a> · <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a> · <a href="/ja/" hreflang="ja" lang="ja">日本</a></span>
 </div></header>
 
 <main id="top">
 <section class="hero"><div class="hero-in">
   <span class="halo" aria-hidden="true"><img src="../assets/img/hiven-symbol.webp" alt="" width="320" height="320"></span>
-  <div class="eyebrow">Hi Silver&nbsp;· Care AI Agent</div>
-  <h1 class="motto-ko"><span>Never left alone,</span> <span>prepared in advance,</span> <span><b>protected to the end</b></span></h1>
-  <p class="motto-en" lang="en"><span class="s">Never alone.</span> <span class="s">Ready early.</span> <span class="s">Kept to the <b class="one">END!</b></span></p>
-  <p class="lead"><span class="ln">You manage your own medical and financial MyData and provide it only where it is needed.</span><span class="ln">The AI agent helps you prepare for medical visits, insurance claims, dementia and putting your affairs in order.</span></p>
-  <div class="cta"><a class="btn p" href="#service">View service</a><a class="btn g" href="https://hicoffer.ai/">Hi Coffer AI</a></div>
+  <div class="eyebrow">Hi Silver · Care AI Agent</div>
+  <h1 class="motto-ko"><span>Never alone,</span> <span>always together,</span><br><span><b>kept safe to the very end</b></span></h1>
+  <p class="motto-en" lang="en"><span class="s">Never alone,</span> <span class="s">With whole time,</span> <span class="s">Kept to the <b class="one" style="color:#B8BCC6">end...</b></span></p>
+  <p class="lead"><span class="ln">A service platform that stays with you to the end of life, through the funeral.</span><span class="ln">It is the bridge between online and offline, between digital data and documents and legacy.</span></p>
+  <div class="cta"><a class="btn p" href="#service">View services</a><a class="btn g" href="https://hicoffer.ai/">Hi Coffer AI</a></div>
 </div></section>
 
-<section class="sec" id="motto"><div class="wrap">
-  <div class="kicker">Motto</div>
-  <h2>Meaning of the three phrases</h2>
-  <p class="lead"><span class="ln">We accompany older adults, people in the presenile stage, the middle-aged and their families through daily life, medical care, preparation and the final chapter.</span><span class="ln">We also prepare follow-up prevention and preparedness for unfortunate situations.</span></p>
-  <div class="grid g3 motto3">
-    <div class="card"><h3>Never left alone</h3><div class="en" lang="en">Never alone.</div><p><span>We look in on wellbeing and changes in daily life.</span><span>We verify warning signs and work out prompt preventive/preparatory measures.</span><span>We keep watch together with caregivers. (Care)</span></p></div>
-    <div class="card"><h3>Prepared in advance</h3><div class="en" lang="en">Ready early.</div><p><span>Things are organized in advance while cognition is intact.</span><span>Medical, insurance and financial documents are gathered in one place.</span><span>We prepare for the presenile stage and dementia. (Preparation)</span></p></div>
-    <div class="card"><h3>Protected to the end</h3><div class="en" lang="en">Kept to the end.</div><p><span>Records are stored in the Hi Coffer vault.</span><span>They open only to the people you designate.</span><span>Your wishes are protected to the very end. (Protection)</span></p></div>
+<section class="sec" id="why"><div class="wrap">
+  <div class="kicker">Why now</div>
+  <h2>Dying alone, seen in numbers</h2>
+  <p class="lead"><span class="ln">Reducing these numbers is the first job of Hi Silver AI.</span></p>
+  <div class="grid g3">
+    <div class="card stat"><div class="num">3,924<small> people</small></div><p><span>Lonely deaths in 2024</span></p></div>
+    <div class="card stat"><div class="num">About 60<small>%</small></div><p><span>Share aged 50 to 69</span><span>It is not only a problem of old age.</span></p></div>
+    <div class="card stat"><div class="num">43.1<small>%</small></div><p><span>Share first discovered by the landlord</span><span>The landlord finds out before the family.</span></p></div>
   </div>
+  <p class="note"><span class="ln">Source: Ministry of Health and Welfare, Lonely Death Survey (2024)</span></p>
+</div></section>
+
+<section class="sec alt" id="motto"><div class="wrap">
+  <div class="kicker">Motto</div>
+  <h2>What the three phrases mean</h2>
+  <p class="lead"><span class="ln">We accompany older adults, people in the presenile stage, middle-aged people and their families in daily life, medical care, preparation and closure.</span><span class="ln">We also prepare follow-up prevention and preparedness for unfortunate situations.</span></p>
+  <div class="grid g3 motto3">
+    <div class="card"><h3>Never alone,</h3><div class="en" lang="en">Never alone,</div><p><span>We watch for check-ins and changes in daily life.</span><span>We verify warning signs and work out prompt preventive/preparatory measures.</span><span>We watch together with caregivers. (Care)</span></p></div>
+    <div class="card"><h3>Always together,</h3><div class="en" lang="en">With whole time,</div><p><span>We keep up with daily check-ins and medication together.</span><span>We prepare medical, insurance and financial documents together.</span><span>We stay by your side to prepare for the presenile stage and dementia. (Companionship)</span></p></div>
+    <div class="card"><h3>Kept safe to the very end</h3><div class="en" lang="en">Kept to the end...</div><p><span>Records are stored in the Hi Coffer vault.</span><span>They open only to the people you designate.</span><span>Your wishes are kept to the very end. (Protection)</span></p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="funeral"><div class="wrap">
+  <div class="kicker">Funeral · Bridge</div>
+  <h2>Funeral: with you to the end</h2>
+  <p class="lead"><span class="ln">Even when death comes without warning, someone must handle the funeral and the belongings.</span><span class="ln">Information and data the deceased could not dispose of remain among the belongings.</span><span class="ln">That is why advance measures such as wills, trusts and mandates, and their records and evidence, matter.</span></p>
+  <table>
+    <thead><tr><th>Stage</th><th>Offline</th><th>Online · Hi Coffer</th></tr></thead>
+    <tbody>
+      <tr><td><b>Advance measures</b></td><td>Will, trust and mandate documents<br>Funeral wishes and life-sustaining treatment wishes</td><td>Copies and evidence kept in the vault<br>Authenticity checked by the original's fingerprint</td></tr>
+      <tr><td><b>Death</b></td><td>Death certification and laying-out</td><td>Notice to designated persons<br>List of things to do</td></tr>
+      <tr><td><b>Funeral</b></td><td>Funeral hall, funeral director, cremation, enshrinement</td><td>Passing on the deceased's wishes<br>Guidance on procedures and costs</td></tr>
+      <tr><td><b>Sorting belongings</b></td><td>Sorting, keeping and disposing of belongings</td><td>Sorting digital belongings on phones, PCs and USB drives<br>List of information not yet disposed of</td></tr>
+      <tr><td><b>After-death settlement</b></td><td>Administrative, inheritance and trust execution</td><td>Bundle of supporting documents<br>Access by designated persons</td></tr>
+    </tbody>
+  </table>
+  <div class="grid g3">
+    <div class="card"><h3>Hi Coffer</h3><p><span>It stores and classifies digital assets.</span><span>It is an online-centered protocol.</span></p></div>
+    <div class="card"><h3>Hi Silver</h3><p><span>It connects people, institutions, documents and sites.</span><span>It is a hybrid offline and online bridge.</span></p></div>
+    <div class="card"><h3>To the end of the life cycle</h3><p><span>Care, preparation, death, funeral, belongings and after-death settlement:</span><span>we stay with you to the end.</span></p></div>
+  </div>
+  <h3 style="margin-top:48px">Systems to cover before and after the funeral</h3>
+  <p class="lead"><span class="ln">We gather scattered systems in advance so that no one has to search for them when the time comes.</span></p>
+  <table>
+    <thead><tr><th>System</th><th>Current status</th><th class="hs">Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>Advance directive on life-sustaining treatment</b></td><td>Over 3 million registrants (Aug. 2025, National Agency for Management of Life-Sustaining Treatment)</td><td>Records registration status in the ending note · Guidance on registration institutions</td></tr>
+      <tr><td><b>Funeral mutual aid contracts</b></td><td>11.31 million contract holders · KRW 11.3544 trillion in prepayments (end of Mar. 2026, Korea Fair Trade Commission)<br>Companies must protect at least half of prepayments</td><td>Keeps the contract in the vault · Passes it to designated persons so the family knows of every contract</td></tr>
+      <tr><td><b>Cremation booking</b></td><td>Online booking via the e-Sky funeral information system (e하늘 장사정보시스템)</td><td>Guidance on booking order · Passing on the deceased's wishes (cremation, enshrinement, natural burial)</td></tr>
+      <tr><td><b>Funeral benefit · Emergency welfare funeral expenses</b></td><td>About KRW 800,000 on the death of a recipient (2026) · Apply at the administrative welfare center</td><td>Guidance on eligibility and documents</td></tr>
+      <tr><td><b>Public funerals</b></td><td>6,139 unclaimed deaths in 2024; 76% of them had family who delegated the funeral</td><td>Leaving funeral wishes and people to contact in advance, so no one departs alone</td></tr>
+    </tbody>
+  </table>
+  <h3 style="margin-top:48px">After-death checklist (1 month to 1 year)</h3>
+  <p class="lead"><span class="ln">We guide the bereaved family through tasks that are easy to miss, according to deadlines and legal grounds.</span></p>
+  <table>
+    <thead><tr><th>Task</th><th>Deadline · Requirement</th><th>Basis</th><th>Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>Death report</b></td><td>Within 1 month of learning of the death<br>Obligation to report: relatives living together</td><td>Act on the Registration of Family Relationships, Articles 84 and 85</td><td>Deadline reminders · Document guidance</td></tr>
+      <tr><td><b>Issuing medical records</b></td><td>The family requests them with the patient's consent form, proof of kinship and other documents</td><td>Medical Service Act, Article 21</td><td>List of required documents · Where to obtain them</td></tr>
+      <tr><td><b>Indemnity insurance claim</b></td><td>Electronic transmission from hospitals, clinics and pharmacies to the insurer</td><td>Computerized indemnity insurance claims (from Oct. 2024; clinics and pharmacies from Oct. 2025)</td><td>Matching contracts and receipts · Claim preparation</td></tr>
+      <tr><td><b>Integrated inheritance property inquiry</b></td><td>Within 1 year from the last day of the month of death<br>Can be applied for together with the death report</td><td>One-stop Safe Inheritance Service (안심상속 원스톱서비스)</td><td>Application order and deadline reminders</td></tr>
+      <tr><td><b>Checking wills, trusts and mandates</b></td><td>Access by designated persons</td><td>Records the person left in advance</td><td>Evidence bundle provided from the Hi Coffer vault</td></tr>
+      <tr><td><b>Sorting belongings and digital belongings</b></td><td>Phones, PCs, USB drives and accounts<br>Samsung and Apple legacy contacts · Kakao memorial or deletion</td><td>Disposal method set in advance by the person · Manufacturer and platform procedures</td><td>List of information not yet disposed of · Order of sorting</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><span class="ln">We do not act on legal or administrative procedures; we guide you on deadlines and documents.</span></p>
+  <h3 style="margin-top:48px">Sorting belongings, offline and online together</h3>
+  <p class="lead"><span class="ln">Things in the home and records on phones and PCs are sorted separately, but the deceased's wishes are one.</span><span class="ln">Using the list left during life, the site and the digital side are sorted in the same order.</span></p>
+  <table>
+    <thead><tr><th>Stage</th><th>Offline (on site)</th><th>Online (digital)</th><th class="hs">Hi Silver AI · Hi Coffer AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>Preparation during life</b></td><td>Location of valuables, bankbooks, securities and contracts<br>Wishes to keep, donate or discard</td><td>Phone legacy contact designation (Samsung up to 5 people · Apple)<br>Memorial or deletion wishes for each account</td><td>Belongings list and digital legacy list kept in the vault · PCs and USB drives classified with Hi DAM</td></tr>
+      <tr><td><b>Checking</b></td><td>Rented or owned home · Confirming acceptance, renunciation or qualified acceptance of inheritance</td><td>Locked phone · Hard even for the bereaved to open without a designation</td><td>Passing the list to designated persons · Guidance on the order of checks</td></tr>
+      <tr><td><b>Sorting · Searching</b></td><td>Consultation and site inspection → sorting into keep, donate and discard<br>Finding wills, valuables and documents</td><td>Backing up photos, contacts and documents · Cancelling payments and subscriptions</td><td>Marking missing items and documents against the list · Keeping handover photos as evidence</td></tr>
+      <tr><td><b>Clearing · Cleaning</b></td><td>Special cleaning · Restoration (cases reaching KRW 10 million even for a studio)</td><td>Disposing of PCs, USB drives and cloud data · Account memorial or deletion</td><td>Recording whether the disposal method set by the deceased was followed</td></tr>
+      <tr><td><b>When no one claims the deceased</b></td><td>Local government support for sorting belongings (cases of up to KRW 1 million for unclaimed welfare recipients)<br>Belongings kept during court proceedings</td><td>No legal basis for handling digital belongings</td><td>Designating persons in advance so that no one dies unclaimed</td></tr>
+    </tbody>
+  </table>
+  <ul class="ticks"><li>Sorting belongings is a field without qualification standards or guidelines yet. On site, neighbors sometimes take items first.</li><li>A bill to amend the Lonely Death Prevention Act, under which the state and local governments would support sorting belongings and special cleaning after unclaimed lonely deaths, was introduced (June 2026).</li></ul>
+
 </div></section>
 
 <section class="sec alt" id="service"><div class="wrap">
   <div class="kicker">Service</div>
   <h2>What Hi Silver AI does</h2>
-  <p class="lead"><span class="ln">It does not diagnose, and it does not act on your behalf.</span><span class="ln">It gathers and organizes records and provides guidance so that you can make your own decisions.</span></p>
+  <p class="lead"><span class="ln">It does not diagnose, and it does not act on your behalf.</span><span class="ln">It gathers, organizes and explains records so that you can decide for yourself.</span></p>
   <div class="steps">
-    <div class="st"><b class="n">1</b><h3>Medical visit preparation</h3><p>Summarizes recent changes in medication, tests and symptoms on a single page to show at medical visits.</p></div>
-    <div class="st"><b class="n">2</b><h3>Insurance claim preparation</h3><p>Gathers medical bill receipts, itemized statements and medical certificates, checks them against your insurance policies, and points out the items that can be claimed.</p></div>
-    <div class="st"><b class="n">3</b><h3>Presenile stage&nbsp;· Dementia preparation</h3><p>Records changes in daily life and guides you to where you can be screened.<br>Helps prepare a digital legacy list, a dementia-care trust and guardianship consultations.</p></div>
-    <div class="st"><b class="n">4</b><h3>Caregiver connection</h3><p>Within the scope you have consented to, sends caregivers summaries of check-ins, medication and medical appointments.</p></div>
-    <div class="st"><b class="n">5</b><h3>Putting affairs in order</h3><p>Organizes digital assets and stores them in the vault, and prepares access by designated persons.</p></div>
-    <div class="st"><b class="n">6</b><h3>After-death preparation&nbsp;· Funeral</h3><p>Sets in advance the emergency contact order, funeral arrangements and the people to contact.<br>If check-ins stop, it checks step by step and provides guidance on funeral and after-death procedures.</p></div>
+    <div class="st"><b class="n">1</b><h3>Medical visit preparation</h3><p>Summarizes recent medication, tests and symptom changes on one page to show at the visit.</p></div>
+    <div class="st"><b class="n">2</b><h3>Insurance claim preparation</h3><p>Gathers medical bills, itemized statements and diagnoses, matches them against your insurance contracts, and points out items you can claim.</p></div>
+    <div class="st"><b class="n">3</b><h3>Presenile stage and dementia preparation</h3><p>Records changes in daily life and guides you to where you can get screened.<br>Helps prepare a digital legacy list, a dementia safety trust and guardianship consultations.</p></div>
+    <div class="st"><b class="n">4</b><h3>Caregiver connection</h3><p>Within the scope you consent to, sends caregivers a summary of check-ins, medication and appointments.</p></div>
+    <div class="st"><b class="n">5</b><h3>Putting affairs in order</h3><p>Organizes digital assets, stores them in the vault, and prepares access by designated persons.<br>Guides you in advance to designate a phone legacy contact (Samsung, Apple).</p></div>
+    <div class="st"><b class="n">6</b><h3>After-death preparation · Funeral</h3><p>Sets in advance the emergency contact order, funeral arrangements and the people to contact.<br>If check-ins stop, it checks step by step and guides you through funeral and after-death procedures.</p></div>
   </div>
   <div class="grid g3">
-    <div class="card"><h3>Check-ins&nbsp;· Daily life</h3><p><span>Holds scheduled check-in conversations.</span><span>Notifies when something differs from usual.</span></p></div>
-    <div class="card"><h3>Medication&nbsp;· Health records</h3><p><span>Reminds you when to take medication.</span><span>Organizes blood pressure and blood sugar records into a table.</span></p></div>
-    <div class="card"><h3>Target users</h3><p><span>It starts with individuals and families.</span><span>It will expand to hospitals, care facilities and public institutions.</span></p></div>
+    <div class="card"><h3>Check-ins · Daily life</h3><p><span>Holds scheduled check-in conversations.</span><span>Notifies when something differs from usual.</span></p></div>
+    <div class="card"><h3>Medication · Health records</h3><p><span>Reminds you of medication times.</span><span>Organizes blood pressure and blood sugar records into tables.</span></p></div>
+    <div class="card"><h3>Who it serves</h3><p><span>It starts with you and your family.</span><span>It will expand to hospitals, care facilities and public institutions.</span></p></div>
   </div>
 </div></section>
 
-<section class="sec" id="data"><div class="wrap">
+<section class="sec" id="day"><div class="wrap">
+  <div class="kicker">A day with Hi Silver AI</div>
+  <h2>A day of the agent</h2>
+  <p class="lead"><span class="ln">Not a list of features: this is how it works every day.</span></p>
+  <div class="day">
+    <div class="t"><b>Morning</b><h3>Check-in and medication</h3><p>Holds a check-in conversation and announces medication time. Records responses and whether medication was taken.</p></div>
+    <div class="t"><b>Daytime</b><h3>Medical visit and schedule preparation</h3><p>Checks hospital appointments and schedules, and makes a one-page summary to show at the visit.</p></div>
+    <div class="t"><b>Evening</b><h3>Record keeping · Caregiver summary</h3><p>Organizes blood pressure, blood sugar and medication records into tables, and summarizes only the consented scope for caregivers.</p></div>
+    <div class="t alert"><b>When there is no response</b><h3>Step-by-step checks</h3><p>Contact again → Caregiver check → Verify warning signs and work out prompt preventive/preparatory measures.<br>Emergencies are connected to 119, crises to 109.</p></div>
+    <div class="t"><b>To the end</b><h3>Funeral · After-death arrangements</h3><p>Notifies designated persons according to wishes set in advance, and guides the funeral and tasks for the first month after death.</p></div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="data"><div class="wrap">
   <div class="kicker">MyData</div>
   <h2>MyData</h2>
-  <p class="lead"><span class="ln">It handles medical MyData and financial MyData.</span><span class="ln">Originals are kept in the Hi Coffer vault, and Hi Silver AI manages where they are provided or entrusted.</span></p>
+  <p class="lead"><span class="ln">It handles health (counseling records), medical and financial MyData.</span><span class="ln">Originals stay in the Hi Coffer vault; Hi Silver AI manages where they are provided or entrusted.</span></p>
   <table>
     <thead><tr><th>Category</th><th>Data</th><th>Used for</th></tr></thead>
     <tbody>
-      <tr><td class="sc"><b>Medical</b><span class="sq">(MyData)</span></td><td>Treatment, diagnosis, prescription and test history<br>Medication and vaccination history</td><td>Medical visit preparation&nbsp;· Caregiver summary</td></tr>
-      <tr><td class="sc"><b>Medical</b><span class="sq">(Documents)</span></td><td>Medical bill receipts, itemized statements, medical certificates</td><td>Insurance claim preparation</td></tr>
-      <tr><td class="sc"><b>Financial</b><span class="sq">(MyData)</span></td><td>Lists of insurance policies, pensions and accounts<br>Trust and guardianship documents</td><td>Claim guidance&nbsp;· Dementia preparation&nbsp;· Putting affairs in order</td></tr>
+      <tr><td class="sc"><b>Health</b><span class="sq">(counseling records)</span></td><td>Depression, anxiety, panic disorder, sleep, addiction, dementia, etc.<br>Mental health counseling, treatment history, schedules, institution contacts<br>Depression and cognitive screening results from checkups<br>Welfare counseling history</td><td>Warning sign verification · Connection to 109 and mental health welfare centers<br>Presenile stage and dementia preparation · Connection to Dementia Care Centers (치매안심센터)<br>Caregiver connection (with your consent)</td></tr>
+      <tr><td class="sc"><b>Medical</b><span class="sq">(MyData)</span></td><td>Treatment, diagnosis, prescription and test history<br>Medication and vaccination history</td><td>Medical visit preparation · Caregiver summary</td></tr>
+      <tr><td class="sc"><b>Medical</b><span class="sq">(documents)</span></td><td>Medical bills, itemized statements, diagnoses</td><td>Insurance claim preparation</td></tr>
+      <tr><td class="sc"><b>Financial</b><span class="sq">(MyData)</span></td><td>Insurance contracts, pensions, account lists<br>Trust and guardianship documents</td><td>Claim guidance · Dementia preparation · Putting affairs in order</td></tr>
     </tbody>
   </table>
-  <ul class="ticks"><li>Passwords, certificates and card numbers are not stored.</li></ul>
+  <h3 style="margin-top:48px">Health (mental health) network</h3>
+  <p class="lead"><span class="ln">From panic disorder, depression, anxiety and addiction to dementia, we connect you to public services so you do not endure alone.</span></p>
+  <table>
+    <thead><tr><th>Public service</th><th>Current status</th><th class="hs">Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>109 suicide prevention hotline</b></td><td>Unified in Jan. 2024 · 182,725 counseling sessions in 2024<br>Only about half of incoming calls were connected to counseling (2025)</td><td>Verify warning signs and take prompt preventive/preparatory measures · Connection after consent</td></tr>
+      <tr><td><b>Mental health crisis counseling 1577-0199</b></td><td>24 hours · Linked to mental health welfare centers</td><td>Local center contacts · Recording counseling schedules</td></tr>
+      <tr><td><b>Mental health tests in national health screening</b></td><td>Depression screening every 2 years for ages 20–34 · Early psychosis screening added (from 2025)</td><td>You choose which screening results to keep in the vault</td></tr>
+      <tr><td><b>National Mind Investment Support Program (전국민 마음투자 지원사업)</b></td><td>8 professional counseling sessions (8 more if needed) · No co-payment for recipients and near-poverty groups</td><td>Guidance on referral routes and application documents · Managing counseling schedules</td></tr>
+      <tr><td><b>Dementia Care Centers (치매안심센터)</b></td><td>Dementia screening and counseling by city, county and district</td><td>Recording changes in daily life · Preparing screening appointments</td></tr>
+    </tbody>
+  </table>
+  <ul class="ticks"><li>Data is received only through the legally designated channels (APIs), at your own transmission request (Personal Information Protection Act, Article 35-2). No scraping is used.</li><li>Medical records received through the My Health Record app (나의건강기록; 113 items in 12 categories) can also be selected and placed in the vault.</li><li>Only the counseling content you choose is kept in the vault.</li><li>Passwords, certificates and card numbers are not stored.</li></ul>
 </div></section>
 
-<section class="sec alt" id="agent"><div class="wrap">
+<section class="sec" id="ops"><div class="wrap">
+  <div class="kicker">How it runs today</div>
+  <h2>How hospitals and public services operate today</h2>
+  <p class="lead"><span class="ln">It works on top of actual systems and institutions.</span><span class="ln">Rather than building something new, it connects through channels that already exist.</span></p>
+
+  <h3 style="margin-top:40px">Inside the hospital: the hospital information system (HIS) creates records</h3>
+  <table>
+    <thead><tr><th>System</th><th>What it does inside the hospital</th><th class="hs">Where it meets Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>HIS</b><br><small>Hospital information system</small></td><td>An integrated system that ties together administration, treatment, nursing and tests around the order communication system (OCS)</td><td>No direct access · Received only through documents the hospital issues and standard channels</td></tr>
+      <tr><td><b>OCS</b><br><small>Order communication system</small></td><td>Sends doctors' orders to test, pharmacy and nursing departments · Shortens waits for payment and medication</td><td>Prescription and medication history → Medication reminders · Visit summary</td></tr>
+      <tr><td><b>EMR</b><br><small>Electronic medical records</small></td><td>Computerized medical records · Automated insurance claims · Charts linked with imaging systems</td><td>Diagnosis and test history → Received as medical MyData</td></tr>
+      <tr><td><b>PACS</b><br><small>Picture archiving and communication</small></td><td>Images from imaging devices are read and stored immediately · Film-free care</td><td>Copies of imaging reports → Kept in the vault</td></tr>
+      <tr><td><b>P-HIS</b><br><small>Cloud hospital information system</small></td><td>Developed by 14 medical institutions and ICT companies including Korea University Medicine (Ministry of Science and ICT, Ministry of Health and Welfare)<br>38 standard modules · 89,004 clinical terms and codes standardized · International interoperability certification<br>3 Korea University hospitals converted; about 90 primary care institutions supplied (Dec. 2021)</td><td>The more cloud hospitals use standard codes, the easier hospital partnership integration becomes · Priority partnership candidates</td></tr>
+      <tr><td><b>Administration</b></td><td>Registration, payment, fee calculation, certificate issuance</td><td>Receipts, itemized statements, diagnoses → Insurance claim preparation</td></tr>
+    </tbody>
+  </table>
+  <ul class="ticks"><li>34,958 clinics (Mar. 2023) use EMRs from many vendors. There are no official market share statistics.</li><li>The services doctors most want linked to EMRs were booking, registration and payment (26.35%), blood sugar and blood pressure devices (20.35%), and checking test results from other hospitals (15.93%) (2023 survey of 1,030 doctors). This is where Hi Silver AI's hospital partnerships (B2B) fit.</li></ul>
+
+  <h3 style="margin-top:40px">1. Medical record management (hospital records systems · EMR)</h3>
+  <table>
+    <thead><tr><th>Item</th><th>How it operates</th><th class="hs">Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>Retention period</b></td><td>Medical charts and surgical records 10 years · Patient registers, test findings, images and nursing records 5 years<br>Copies of medical certificates 3 years · Prescriptions 2 years (Enforcement Rule of the Medical Service Act, Article 15)</td><td>Keeping your own copies in the vault before hospital records disappear after the period</td></tr>
+      <tr><td><b>Electronic medical records (EMR)</b></td><td>4,057 certified medical institutions, 11% of all 36,234 (Sept. 2025)</td><td>Instead of each hospital's different system, only records received through standard channels are organized</td></tr>
+      <tr><td><b>When a hospital closes</b></td><td>Transferred to the public health center · Medical record storage system in official operation (from July 21, 2025)</td><td>Recording where to look even if your hospital closes</td></tr>
+      <tr><td><b>Exchange between hospitals</b></td><td>Medical information exchange: referral letters · return letters · medical record summaries · imaging reports</td><td>Documents received at transfer or discharge are reflected in the one-page visit summary</td></tr>
+      <tr><td><b>Personal access · Copies</b></td><td>Patients may request access and copies; families need a consent form and proof documents (Medical Service Act, Article 21)</td><td>List of request documents · Preparing delegation to designated persons</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:44px">2. How medical MyData services work</h3>
+  <table>
+    <thead><tr><th>Item</th><th>How it operates</th><th class="hs">Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>My Health Record app (나의건강기록)</b></td><td>Health Information Highway · 860 medical institutions · 113 items in 12 categories viewed, saved and transmitted (Sept. 2023)</td><td>You choose which received records to place in the Hi Coffer vault</td></tr>
+      <tr><td><b>Right to request transmission</b></td><td>From Mar. 2025 · Health and medical sector first (KDCA · National Health Insurance Service · HIRA · tertiary general hospitals)</td><td>Received only at your request</td></tr>
+      <tr><td><b>Transmission channel</b></td><td>Transmission to yourself or a third party · Via specialized intermediary institutions · API only, scraping prohibited</td><td>Connection as an official recipient after meeting registration requirements (phased)</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:44px">3. Community care · End of life · Funeral services</h3>
+  <table>
+    <thead><tr><th>Item</th><th>Operations</th><th class="hs">Hi Silver AI</th></tr></thead>
+    <tbody>
+      <tr><td><b>Integrated care</b></td><td>Act on Integrated Support for Community Care, including Medical and Long-term Care, in force (Mar. 27, 2026)<br>Care needs assessed before discharge → connection to the local government's dedicated desk</td><td>Takes over medication, schedules and caregiver reports after discharge</td></tr>
+      <tr><td><b>Long-term care home medical centers</b></td><td>344 centers in 195 cities, counties and districts (Jan. 2026) · Doctor visits monthly, nurse visits twice a month</td><td>Organizing visit schedules and records · Sharing with family</td></tr>
+      <tr><td><b>Home-based hospice</b></td><td>40 medical institutions · 2,042 users (Sept. 2025)</td><td>Recording life-sustaining treatment wishes · Preferred place of death</td></tr>
+      <tr><td><b>Funeral services</b></td><td>358,569 deaths in 2024 · 400 cremation furnaces · Cremation rate 94.4%</td><td>Cremation booking order · Passing on funeral wishes</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><span class="ln">Figures are as of the dates shown and will be updated when official releases change.</span></p>
+</div></section>
+
+<section class="sec alt" id="link"><div class="wrap">
+  <div class="kicker">Hi Silver × Hi Coffer</div>
+  <h2>Data link with Hi Coffer</h2>
+  <p class="lead"><span class="ln">Hi Coffer protects; Hi Silver connects.</span><span class="ln">Original records stay in the Hi Coffer vault; Hi Silver AI handles only lists and permissions, not originals.</span></p>
+  <div class="grid g3">
+    <div class="card"><h3>Hi Coffer AI</h3><p><span>Online-centered protocol</span><span>Originals kept in the on-device vault</span><span>Classified with Hi DAM · Authenticity checked by the original's fingerprint</span></p></div>
+    <div class="card"><h3>Hi Silver AI</h3><p><span>Hybrid offline and online bridge</span><span>Manages who receives what, and until when</span><span>Connects with people, hospitals, institutions and funeral sites</span></p></div>
+    <div class="card"><h3>You</h3><p><span>Approve every provision and entrustment yourself</span><span>Withdraw at any time</span><span>Designate persons in advance</span></p></div>
+  </div>
+  <h3 style="margin-top:44px">Five steps of the link</h3>
+  <div class="steps">
+    <div class="st"><b class="n">1</b><h3>Store</h3><p>Place MyData, medical documents, insurance policies, wills and trust documents in the Hi Coffer vault.</p></div>
+    <div class="st"><b class="n">2</b><h3>View list</h3><p>Hi Silver AI does not open originals; it receives only a list of "which records exist".</p></div>
+    <div class="st"><b class="n">3</b><h3>Approve provision</h3><p>Hi Coffer itself releases data only to the recipient, scope and period you approve.</p></div>
+    <div class="st"><b class="n">4</b><h3>Withdraw</h3><p>When you withdraw, provision stops immediately.</p></div>
+    <div class="st"><b class="n">5</b><h3>Record results</h3><p>Who received what and when is recorded in the vault for later use as evidence.</p></div>
+  </div>
+  <h3 style="margin-top:44px">Moments of contact</h3>
+  <table>
+    <thead><tr><th>Moment</th><th>What goes into Hi Coffer AI</th><th class="hs">What Hi Silver AI does</th></tr></thead>
+    <tbody>
+      <tr><td><b>When receiving records</b></td><td>Original medical records received through the My Health Record app or the right to request transmission</td><td>Receives only the list · Visit summary · Caregiver report</td></tr>
+      <tr><td><b>After a hospital visit</b></td><td>Medical bills · Itemized statements · Diagnoses · Return letters</td><td>Matching against insurance contracts · Claim preparation</td></tr>
+      <tr><td><b>Before the retention period ends</b></td><td>Your own copies of records the hospital will delete after 10 or 5 years</td><td>Expiry reminders · Guidance on requesting copies</td></tr>
+      <tr><td><b>Discharge · Home medical care · Hospice</b></td><td>Discharge summaries · Visit records · Life-sustaining treatment wishes</td><td>Taking over schedules and medication after discharge · Sharing with family</td></tr>
+      <tr><td><b>While cognition is intact</b></td><td>Trusts · Guardianship · Wills · Funeral mutual aid contracts · Ending note</td><td>Preparing dementia consultations · Choosing designated persons</td></tr>
+      <tr><td><b>Sorting PCs, phones and USB drives</b></td><td>Digital assets classified with Hi DAM · Digital legacy list</td><td>Guidance on designating legacy contacts · Recording disposal methods</td></tr>
+      <tr><td><b>When there are warning signs</b></td><td>Emergency contact order · Scope of consent</td><td>Verify warning signs and take prompt preventive/preparatory measures · Connection to 109 and 119</td></tr>
+      <tr><td><b>Death · Funeral · After death</b></td><td>Records that open only to designated persons · Evidence bundle</td><td>Notice to designated persons · Passing on funeral wishes · After-death checklist</td></tr>
+    </tbody>
+  </table>
+  <h3 style="margin-top:44px">How they work together · Data used · Connecting online and offline</h3>
+  <p class="lead"><span class="ln">Records created on site (offline) go into the vault (online),</span><span class="ln">and Hi Silver AI turns them into the next action on site.</span></p>
+  <div class="chains">
+    <div class="chain"><h3>Medical care</h3><ol><li class="off"><i>On site</i>Outpatient care · Tests (hospital)</li><li><i>Data used</i>Treatment, medication and test records · Return letters</li><li class="hc"><i>Hi Coffer AI</i>Original storage · Authenticity check</li><li class="hs"><i>Hi Silver AI</i>One-page summary for the next visit · Caregiver report</li><li class="off"><i>Next on site</i>Showing the summary to the doctor at the next visit (hospital)</li></ol></div>
+    <div class="chain"><h3>Insurance claim</h3><ol><li class="off"><i>On site</i>Paying medical bills · Issuing documents (hospital counter)</li><li><i>Data used</i>Receipts · Itemized statements · Diagnoses · Insurance policies (financial MyData)</li><li class="hc"><i>Hi Coffer AI</i>Document storage · Bundled with insurance policies</li><li class="hs"><i>Hi Silver AI</i>Matching contracts and riders · Guidance on claimable items</li><li class="off"><i>Next on site</i>Electronic indemnity claim transmission or submission to the insurer</li></ol></div>
+    <div class="chain"><h3>Discharge · Home</h3><ol><li class="off"><i>On site</i>Discharge · Home medical center visits · Home-based hospice</li><li><i>Data used</i>Discharge summaries · Visit records · Life-sustaining treatment wishes</li><li class="hc"><i>Hi Coffer AI</i>Record storage · Keeping copies of directives</li><li class="hs"><i>Hi Silver AI</i>Taking over medication and visit schedules · Sharing with family</li><li class="off"><i>Next on site</i>Connection to the local integrated care desk and visiting medical staff</li></ol></div>
+    <div class="chain"><h3>Dementia preparation</h3><ol><li class="off"><i>On site</i>Dementia Care Center screening · Bank and legal consultations</li><li><i>Data used</i>Cognitive screening results · Account and pension lists · Trust and guardianship documents</li><li class="hc"><i>Hi Coffer AI</i>Document storage · Setting designated persons</li><li class="hs"><i>Hi Silver AI</i>Recording changes in daily life · Consultation preparation list</li><li class="off"><i>Next on site</i>Signing trust and guardianship contracts (bank, court)</li></ol></div>
+    <div class="chain"><h3>Crisis</h3><ol><li class="off"><i>On site</i>Warning signs in the person or family (home)</li><li><i>Data used</i>Counseling records · Emergency contact order · Scope of consent</li><li class="hc"><i>Hi Coffer AI</i>Providing scope of consent and contacts</li><li class="hs"><i>Hi Silver AI</i>Verify warning signs and take prompt preventive/preparatory measures</li><li class="off"><i>Next on site</i>109 · Mental health welfare centers · 119 on-site response</li></ol></div>
+    <div class="chain"><h3>Funeral</h3><ol><li class="off"><i>On site</i>Death · Laying-out · Funeral hall (on site)</li><li><i>Data used</i>Funeral wishes · People to contact · Funeral mutual aid contract</li><li class="hc"><i>Hi Coffer AI</i>Open only to designated persons</li><li class="hs"><i>Hi Silver AI</i>Notice to designated persons · Guidance on funeral procedures and cremation booking</li><li class="off"><i>Next on site</i>Funeral director · Funeral hall · Crematorium</li></ol></div>
+    <div class="chain"><h3>After death · Belongings</h3><ol><li class="off"><i>On site</i>Death report · Inheritance · Sorting belongings (community center, home)</li><li><i>Data used</i>Evidence of wills, trusts and mandates · Digital legacy list</li><li class="hc"><i>Hi Coffer AI</i>Evidence bundle · Digital belongings list provided</li><li class="hs"><i>Hi Silver AI</i>After-death checklist · Deadline reminders</li><li class="off"><i>Next on site</i>Safe Inheritance application · Disposal of belongings and digital belongings</li></ol></div>
+  </div>
+  <ul class="ticks"><li>The two apps can be used separately; used together, they form one flow to the end of life.</li><li>Originals are not sent to servers. Passwords, certificates and card numbers are not stored.</li></ul>
+</div></section>
+
+<section class="sec" id="agent"><div class="wrap">
   <div class="kicker">Hi Silver AI Agent</div>
   <h2>Agent structure</h2>
-  <p class="lead"><span class="ln">Every request and answer passes through the supervisory AI.</span><span class="ln">It verifies warning signs and works out prompt preventive/preparatory measures.</span></p>
+  <p class="lead"><span class="ln">Every request and answer passes through the supervisory AI.</span><span class="ln">We verify warning signs and work out prompt preventive/preparatory measures.</span></p>
   <div class="arch">
-    <div class="lab">Users (individual&nbsp;· caregiver&nbsp;· institution)</div>
-    <div class="row"><div class="box">Supervisory AI (guardrails)&nbsp;· Emergency → 119&nbsp;· Crisis → 109&nbsp;· Medical judgment → Doctor/pharmacist&nbsp;· Finance → Institution's main number</div></div>
+    <div class="lab">Users (individual · caregiver · institution)</div>
+    <div class="row"><div class="box">Supervisory AI (guardrails) · Emergency → 119 · Crisis → 109 · Medical judgment → doctor or pharmacist · Finance → institution's main line</div></div>
     <div class="lab" style="margin-top:18px">Hi Silver AI Agent</div>
     <div class="row g3" style="display:grid;grid-template-columns:repeat(3,1fr)">
-      <div class="box core">Putting affairs in order<small>Digital legacy list&nbsp;· Ending note</small></div>
-      <div class="box core">Check-in&nbsp;· Daily-life sensing<small>Check-in conversations&nbsp;· Change alerts</small></div>
-      <div class="box core">Health records<small>Medication reminders&nbsp;· Record sheets</small></div>
+      <div class="box core">Putting affairs in order<small>Digital legacy list</small><small>Ending note · Funeral</small></div>
+      <div class="box core">Check-in and daily life sensing<small>Check-in conversations · Change alerts</small></div>
+      <div class="box core">Health records<small>Medication reminders · Record tables</small></div>
       <div class="box core">Medical visit preparation<small>One-page summary</small></div>
-      <div class="box core">Financial&nbsp;· Fraud protection<small>Suspected fraud alerts</small></div>
-      <div class="box core">Welfare guidance&nbsp;· Caregiver reports<small>Available services&nbsp;· Weekly summary</small></div>
+      <div class="box core">Financial and fraud protection<small>Suspected fraud alerts</small></div>
+      <div class="box core">Welfare guidance · Caregiver report<small>Services you can receive · Weekly summary</small></div>
     </div>
     <div class="lab" style="margin-top:18px">Connected to</div>
     <div class="row" style="display:grid;grid-template-columns:repeat(3,1fr)">
-      <div class="box">Hi Coffer AI<small>Vault&nbsp;· Hi DAM classification&nbsp;· Original storage</small></div>
-      <div class="box">Hospitals&nbsp;· Care facilities<small>Medical records&nbsp;· Documents&nbsp;· Caregiver reports</small></div>
-      <div class="box">Sensors&nbsp;· Care devices<small>Partner device signal integration (planned)</small></div>
+      <div class="box">Hi Coffer AI<small>Vault · Hi DAM classification · Original storage</small></div>
+      <div class="box">Hospitals and care facilities<small>Medical records · Documents · Caregiver report</small></div>
+      <div class="box">Sensors and care devices<small>Partner device signal integration (planned)</small></div>
     </div>
+  </div>
+  <ul class="ticks"><li>Crisis connections are made to 109 and mental health welfare centers with your consent.</li><li>Providing information without consent is the legal role of the police, fire services and suicide prevention centers; Hi Silver AI does not take over that role.</li></ul>
+</div></section>
+
+<section class="sec alt" id="compare"><div class="wrap">
+  <div class="kicker">Landscape · Bridge</div>
+  <h2>Connecting existing services, all the way to the end</h2>
+  <p class="lead"><span class="ln">Public and private services exist separately at each stage.</span><span class="ln">Hi Silver AI does not replace them; it connects the gaps between them with your consent.</span></p>
+  <table>
+    <thead><tr><th>Stage</th><th>Existing services</th><th>Remaining gap</th><th class="hs">What Hi Silver AI connects</th></tr></thead>
+    <tbody>
+      <tr><td><b>Care</b></td><td>Emergency Safety Service (응급안전안심서비스; fire and activity detection, 119 connection, about 270,000 households)<br>AI check-in calls (local governments, telecom carriers, Naver CLOVA CareCall (클로바 케어콜), etc.)</td><td>Records are scattered across institutions and not linked to family or hospitals</td><td>Check-in, medication and change records in one place · Caregiver summary within consented scope only</td></tr>
+      <tr><td><b>Crisis</b></td><td>109 suicide prevention hotline · Mental health welfare centers<br>Police and fire services → information to suicide prevention centers (from Aug. 2022)</td><td>Hard for the person to reach out first</td><td>Verify warning signs and take prompt preventive/preparatory measures · 109 connection after consent</td></tr>
+      <tr><td><b>Isolation</b></td><td>Lonely Death Prevention Act (from Mar. 2024) · Local government identification of people at risk</td><td>People in their 50s and 60s easily fall outside the identification net</td><td>Available from middle age and the presenile stage · Linked to local government programs (B2G)</td></tr>
+      <tr><td><b>Dementia preparation</b></td><td>Dementia Care Centers (치매안심센터) · Dementia safety trust · Adult guardianship</td><td>Affairs are not put in order while cognition is intact</td><td>Recording changes in daily life · Preparing screening, trust and guardianship consultations</td></tr>
+      <tr><td><b>Medical</b></td><td>My Health Record app (나의건강기록; 860 medical institutions, 113 items in 12 categories)<br>Right to request personal data transmission (from Mar. 2025)</td><td>Hard to use received records for visits, insurance and family</td><td>One-page visit summary · Insurance claim preparation · Caregiver report</td></tr>
+      <tr><td><b>Insurance</b></td><td>Computerized indemnity insurance claims (hospitals from Oct. 2024; clinics and pharmacies from Oct. 2025)</td><td>Matching against contracts and riders is left to the individual</td><td>Matching contracts and documents · Guidance on claimable items</td></tr>
+      <tr><td><b>Funeral</b></td><td>Funeral mutual aid · Funeral halls · Public funerals for the unclaimed deceased</td><td>The family lacks the deceased's wishes, contacts and documents</td><td>Funeral wishes and people to contact set in advance · Notice to designated persons</td></tr>
+      <tr><td><b>Inheritance · Administration</b></td><td>One-stop Safe Inheritance Service (안심상속 원스톱서비스; integrated inquiry of finances, debts, taxes, pensions, real estate and vehicles)</td><td>Application deadlines and order are not known</td><td>Guidance to apply together with the death report · Deadline reminders</td></tr>
+      <tr><td><b>Digital legacy</b></td><td>Samsung and Apple legacy contact designation · Kakao memorial or deletion</td><td>Without advance designation the bereaved cannot open them · No basis in Korean law</td><td>Guidance on designation during life · Digital legacy list · Storage in the Hi Coffer vault</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><span class="ln">Conditions of use for each service follow the operating institution's standards.</span></p>
+</div></section>
+
+<section class="sec" id="team"><div class="wrap">
+  <div class="kicker">Why HIVEN</div>
+  <h2>A team that knows both hospital systems and the funeral field</h2>
+  <div class="grid g3">
+    <div class="card"><h3>25 years in IT/ICT</h3><p><span>Through public medical IT projects,</span><span>we know how hospital data flows.</span></p></div>
+    <div class="card"><h3>Licensed funeral director</h3><p><span>We know death, funerals and the sorting of belongings</span><span>first-hand.</span></p></div>
+    <div class="card"><h3>One with Hi Coffer</h3><p><span>Original records stay in the Hi Coffer vault;</span><span>Hi Silver AI handles connection and execution.</span></p></div>
   </div>
 </div></section>
 
-<section class="sec" id="how"><div class="wrap">
+<section class="sec alt" id="how"><div class="wrap">
   <div class="kicker">How it works</div>
-  <h2>Process</h2>
-  <p class="lead"><span class="ln">Steps 1–6 are getting started and recording,</span><span class="ln">steps 7–12 are preparation and storage.</span><span class="ln">Every step follows your own consent and decisions.</span></p>
+  <h2>How it works</h2>
+  <p class="lead"><span class="ln">Steps 1–6 are getting started and recording;</span><span class="ln">steps 7–12 are preparation and storage.</span><span class="ln">Every step follows your own consent and decisions.</span></p>
   <ol class="flow">
-    <li>Install&nbsp;· Consent</li><li>Designate caregiver</li><li>Start check-ins</li><li>Import records<br><small>MyData</small></li><li>Medication reminders</li><li>Change check</li>
-    <li>Medical visit preparation</li><li>Insurance&nbsp;· Welfare guidance</li><li>Putting affairs in order</li><li>Ending note<br><small>Funeral&nbsp;· Emergency contacts</small></li><li class="v">Vault storage<br><small>Hi Coffer</small></li><li class="v">Designated person<br><small>Annual check</small></li>
+    <li>Install · Consent</li><li>Designate caregivers</li><li>Start check-ins</li><li>Import records<br><small>MyData</small></li><li>Medication reminders</li><li>Check changes</li>
+    <li>Medical visit preparation</li><li>Insurance and welfare guidance</li><li>Putting affairs in order</li><li>Ending note<br><small>Funeral · Emergency contacts</small></li><li class="v">Vault storage<br><small>Hi Coffer</small></li><li class="v">Designated persons<br><small>Annual review</small></li>
   </ol>
   <div class="grid g3">
-    <div class="card"><h3>No diagnosis</h3><p><span>It does not make judgments about illnesses or readings.</span><span>It advises you to check with a doctor or pharmacist.</span></p></div>
-    <div class="card"><h3>Warning sign verification&nbsp;· Prevention</h3><p><span>It verifies warning signs</span><span>and works out prompt preventive/preparatory measures.</span></p></div>
-    <div class="card"><h3>Does not act on your behalf</h3><p><span>It does not handle legal, financial or administrative matters on your behalf.</span><span>It guides you through procedures and documents.</span></p></div>
-    <div class="card"><h3>Records stay on your device</h3><p><span>Health and financial records are kept in the vault on the device.</span><span>Originals are not sent to a server.</span></p></div>
-    <div class="card"><h3>Your consent comes first</h3><p><span>Only what you consent to is shared with caregivers.</span><span>Consent can be withdrawn at any time.</span></p></div>
+    <div class="card"><h3>No diagnosis</h3><p><span>It does not judge diseases or values.</span><span>It advises you to check with a doctor or pharmacist.</span></p></div>
+    <div class="card"><h3>Warning sign verification · Prevention</h3><p><span>It verifies warning signs</span><span>and works out prompt preventive/preparatory measures.</span></p></div>
+    <div class="card"><h3>Does not act for you</h3><p><span>It does not act on legal, financial or administrative matters.</span><span>It explains procedures and documents.</span></p></div>
+    <div class="card"><h3>Records stay on your device</h3><p><span>Health and financial records stay in the on-device vault.</span><span>Originals are not sent to servers.</span></p></div>
+    <div class="card"><h3>Your consent comes first</h3><p><span>Only the consented scope is shared with caregivers.</span><span>Consent can be withdrawn at any time.</span></p></div>
     <div class="card"><h3>AI only guides</h3><p><span>Answers generated by AI are labeled as such.</span><span>You make the decisions.</span></p></div>
   </div>
 </div></section>
 
-<section class="sec alt" id="plan"><div class="wrap">
+<section class="sec" id="plan"><div class="wrap">
   <div class="kicker">Plan</div>
   <h2>Plans</h2>
-  <p class="lead"><span class="ln">Basic features are free.</span><span class="ln">People facing financial hardship can use all features free of charge.</span></p>
+  <p class="lead"><span class="ln">Basic features are free.</span><span class="ln">People in financial hardship can use all features free of charge.</span></p>
   <table>
-    <thead><tr><th>Category</th><th>Included</th><th>Pricing</th></tr></thead>
+    <thead><tr><th>Category</th><th>Includes</th><th>Terms</th></tr></thead>
     <tbody>
       <tr><td><b>Trial version</b></td><td>All features of the beta (β) version</td><td>Free</td></tr>
-      <tr><td><b>Basic</b></td><td>Check-ins&nbsp;· Medication reminders&nbsp;· Medical visit summary&nbsp;· Affairs checklist</td><td>Free</td></tr>
-      <tr><td class="sc"><b>Vulnerable groups</b><span class="sq">(Support)</span></td><td>All features, including subscription features</td><td>Free</td></tr>
-      <tr><td class="sc"><b>Subscription</b><span class="sq">(Regular)</span></td><td>Caregiver reports&nbsp;· Hi Coffer vault&nbsp;· MyData integration&nbsp;· Insurance claim preparation</td><td>Paid</td></tr>
-      <tr><td class="sc"><b>Institution</b><span class="sq">(Contract)</span></td><td>Management console for hospitals, care facilities, funeral service providers and banks</td><td>By arrangement</td></tr>
+      <tr><td><b>Basic</b></td><td>Check-ins · Medication reminders · Visit preparation summary · Affairs list</td><td>Free</td></tr>
+      <tr><td class="sc"><b>Vulnerable groups</b><span class="sq">(support)</span></td><td>All features, including subscription features</td><td>Free</td></tr>
+      <tr><td class="sc"><b>Subscription</b><span class="sq">(regular)</span></td><td>Caregiver report · Hi Coffer vault · MyData link · Insurance claim preparation</td><td>Paid</td></tr>
+      <tr><td class="sc"><b>Institutions</b><span class="sq">(contract)</span></td><td>Management screens for hospitals, care facilities, funeral mutual aid companies and banks</td><td>By agreement</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>Supplied and provided by HIVEN.</li></ul>
 </div></section>
 
-<section class="sec" id="road"><div class="wrap">
+<section class="sec alt" id="road"><div class="wrap">
   <div class="kicker">Roadmap</div>
   <h2>Service roadmap</h2>
   <div class="grid g3">
-    <div class="card"><h3>Phase 1&nbsp;· <span class="tag">H1 2027</span></h3><p><span>Medical visit preparation&nbsp;· Insurance claim preparation&nbsp;· Putting affairs in order</span><span>The trial version is available free of charge.</span></p></div>
-    <div class="card"><h3>Phase 2&nbsp;· <span class="tag">H2 2027</span></h3><p><span>Check-ins&nbsp;· Fraud protection&nbsp;· Caregiver app</span><span>Pilot operation with hospitals and care facilities.</span></p></div>
-    <div class="card off"><h3>Phase 3&nbsp;· <span class="tag tbd">To be announced</span></h3><p><span>Health records&nbsp;· Care device integration (planned)</span></p></div>
+    <div class="card"><h3>Phase 1 · <span class="tag">First half of 2027</span></h3><p><span>Visit preparation · Insurance claim preparation · Putting affairs in order</span><span>The trial version is available free of charge.</span></p></div>
+    <div class="card"><h3>Phase 2 · <span class="tag">Second half of 2027</span></h3><p><span>Check-ins · Fraud protection · Caregiver app</span><span>Pilot operation with hospitals and care facilities.</span></p></div>
+    <div class="card off"><h3>Phase 3 · <span class="tag tbd">To be announced</span></h3><p><span>Health records · Care device integration (planned)</span></p></div>
   </div>
-  <p class="note"><span class="ln">The schedule will be announced after test results and a review of the relevant laws.</span></p>
+  <p class="note"><span class="ln">The schedule will be announced after trial results and review of relevant laws.</span></p>
+</div></section>
+
+<section class="sec" id="with"><div class="wrap">
+  <div class="kicker">Join</div>
+  <h2>Join</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Individuals · Families</h3><p><span>Caregiver pre-registration</span><span>Be the first to hear about the trial release.</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20caregiver%20pre-registration">Pre-register →</a></div>
+    <div class="card"><h3>Hospitals and care facilities</h3><p><span>Post-discharge linkage · Caregiver report</span><span>Linkage for indemnity insurance claim preparation</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20institution%20partnership">Partnership inquiry →</a></div>
+    <div class="card"><h3>Local governments · Public institutions</h3><p><span>Linkage with lonely death prevention programs</span><span>All features free for vulnerable groups</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20public%20partnership">Public partnership inquiry →</a></div>
+  </div>
 </div></section>
 
 <section class="sec dl" id="download"><div class="wrap">
   <h2>Hi Silver AI Agent</h2>
-  <p class="lead"><span class="ln">HIVEN stands with you so that your records and wishes are protected to the end.</span></p>
+  <p class="lead"><span class="ln">HIVEN is with you so that your records and wishes are kept to the end.</span></p>
   <div class="cta"><a class="btn p" href="https://hicoffer.ai/">hicoffer.ai</a><a class="btn g" href="https://hiven.co.kr/">hiven.co.kr</a></div>
 </div></section>
 </main>
 
-<footer><div class="wrap"><span>© 2026 HIVEN&nbsp;· HIVE-Group</span><span class="fm">Hi Silver&nbsp;· Hi Coffer</span><span class="fr"><a href="https://hiven.co.kr/">hiven.co.kr</a><a class="fmail" href="mailto:contact@hiven.co.kr">contact@hiven.co.kr</a></span></div></footer>
+<footer><div class="wrap"><span>© 2026 HIVEN · HIVE-Group</span><span class="fm">Hi Silver · Hi Coffer</span><span class="fr"><a href="https://hiven.co.kr/">hiven.co.kr</a><a class="fmail" href="mailto:contact@hiven.co.kr">contact@hiven.co.kr</a></span></div></footer>
 </body>
 </html>

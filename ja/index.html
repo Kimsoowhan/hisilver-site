@@ -140,7 +140,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
 .chain li.hc i{color:var(--c1)}.chain li.hs{background:var(--grad);color:#fff}.chain li.hs i{color:#E8ECFF}
 .chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
 @media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
-@media (max-width:600px){table.stk thead{display:none}table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}table.stk tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:12px;background:var(--bg)}table.stk td{border:0;padding:6px 0;text-align:left!important;white-space:normal}table.stk td:first-child{font-size:16px;padding-top:2px}table.stk td:not(:first-child):before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}table.stk td.sc b,table.stk td.sc .sq{display:inline;margin-right:4px}}
+@media (max-width:960px){table.stk thead{display:none}table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}table.stk tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:12px;background:var(--bg)}table.stk td{border:0;padding:6px 0;text-align:left!important;white-space:normal}table.stk td:first-child{font-size:16px;padding-top:2px}table.stk td:not(:first-child):before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}table.stk td.sc b,table.stk td.sc .sq{display:inline;margin-right:4px}}
 .rel{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(8px,2vw,18px);align-items:stretch;margin-top:24px}
 .rel .node{border-radius:16px;padding:clamp(14px,2.4vw,24px);color:#fff;text-align:center}
 .rel .node h4{font-size:clamp(17px,2.2vw,22px);font-weight:800}
@@ -160,6 +160,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
 .top .wrap{max-width:1400px}
 nav{flex:1;justify-content:center;gap:clamp(10px,1.3vw,22px);font-size:14.5px;white-space:nowrap;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrollbar{display:none}
 nav a{flex:none}
+@media(max-width:1100px){nav{display:none}}
 </style>
 </head>
 <body>

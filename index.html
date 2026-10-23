@@ -125,6 +125,15 @@ th.hs{color:var(--c2)}
 td.sc{text-align:center;vertical-align:top;line-height:1.3;white-space:nowrap}td.sc b,td.sc .sq{display:block}td.sc .sq{color:#B8BCC6;font-weight:700}
 footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;gap:6px}footer .fmail{color:#D3D6DE}
 @media(max-width:600px){footer .fr{justify-self:center;text-align:center;align-items:center}}
+.chains{display:grid;gap:14px;margin-top:28px}
+.chain{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg)}
+.chain ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.chain li{position:relative;border-radius:10px;padding:10px 12px;font-size:15px;line-height:1.5;background:var(--bg2);color:var(--sub)}
+.chain li i{display:block;font-style:normal;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--faint);margin-bottom:2px}
+.chain li.off{border:1px dashed var(--faint);background:transparent}
+.chain li.hc i{color:var(--c1)}.chain li.hs{background:var(--grad);color:#fff}.chain li.hs i{color:#E8ECFF}
+.chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
+@media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
 </style>
 </head>
 <body>
@@ -344,19 +353,17 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
       <tr><td><b>임종 · 장례 · 사후</b></td><td>지정인에게만 열리는 기록 · 증빙 묶음</td><td>지정인 알림 · 장례 의향 전달 · 사후 체크리스트</td></tr>
     </tbody>
   </table>
-  <h3 style="margin-top:44px">함께 움직이는 장면</h3>
-  <table>
-    <thead><tr><th>장면</th><th>Hi Coffer AI</th><th class="hs">Hi Silver AI</th></tr></thead>
-    <tbody>
-      <tr><td><b>진료</b></td><td>진료·투약·검사 기록 원본</td><td>진료 한 장 요약 · 보호자 보고</td></tr>
-      <tr><td><b>보험 청구</b></td><td>보험 증권·영수증·세부내역서 보관</td><td>계약과 서류 대조 · 청구 준비</td></tr>
-      <tr><td><b>치매 대비</b></td><td>신탁·후견 서류 · 계좌·연금 목록</td><td>일상 변화 기록 · 상담 준비</td></tr>
-      <tr><td><b>위기</b></td><td>비상연락 순서 · 동의 범위</td><td>위험한 징후를 검증하여 신속한 예방/대비조치 · 109·119 연결</td></tr>
-      <tr><td><b>장례</b></td><td>장례 의향 · 연명의료 의향 · 연락할 사람</td><td>지정인 알림 · 장례 절차 안내</td></tr>
-      <tr><td><b>상속·사후</b></td><td>유언·신탁·위탁 사본과 증빙</td><td>지정인 열람 · 사후 체크리스트</td></tr>
-      <tr><td><b>디지털 유산</b></td><td>디지털 유산 목록 · 처분 방식</td><td>유산 관리자 지정 안내 · 유품 정리 순서</td></tr>
-    </tbody>
-  </table>
+  <h3 style="margin-top:44px">협업 방식 · 쓰는 데이터 · 온라인과 오프라인의 연결</h3>
+  <p class="lead"><span class="ln">현장(오프라인)에서 생긴 기록이 금고(온라인)로 들어가고,</span><span class="ln">Hi Silver AI가 그것을 다음 현장 행동으로 이어 줍니다.</span></p>
+  <div class="chains">
+    <div class="chain"><h3>진료</h3><ol><li class="off"><i>현장</i>외래 진료 · 검사 (병원)</li><li><i>쓰는 데이터</i>진료·투약·검사 기록 · 회송서</li><li class="hc"><i>Hi Coffer AI</i>원본 보관 · 진본 확인</li><li class="hs"><i>Hi Silver AI</i>다음 진료용 한 장 요약 · 보호자 보고</li><li class="off"><i>다음 현장</i>다음 진료 때 의사에게 요약을 보여 줌 (병원)</li></ol></div>
+    <div class="chain"><h3>보험 청구</h3><ol><li class="off"><i>현장</i>진료비 수납 · 서류 발급 (병원 창구)</li><li><i>쓰는 데이터</i>영수증 · 세부내역서 · 진단서 · 보험 증권(금융 마이데이터)</li><li class="hc"><i>Hi Coffer AI</i>서류 보관 · 보험 증권과 묶음</li><li class="hs"><i>Hi Silver AI</i>계약·특약과 대조 · 청구 가능 항목 안내</li><li class="off"><i>다음 현장</i>실손 청구 전산 전송 또는 보험사 제출</li></ol></div>
+    <div class="chain"><h3>퇴원 · 재택</h3><ol><li class="off"><i>현장</i>퇴원 · 재택의료센터 방문 · 가정형 호스피스</li><li><i>쓰는 데이터</i>퇴원 요약 · 방문 기록 · 연명의료 의향</li><li class="hc"><i>Hi Coffer AI</i>기록 보관 · 의향서 사본 보관</li><li class="hs"><i>Hi Silver AI</i>복약·방문 일정 이어받기 · 가족 공유</li><li class="off"><i>다음 현장</i>지자체 통합돌봄 창구 · 방문 의료진과 연결</li></ol></div>
+    <div class="chain"><h3>치매 대비</h3><ol><li class="off"><i>현장</i>치매안심센터 검진 · 은행·법률 상담</li><li><i>쓰는 데이터</i>인지 선별 결과 · 계좌·연금 목록 · 신탁·후견 서류</li><li class="hc"><i>Hi Coffer AI</i>서류 보관 · 지정인 설정</li><li class="hs"><i>Hi Silver AI</i>일상 변화 기록 · 상담 준비 목록</li><li class="off"><i>다음 현장</i>신탁·후견 계약 체결 (은행·법원)</li></ol></div>
+    <div class="chain"><h3>위기</h3><ol><li class="off"><i>현장</i>본인·가족의 이상 징후 (집)</li><li><i>쓰는 데이터</i>상담기록 · 비상연락 순서 · 동의 범위</li><li class="hc"><i>Hi Coffer AI</i>동의 범위·연락처 제공</li><li class="hs"><i>Hi Silver AI</i>위험한 징후를 검증하여 신속한 예방/대비조치</li><li class="off"><i>다음 현장</i>109 · 정신건강복지센터 · 119 현장 대응</li></ol></div>
+    <div class="chain"><h3>장례</h3><ol><li class="off"><i>현장</i>임종 · 안치 · 장례식장 (현장)</li><li><i>쓰는 데이터</i>장례 의향 · 연락할 사람 · 상조 계약서</li><li class="hc"><i>Hi Coffer AI</i>지정인에게만 열람</li><li class="hs"><i>Hi Silver AI</i>지정인 알림 · 장례 절차·화장 예약 안내</li><li class="off"><i>다음 현장</i>장례지도사 · 장례식장 · 화장장</li></ol></div>
+    <div class="chain"><h3>사후 · 유품</h3><ol><li class="off"><i>현장</i>사망신고 · 상속 · 유품 정리 (주민센터·집)</li><li><i>쓰는 데이터</i>유언·신탁·위탁 증빙 · 디지털 유산 목록</li><li class="hc"><i>Hi Coffer AI</i>증빙 묶음 · 디지털 유품 목록 제공</li><li class="hs"><i>Hi Silver AI</i>사후 체크리스트 · 기한 알림</li><li class="off"><i>다음 현장</i>안심상속 신청 · 유품·디지털 유품 처분</li></ol></div>
+  </div>
   <ul class="ticks"><li>두 앱은 따로 써도 되고, 함께 쓰면 생애 마지막까지 한 흐름으로 이어집니다.</li><li>원본은 서버로 보내지 않습니다. 비밀번호·인증서·카드번호는 저장하지 않습니다.</li></ul>
 </div></section>
 

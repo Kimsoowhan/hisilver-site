@@ -113,6 +113,7 @@ footer .wrap>a{justify-self:end}
 .ln,.card p span{white-space:normal}.st{grid-template-columns:44px 230px 1fr}.flow li,.box,h3{overflow-wrap:break-word;hyphens:auto}
 @media (max-width:600px){.st{grid-template-columns:44px 1fr}}
 p,.ln,.card p span,li,small,.box,td{text-wrap:pretty}h1,h2,h3{text-wrap:balance}
+@media (max-width:600px){table{font-size:14px;table-layout:fixed}th,td{padding:10px 6px;overflow-wrap:anywhere;hyphens:auto}td.sc{white-space:normal}}
 .tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
 .card.off h3,.card.off p{color:#B8BCC6}
 .stat .num{font-size:44px;font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -297,7 +298,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
       <tr><td><b>Dementia Care Centers (치매안심센터)</b></td><td>Dementia screening and counseling by city, county and district</td><td>Recording changes in daily life · Preparing screening appointments</td></tr>
     </tbody>
   </table>
-  <ul class="ticks"><li>Data is received only through the legally designated channels (APIs), at your own transmission request (Personal Information Protection Act, Article 35-2). No scraping is used.</li><li>Medical records received through the My Health Record app (나의건강기록; 113 items in 12 categories) can also be selected and placed in the vault.</li><li>Only the counseling content you choose is kept in the vault.</li><li>Passwords, certificates and card numbers are not stored.</li></ul>
+  <ul class="ticks"><li>Data is received only through the legally designated channels (APIs), at your own transmission request (Personal Information Protection Act, Article 35-2). No scraping is used.</li><li>Medical records received through the My Health Record app (나의건강기록) can also be selected and placed in the vault.</li><li>Only the counseling content you choose is kept in the vault.</li><li>Passwords, certificates and card numbers are not stored.</li></ul>
 </div></section>
 
 <section class="sec" id="ops"><div class="wrap">
@@ -314,10 +315,11 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
       <tr><td><b>EMR</b><br><small>Electronic medical records</small></td><td>Computerized medical records · Automated insurance claims · Charts linked with imaging systems</td><td>Diagnosis and test history → Received as medical MyData</td></tr>
       <tr><td><b>PACS</b><br><small>Picture archiving and communication</small></td><td>Images from imaging devices are read and stored immediately · Film-free care</td><td>Copies of imaging reports → Kept in the vault</td></tr>
       <tr><td><b>P-HIS</b><br><small>Cloud hospital information system</small></td><td>Developed by 14 medical institutions and ICT companies including Korea University Medicine (Ministry of Science and ICT, Ministry of Health and Welfare)<br>38 standard modules · 89,004 clinical terms and codes standardized · International interoperability certification<br>3 Korea University hospitals converted; about 90 primary care institutions supplied (Dec. 2021)</td><td>The more cloud hospitals use standard codes, the easier hospital partnership integration becomes · Priority partnership candidates</td></tr>
+      <tr><td><b>Cloud HIS for public medical centers</b></td><td>Ministry of Science and ICT · KRW 15 billion in 2026 · Development and demonstration through 2027<br>From 2028 at the National Medical Center, replacing the EMR, OCS and PACS of 37 regional medical centers with SaaS by 2030</td><td>Standard data from public hospitals · B2G linkage candidates</td></tr>
       <tr><td><b>Administration</b></td><td>Registration, payment, fee calculation, certificate issuance</td><td>Receipts, itemized statements, diagnoses → Insurance claim preparation</td></tr>
     </tbody>
   </table>
-  <ul class="ticks"><li>34,958 clinics (Mar. 2023) use EMRs from many vendors. There are no official market share statistics.</li><li>The services doctors most want linked to EMRs were booking, registration and payment (26.35%), blood sugar and blood pressure devices (20.35%), and checking test results from other hospitals (15.93%) (2023 survey of 1,030 doctors). This is where Hi Silver AI's hospital partnerships (B2B) fit.</li></ul>
+  <ul class="ticks"><li>34,958 clinics (Mar. 2023) use EMRs from many vendors. There are no official market share statistics.</li><li>EMR structures differ by vendor, making integration hard even within a hospital; recently the direction has shifted to exchanging data through APIs.</li><li>The services doctors most want linked to EMRs were booking, registration and payment (26.35%), blood sugar and blood pressure devices (20.35%), and checking test results from other hospitals (15.93%) (2023 survey of 1,030 doctors). This is where Hi Silver AI's hospital partnerships (B2B) fit.</li></ul>
 
   <h3 style="margin-top:40px">1. Medical record management (hospital records systems · EMR)</h3>
   <table>
@@ -335,8 +337,9 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <table>
     <thead><tr><th>Item</th><th>How it operates</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>My Health Record app (나의건강기록)</b></td><td>Health Information Highway · 860 medical institutions · 113 items in 12 categories viewed, saved and transmitted (Sept. 2023)</td><td>You choose which received records to place in the Hi Coffer vault</td></tr>
+      <tr><td><b>My Health Record app (나의건강기록)</b></td><td>Health Information Highway · 1,269 providing medical institutions (including 47 tertiary general hospitals, Dec. 2025)<br>Viewing, saving and sharing diagnosis, prescription, test and surgery history · FHIR-standard cloud (hub: Asan Medical Center, Seoul)</td><td>You choose which received records to place in the Hi Coffer vault</td></tr>
       <tr><td><b>Right to request transmission</b></td><td>From Mar. 2025 · Health and medical sector first (KDCA · National Health Insurance Service · HIRA · tertiary general hospitals)</td><td>Received only at your request</td></tr>
+      <tr><td><b>Right to download one's own information</b></td><td>Expanded from medical and telecom to all sectors (Enforcement Decree, Feb. 2026) · Direct download from public institution websites (from Aug. 2026) · Private sector (from Feb. 2027)</td><td>Downloaded files are kept in the vault as they are</td></tr>
       <tr><td><b>Transmission channel</b></td><td>Transmission to yourself or a third party · Via specialized intermediary institutions · API only, scraping prohibited</td><td>Connection as an official recipient after meeting registration requirements (phased)</td></tr>
     </tbody>
   </table>
@@ -436,7 +439,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
       <tr><td><b>Crisis</b></td><td>109 suicide prevention hotline · Mental health welfare centers<br>Police and fire services → information to suicide prevention centers (from Aug. 2022)</td><td>Hard for the person to reach out first</td><td>Verify warning signs and take prompt preventive/preparatory measures · 109 connection after consent</td></tr>
       <tr><td><b>Isolation</b></td><td>Lonely Death Prevention Act (from Mar. 2024) · Local government identification of people at risk</td><td>People in their 50s and 60s easily fall outside the identification net</td><td>Available from middle age and the presenile stage · Linked to local government programs (B2G)</td></tr>
       <tr><td><b>Dementia preparation</b></td><td>Dementia Care Centers (치매안심센터) · Dementia safety trust · Adult guardianship</td><td>Affairs are not put in order while cognition is intact</td><td>Recording changes in daily life · Preparing screening, trust and guardianship consultations</td></tr>
-      <tr><td><b>Medical</b></td><td>My Health Record app (나의건강기록; 860 medical institutions, 113 items in 12 categories)<br>Right to request personal data transmission (from Mar. 2025)</td><td>Hard to use received records for visits, insurance and family</td><td>One-page visit summary · Insurance claim preparation · Caregiver report</td></tr>
+      <tr><td><b>Medical</b></td><td>My Health Record app (나의건강기록; 1,269 providing medical institutions, Dec. 2025)<br>Right to request personal data transmission (from Mar. 2025)</td><td>Hard to use received records for visits, insurance and family</td><td>One-page visit summary · Insurance claim preparation · Caregiver report</td></tr>
       <tr><td><b>Insurance</b></td><td>Computerized indemnity insurance claims (hospitals from Oct. 2024; clinics and pharmacies from Oct. 2025)</td><td>Matching against contracts and riders is left to the individual</td><td>Matching contracts and documents · Guidance on claimable items</td></tr>
       <tr><td><b>Funeral</b></td><td>Funeral mutual aid · Funeral halls · Public funerals for the unclaimed deceased</td><td>The family lacks the deceased's wishes, contacts and documents</td><td>Funeral wishes and people to contact set in advance · Notice to designated persons</td></tr>
       <tr><td><b>Inheritance · Administration</b></td><td>One-stop Safe Inheritance Service (안심상속 원스톱서비스; integrated inquiry of finances, debts, taxes, pensions, real estate and vehicles)</td><td>Application deadlines and order are not known</td><td>Guidance to apply together with the death report · Deadline reminders</td></tr>

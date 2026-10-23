@@ -139,6 +139,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
 .chain li.hc i{color:var(--c1)}.chain li.hs{background:var(--grad);color:#fff}.chain li.hs i{color:#E8ECFF}
 .chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
 @media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
+@media (max-width:600px){table.stk thead{display:none}table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}table.stk tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:12px;background:var(--bg)}table.stk td{border:0;padding:6px 0;text-align:left!important;white-space:normal}table.stk td:first-child{font-size:16px;padding-top:2px}table.stk td:not(:first-child):before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}table.stk td.sc b,table.stk td.sc .sq{display:inline;margin-right:4px}}
 </style>
 </head>
 <body>
@@ -184,14 +185,14 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Funeral · Bridge</div>
   <h2>殡葬，陪伴到最后</h2>
   <p class="lead"><span class="ln">即使面对毫无预兆的临终与死亡，也总要有人处理殡葬和遗物。</span><span class="ln">逝者未及处理的信息和数据会留在遗物之中。</span><span class="ln">因此，遗嘱·信托·委托等事先安排及其记录·凭证十分重要。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>阶段</th><th>线下</th><th>线上 · Hi Coffer</th></tr></thead>
     <tbody>
-      <tr><td><b>事先安排</b></td><td>遗嘱·信托·委托文件<br>殡葬意愿·维持生命治疗意愿</td><td>副本·凭证存入保险库<br>以原件指纹确认真实性</td></tr>
-      <tr><td><b>临终</b></td><td>死亡诊断·遗体安置</td><td>通知指定人<br>待办事项清单</td></tr>
-      <tr><td><b>殡葬</b></td><td>殡仪馆·殡葬指导师·火化·安放</td><td>传达逝者意愿<br>程序·费用说明</td></tr>
-      <tr><td><b>遗物整理</b></td><td>遗物分类·保管·处理</td><td>整理手机·电脑·USB 中的数字遗物<br>未处理信息清单</td></tr>
-      <tr><td><b>身后处置</b></td><td>行政·继承·信托执行</td><td>凭证资料包<br>指定人查阅</td></tr>
+      <tr><td data-label="阶段"><b>事先安排</b></td><td data-label="线下">遗嘱·信托·委托文件<br>殡葬意愿·维持生命治疗意愿</td><td data-label="线上 · Hi Coffer">副本·凭证存入保险库<br>以原件指纹确认真实性</td></tr>
+      <tr><td data-label="阶段"><b>临终</b></td><td data-label="线下">死亡诊断·遗体安置</td><td data-label="线上 · Hi Coffer">通知指定人<br>待办事项清单</td></tr>
+      <tr><td data-label="阶段"><b>殡葬</b></td><td data-label="线下">殡仪馆·殡葬指导师·火化·安放</td><td data-label="线上 · Hi Coffer">传达逝者意愿<br>程序·费用说明</td></tr>
+      <tr><td data-label="阶段"><b>遗物整理</b></td><td data-label="线下">遗物分类·保管·处理</td><td data-label="线上 · Hi Coffer">整理手机·电脑·USB 中的数字遗物<br>未处理信息清单</td></tr>
+      <tr><td data-label="阶段"><b>身后处置</b></td><td data-label="线下">行政·继承·信托执行</td><td data-label="线上 · Hi Coffer">凭证资料包<br>指定人查阅</td></tr>
     </tbody>
   </table>
   <div class="grid g3">
@@ -201,40 +202,40 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   </div>
   <h3 style="margin-top:48px">殡葬前后需要关注的制度</h3>
   <p class="lead"><span class="ln">提前汇集分散的制度，免得到时再去寻找。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>制度</th><th>现状</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>事前维持生命治疗意向书</b></td><td>登记人数超过 300 万（2025 年 8 月，国立维持生命医疗管理机构）</td><td>在人生终章笔记中记录登记情况 · 指引登记机构</td></tr>
-      <tr><td><b>殡葬互助合同</b></td><td>签约人 1,131 万 · 预付款 11 万 3,544 亿韩元（2026 年 3 月底，公平交易委员会）<br>企业须保全一半以上的预付款</td><td>合同存入保险库 · 转交指定人，避免出现家人不知道的殡葬互助合同</td></tr>
-      <tr><td><b>火化预约</b></td><td>通过 e 天空殡葬信息系统在线预约</td><td>预约顺序指引 · 传达逝者意愿（火化·安放·自然葬）</td></tr>
-      <tr><td><b>丧葬给付 · 紧急福利丧葬费</b></td><td>受助人死亡时约 80 万韩元（2026 年） · 向行政福利中心申请</td><td>指引是否符合条件及所需文件</td></tr>
-      <tr><td><b>公营殡葬</b></td><td>2024 年无人认领死亡 6,139 人，其中 76% 有家人但委托他人办理殡葬</td><td>提前留下殡葬意愿·需联系的人，避免独自离去</td></tr>
+      <tr><td data-label="制度"><b>事前维持生命治疗意向书</b></td><td data-label="现状">登记人数超过 300 万（2025 年 8 月，国立维持生命医疗管理机构）</td><td data-label="Hi Silver AI">在人生终章笔记中记录登记情况 · 指引登记机构</td></tr>
+      <tr><td data-label="制度"><b>殡葬互助合同</b></td><td data-label="现状">签约人 1,131 万 · 预付款 11 万 3,544 亿韩元（2026 年 3 月底，公平交易委员会）<br>企业须保全一半以上的预付款</td><td data-label="Hi Silver AI">合同存入保险库 · 转交指定人，避免出现家人不知道的殡葬互助合同</td></tr>
+      <tr><td data-label="制度"><b>火化预约</b></td><td data-label="现状">通过 e 天空殡葬信息系统在线预约</td><td data-label="Hi Silver AI">预约顺序指引 · 传达逝者意愿（火化·安放·自然葬）</td></tr>
+      <tr><td data-label="制度"><b>丧葬给付 · 紧急福利丧葬费</b></td><td data-label="现状">受助人死亡时约 80 万韩元（2026 年） · 向行政福利中心申请</td><td data-label="Hi Silver AI">指引是否符合条件及所需文件</td></tr>
+      <tr><td data-label="制度"><b>公营殡葬</b></td><td data-label="现状">2024 年无人认领死亡 6,139 人，其中 76% 有家人但委托他人办理殡葬</td><td data-label="Hi Silver AI">提前留下殡葬意愿·需联系的人，避免独自离去</td></tr>
     </tbody>
   </table>
   <h3 style="margin-top:48px">身后事项清单（1 个月至 1 年）</h3>
   <p class="lead"><span class="ln">按期限和依据，提示遗属容易遗漏的事项。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>事项</th><th>期限 · 要件</th><th>依据</th><th>Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>死亡申报</b></td><td>知悉死亡之日起 1 个月内<br>申报义务人：同住亲属</td><td>《家庭关系登记法》第 84 条·第 85 条</td><td>期限提醒 · 文件指引</td></tr>
-      <tr><td><b>病历调取</b></td><td>家属备齐患者同意书·亲属关系证明等提出申请</td><td>《医疗法》第 21 条</td><td>所需文件清单 · 办理机构指引</td></tr>
-      <tr><td><b>实损保险理赔</b></td><td>由医院·诊所·药店向保险公司电子传送</td><td>实损保险理赔电子化（2024.10 起，诊所·药店 2025.10 起）</td><td>核对合同·收据 · 理赔准备</td></tr>
-      <tr><td><b>继承财产统一查询</b></td><td>自死亡当月最后一日起 1 年内<br>可在死亡申报时一并申请</td><td>安心继承一站式服务</td><td>申请顺序·期限提醒</td></tr>
-      <tr><td><b>确认遗嘱·信托·委托</b></td><td>指定人查阅</td><td>本人事先留下的记录</td><td>从 Hi Coffer 保险库提供凭证包</td></tr>
-      <tr><td><b>遗物·数字遗物整理</b></td><td>手机·电脑·USB·账户<br>三星·苹果遗产联系人 · Kakao 纪念·删除</td><td>本人事先确定的处理方式 · 制造商·平台程序</td><td>未处理信息清单 · 整理顺序</td></tr>
+      <tr><td data-label="事项"><b>死亡申报</b></td><td data-label="期限 · 要件">知悉死亡之日起 1 个月内<br>申报义务人：同住亲属</td><td data-label="依据">《家庭关系登记法》第 84 条·第 85 条</td><td data-label="Hi Silver AI">期限提醒 · 文件指引</td></tr>
+      <tr><td data-label="事项"><b>病历调取</b></td><td data-label="期限 · 要件">家属备齐患者同意书·亲属关系证明等提出申请</td><td data-label="依据">《医疗法》第 21 条</td><td data-label="Hi Silver AI">所需文件清单 · 办理机构指引</td></tr>
+      <tr><td data-label="事项"><b>实损保险理赔</b></td><td data-label="期限 · 要件">由医院·诊所·药店向保险公司电子传送</td><td data-label="依据">实损保险理赔电子化（2024.10 起，诊所·药店 2025.10 起）</td><td data-label="Hi Silver AI">核对合同·收据 · 理赔准备</td></tr>
+      <tr><td data-label="事项"><b>继承财产统一查询</b></td><td data-label="期限 · 要件">自死亡当月最后一日起 1 年内<br>可在死亡申报时一并申请</td><td data-label="依据">安心继承一站式服务</td><td data-label="Hi Silver AI">申请顺序·期限提醒</td></tr>
+      <tr><td data-label="事项"><b>确认遗嘱·信托·委托</b></td><td data-label="期限 · 要件">指定人查阅</td><td data-label="依据">本人事先留下的记录</td><td data-label="Hi Silver AI">从 Hi Coffer 保险库提供凭证包</td></tr>
+      <tr><td data-label="事项"><b>遗物·数字遗物整理</b></td><td data-label="期限 · 要件">手机·电脑·USB·账户<br>三星·苹果遗产联系人 · Kakao 纪念·删除</td><td data-label="依据">本人事先确定的处理方式 · 制造商·平台程序</td><td data-label="Hi Silver AI">未处理信息清单 · 整理顺序</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">不代办法律·行政程序，只提示期限和文件。</span></p>
   <h3 style="margin-top:48px">遗物整理，线下与线上并行</h3>
   <p class="lead"><span class="ln">家中物品与手机·电脑中的记录分开整理，但逝者的意愿只有一个。</span><span class="ln">按照生前留下的清单，以相同顺序整理现场与数字资料。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>阶段</th><th>线下（现场）</th><th>线上（数字）</th><th class="hs">Hi Silver AI · Hi Coffer AI</th></tr></thead>
     <tbody>
-      <tr><td><b>生前准备</b></td><td>贵重物品·存折·证券·合同的存放位置<br>保留·捐赠·废弃意愿</td><td>指定手机遗产联系人（三星最多 5 人 · 苹果）<br>各账户的纪念·删除意愿</td><td>遗物清单与数字遗产清单存入保险库 · 用 Hi DAM 分类电脑·USB</td></tr>
-      <tr><td><b>确认</b></td><td>租住或自有 · 确认继承接受·放弃·限定承认</td><td>手机已锁 · 未指定时遗属也难以打开</td><td>向指定人转交清单 · 指引确认顺序</td></tr>
-      <tr><td><b>分类·查找</b></td><td>咨询·现场查看 → 按保留·捐赠·废弃分类<br>查找遗嘱·贵重物品·文件</td><td>备份照片·联系人·文件 · 解除付款·订阅</td><td>对照清单标出缺失的物品·文件 · 交接照片作为凭证保存</td></tr>
-      <tr><td><b>整理·清扫</b></td><td>特殊清扫 · 恢复原状（单间也有高达 1,000 万韩元的案例）</td><td>处理电脑·USB·云端数据 · 账户纪念·删除</td><td>记录是否按逝者确定的处理方式执行</td></tr>
-      <tr><td><b>无人认领时</b></td><td>地方政府遗物整理支援（无人认领受助人最高 100 万韩元的案例）<br>法院程序期间保管遗物</td><td>数字遗物处理无法律依据</td><td>提前指定指定人，避免成为无人认领者</td></tr>
+      <tr><td data-label="阶段"><b>生前准备</b></td><td data-label="线下（现场）">贵重物品·存折·证券·合同的存放位置<br>保留·捐赠·废弃意愿</td><td data-label="线上（数字）">指定手机遗产联系人（三星最多 5 人 · 苹果）<br>各账户的纪念·删除意愿</td><td data-label="Hi Silver AI · Hi Coffer AI">遗物清单与数字遗产清单存入保险库 · 用 Hi DAM 分类电脑·USB</td></tr>
+      <tr><td data-label="阶段"><b>确认</b></td><td data-label="线下（现场）">租住或自有 · 确认继承接受·放弃·限定承认</td><td data-label="线上（数字）">手机已锁 · 未指定时遗属也难以打开</td><td data-label="Hi Silver AI · Hi Coffer AI">向指定人转交清单 · 指引确认顺序</td></tr>
+      <tr><td data-label="阶段"><b>分类·查找</b></td><td data-label="线下（现场）">咨询·现场查看 → 按保留·捐赠·废弃分类<br>查找遗嘱·贵重物品·文件</td><td data-label="线上（数字）">备份照片·联系人·文件 · 解除付款·订阅</td><td data-label="Hi Silver AI · Hi Coffer AI">对照清单标出缺失的物品·文件 · 交接照片作为凭证保存</td></tr>
+      <tr><td data-label="阶段"><b>整理·清扫</b></td><td data-label="线下（现场）">特殊清扫 · 恢复原状（单间也有高达 1,000 万韩元的案例）</td><td data-label="线上（数字）">处理电脑·USB·云端数据 · 账户纪念·删除</td><td data-label="Hi Silver AI · Hi Coffer AI">记录是否按逝者确定的处理方式执行</td></tr>
+      <tr><td data-label="阶段"><b>无人认领时</b></td><td data-label="线下（现场）">地方政府遗物整理支援（无人认领受助人最高 100 万韩元的案例）<br>法院程序期间保管遗物</td><td data-label="线上（数字）">数字遗物处理无法律依据</td><td data-label="Hi Silver AI · Hi Coffer AI">提前指定指定人，避免成为无人认领者</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>遗物整理目前尚无资格标准·指南。现场也有邻居先拿走物品的情况。</li><li>由国家·地方政府支援无人认领孤独死遗物整理·特殊清扫的《孤独死预防法》修正案已提出（2026 年 6 月）。</li></ul>
@@ -277,25 +278,25 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">MyData</div>
   <h2>MyData</h2>
   <p class="lead"><span class="ln">处理保健（咨询记录）·医疗·金融 MyData。</span><span class="ln">原件保存在 Hi Coffer 保险库中，Hi Silver AI 管理向何处提供·委托。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>类别</th><th>数据</th><th>用途</th></tr></thead>
     <tbody>
-      <tr><td class="sc"><b>保健</b><span class="sq">（咨询记录）</span></td><td>抑郁·焦虑·惊恐障碍·睡眠·成瘾·痴呆等<br>心理健康咨询·就诊史·日程·机构联系方式<br>体检时的抑郁·认知筛查结果<br>福利咨询记录</td><td>危险征兆核实 · 连接 109·精神健康福利中心<br>初老期·痴呆应对 · 连接痴呆安心中心<br>联系监护人（本人同意）</td></tr>
-      <tr><td class="sc"><b>医疗</b><span class="sq">（MyData）</span></td><td>就诊·诊断·处方·检查记录<br>用药·预防接种记录</td><td>就诊准备 · 监护人摘要</td></tr>
-      <tr><td class="sc"><b>医疗</b><span class="sq">（文件）</span></td><td>医疗费收据·明细单·诊断书</td><td>保险理赔准备</td></tr>
-      <tr><td class="sc"><b>金融</b><span class="sq">（MyData）</span></td><td>保险合同·年金·账户清单<br>信托·监护文件</td><td>理赔指引 · 痴呆应对 · 人生整理</td></tr>
+      <tr><td class="sc" data-label="类别"><b>保健</b><span class="sq">（咨询记录）</span></td><td data-label="数据">抑郁·焦虑·惊恐障碍·睡眠·成瘾·痴呆等<br>心理健康咨询·就诊史·日程·机构联系方式<br>体检时的抑郁·认知筛查结果<br>福利咨询记录</td><td data-label="用途">危险征兆核实 · 连接 109·精神健康福利中心<br>初老期·痴呆应对 · 连接痴呆安心中心<br>联系监护人（本人同意）</td></tr>
+      <tr><td class="sc" data-label="类别"><b>医疗</b><span class="sq">（MyData）</span></td><td data-label="数据">就诊·诊断·处方·检查记录<br>用药·预防接种记录</td><td data-label="用途">就诊准备 · 监护人摘要</td></tr>
+      <tr><td class="sc" data-label="类别"><b>医疗</b><span class="sq">（文件）</span></td><td data-label="数据">医疗费收据·明细单·诊断书</td><td data-label="用途">保险理赔准备</td></tr>
+      <tr><td class="sc" data-label="类别"><b>金融</b><span class="sq">（MyData）</span></td><td data-label="数据">保险合同·年金·账户清单<br>信托·监护文件</td><td data-label="用途">理赔指引 · 痴呆应对 · 人生整理</td></tr>
     </tbody>
   </table>
   <h3 style="margin-top:48px">保健（心理健康）连接网</h3>
   <p class="lead"><span class="ln">从惊恐障碍·抑郁·焦虑·成瘾到痴呆，连接公共服务，不让您独自承受。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>公共服务</th><th>现状</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>109 自杀预防咨询电话</b></td><td>2024 年 1 月整合 · 2024 年咨询 182,725 件<br>来电中仅约一半接通咨询（2025 年）</td><td>核实危险征兆，迅速采取预防/应对措施 · 经本人同意后连接</td></tr>
-      <tr><td><b>心理健康危机咨询 1577-0199</b></td><td>24 小时 · 对接精神健康福利中心</td><td>地区中心联系方式 · 记录咨询日程</td></tr>
-      <tr><td><b>国家健康体检心理健康检查</b></td><td>20~34 岁每 2 年一次抑郁症检查 · 新增早期精神病检查（2025 年起）</td><td>由本人选择将筛查结果存入保险库</td></tr>
-      <tr><td><b>全民心理投资支援项目</b></td><td>专业心理咨询 8 次（必要时再延长 8 次） · 受助人·次贫困层无需自付</td><td>推荐途径·申请文件指引 · 咨询日程管理</td></tr>
-      <tr><td><b>痴呆安心中心</b></td><td>市·郡·区痴呆筛查·咨询</td><td>记录日常变化 · 准备筛查预约</td></tr>
+      <tr><td data-label="公共服务"><b>109 自杀预防咨询电话</b></td><td data-label="现状">2024 年 1 月整合 · 2024 年咨询 182,725 件<br>来电中仅约一半接通咨询（2025 年）</td><td data-label="Hi Silver AI">核实危险征兆，迅速采取预防/应对措施 · 经本人同意后连接</td></tr>
+      <tr><td data-label="公共服务"><b>心理健康危机咨询 1577-0199</b></td><td data-label="现状">24 小时 · 对接精神健康福利中心</td><td data-label="Hi Silver AI">地区中心联系方式 · 记录咨询日程</td></tr>
+      <tr><td data-label="公共服务"><b>国家健康体检心理健康检查</b></td><td data-label="现状">20~34 岁每 2 年一次抑郁症检查 · 新增早期精神病检查（2025 年起）</td><td data-label="Hi Silver AI">由本人选择将筛查结果存入保险库</td></tr>
+      <tr><td data-label="公共服务"><b>全民心理投资支援项目</b></td><td data-label="现状">专业心理咨询 8 次（必要时再延长 8 次） · 受助人·次贫困层无需自付</td><td data-label="Hi Silver AI">推荐途径·申请文件指引 · 咨询日程管理</td></tr>
+      <tr><td data-label="公共服务"><b>痴呆安心中心</b></td><td data-label="现状">市·郡·区痴呆筛查·咨询</td><td data-label="Hi Silver AI">记录日常变化 · 准备筛查预约</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>依据本人的传输请求（《个人信息保护法》第 35 条之 2），仅通过法定渠道（API）获取。不使用网页抓取。</li><li>通过“我的健康记录”应用获取的就诊记录，也可由本人选择存入保险库。</li><li>咨询内容仅保存本人选择的部分。</li><li>不保存密码·证书·卡号。</li></ul>
@@ -307,51 +308,51 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <p class="lead"><span class="ln">建立在实际的制度和系统之上。</span><span class="ln">不另起炉灶，而是按已有通道连接。</span></p>
 
   <h3 style="margin-top:40px">医院内部：由医院信息系统（HIS）生成记录</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>系统</th><th>在医院内的作用</th><th class="hs">与 Hi Silver AI 的交汇点</th></tr></thead>
     <tbody>
-      <tr><td><b>HIS</b><br><small>医院信息系统</small></td><td>以医嘱传递系统（OCS）为中心，整合挂号收费·诊疗·护理·检查的综合系统</td><td>不直接接入 · 仅通过医院出具的文件和标准通道获取</td></tr>
-      <tr><td><b>OCS</b><br><small>医嘱传递系统</small></td><td>将医生医嘱传递至检查·药剂·护理部门 · 缩短缴费·取药等待</td><td>处方·用药记录 → 服药提醒 · 就诊摘要</td></tr>
-      <tr><td><b>EMR</b><br><small>电子病历</small></td><td>病历电子化 · 保险理赔自动化 · 病历与影像系统联动</td><td>诊断·检查记录 → 作为医疗 MyData 接收</td></tr>
-      <tr><td><b>PACS</b><br><small>医学影像存储与传输</small></td><td>影像设备图像即时判读·保存 · 无胶片诊疗</td><td>影像判读意见书副本 → 存入保险库</td></tr>
-      <tr><td><b>P-HIS</b><br><small>云端医院信息系统</small></td><td>由高丽大学医疗院等 14 家医疗机构·ICT 企业开发（科学技术信息通信部·保健福祉部）<br>标准模块 38 个 · 临床术语·代码 89,004 个标准化 · 互操作性国际标准认证<br>高丽大学医院 3 家完成转换，约 90 家基层医疗机构推广（2021 年 12 月）</td><td>使用标准代码的云端医院越多，医院合作对接越容易 · 优先合作候选</td></tr>
-      <tr><td><b>公立医疗院云端 HIS</b></td><td>科学技术信息通信部 · 2026 年 150 亿韩元 · 2027 年前完成开发·实证<br>2028 年起从国立中央医疗院开始，2030 年前将 37 家地方医疗院的 EMR·OCS·PACS 替换为 SaaS</td><td>公立医院标准数据 · B2G 对接候选</td></tr>
-      <tr><td><b>挂号收费</b></td><td>挂号·缴费·医疗费计算·证明开具</td><td>收据·明细单·诊断书 → 保险理赔准备</td></tr>
+      <tr><td data-label="系统"><b>HIS</b><br><small>医院信息系统</small></td><td data-label="在医院内的作用">以医嘱传递系统（OCS）为中心，整合挂号收费·诊疗·护理·检查的综合系统</td><td data-label="与 Hi Silver AI 的交汇点">不直接接入 · 仅通过医院出具的文件和标准通道获取</td></tr>
+      <tr><td data-label="系统"><b>OCS</b><br><small>医嘱传递系统</small></td><td data-label="在医院内的作用">将医生医嘱传递至检查·药剂·护理部门 · 缩短缴费·取药等待</td><td data-label="与 Hi Silver AI 的交汇点">处方·用药记录 → 服药提醒 · 就诊摘要</td></tr>
+      <tr><td data-label="系统"><b>EMR</b><br><small>电子病历</small></td><td data-label="在医院内的作用">病历电子化 · 保险理赔自动化 · 病历与影像系统联动</td><td data-label="与 Hi Silver AI 的交汇点">诊断·检查记录 → 作为医疗 MyData 接收</td></tr>
+      <tr><td data-label="系统"><b>PACS</b><br><small>医学影像存储与传输</small></td><td data-label="在医院内的作用">影像设备图像即时判读·保存 · 无胶片诊疗</td><td data-label="与 Hi Silver AI 的交汇点">影像判读意见书副本 → 存入保险库</td></tr>
+      <tr><td data-label="系统"><b>P-HIS</b><br><small>云端医院信息系统</small></td><td data-label="在医院内的作用">由高丽大学医疗院等 14 家医疗机构·ICT 企业开发（科学技术信息通信部·保健福祉部）<br>标准模块 38 个 · 临床术语·代码 89,004 个标准化 · 互操作性国际标准认证<br>高丽大学医院 3 家完成转换，约 90 家基层医疗机构推广（2021 年 12 月）</td><td data-label="与 Hi Silver AI 的交汇点">使用标准代码的云端医院越多，医院合作对接越容易 · 优先合作候选</td></tr>
+      <tr><td data-label="系统"><b>公立医疗院云端 HIS</b></td><td data-label="在医院内的作用">科学技术信息通信部 · 2026 年 150 亿韩元 · 2027 年前完成开发·实证<br>2028 年起从国立中央医疗院开始，2030 年前将 37 家地方医疗院的 EMR·OCS·PACS 替换为 SaaS</td><td data-label="与 Hi Silver AI 的交汇点">公立医院标准数据 · B2G 对接候选</td></tr>
+      <tr><td data-label="系统"><b>挂号收费</b></td><td data-label="在医院内的作用">挂号·缴费·医疗费计算·证明开具</td><td data-label="与 Hi Silver AI 的交汇点">收据·明细单·诊断书 → 保险理赔准备</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>34,958 家诊所（2023 年 3 月）使用多家厂商的 EMR，尚无官方市场份额统计。</li><li>各厂商 EMR 结构不同，即使在医院内部也难以对接，近来正转向通过 API 交换数据。</li><li>医生最希望与 EMR 联动的服务依次为预约·挂号·支付（26.35%）、血糖·血压测量设备（20.35%）、查看其他医院检查结果（15.93%）（2023 年，1,030 名医生调查）。这正是 Hi Silver AI 医院合作（B2B）的切入点。</li></ul>
 
   <h3 style="margin-top:40px">1. 病历管理（医院记录管理系统 · EMR）</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>项目</th><th>运营方式</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>保存期限</b></td><td>病历·手术记录 10 年 · 患者名册·检查所见·影像·护理记录 5 年<br>诊断书副本 3 年 · 处方 2 年（《医疗法实施规则》第 15 条）</td><td>在医院记录因期满消失前，将本人副本存入保险库</td></tr>
-      <tr><td><b>电子病历（EMR）</b></td><td>认证医疗机构 4,057 家，占全部 36,234 家的 11%（2025 年 9 月）</td><td>不对接各医院不同的系统，只整理通过标准通道获取的记录</td></tr>
-      <tr><td><b>医院停业时</b></td><td>移交保健所 · 病历保管系统正式运营（2025 年 7 月 21 日起）</td><td>即使常去的医院关门，也记录下可查询之处</td></tr>
-      <tr><td><b>医院间交流</b></td><td>诊疗信息交流：转诊单 · 回转单 · 病历摘要 · 影像判读意见书</td><td>将转院·出院时获得的文件反映到就诊一页摘要中</td></tr>
-      <tr><td><b>本人查阅·复印</b></td><td>患者本人可申请查阅·复印，家属需同意书·证明文件（《医疗法》第 21 条）</td><td>申请文件清单 · 准备委托指定人</td></tr>
+      <tr><td data-label="项目"><b>保存期限</b></td><td data-label="运营方式">病历·手术记录 10 年 · 患者名册·检查所见·影像·护理记录 5 年<br>诊断书副本 3 年 · 处方 2 年（《医疗法实施规则》第 15 条）</td><td data-label="Hi Silver AI">在医院记录因期满消失前，将本人副本存入保险库</td></tr>
+      <tr><td data-label="项目"><b>电子病历（EMR）</b></td><td data-label="运营方式">认证医疗机构 4,057 家，占全部 36,234 家的 11%（2025 年 9 月）</td><td data-label="Hi Silver AI">不对接各医院不同的系统，只整理通过标准通道获取的记录</td></tr>
+      <tr><td data-label="项目"><b>医院停业时</b></td><td data-label="运营方式">移交保健所 · 病历保管系统正式运营（2025 年 7 月 21 日起）</td><td data-label="Hi Silver AI">即使常去的医院关门，也记录下可查询之处</td></tr>
+      <tr><td data-label="项目"><b>医院间交流</b></td><td data-label="运营方式">诊疗信息交流：转诊单 · 回转单 · 病历摘要 · 影像判读意见书</td><td data-label="Hi Silver AI">将转院·出院时获得的文件反映到就诊一页摘要中</td></tr>
+      <tr><td data-label="项目"><b>本人查阅·复印</b></td><td data-label="运营方式">患者本人可申请查阅·复印，家属需同意书·证明文件（《医疗法》第 21 条）</td><td data-label="Hi Silver AI">申请文件清单 · 准备委托指定人</td></tr>
     </tbody>
   </table>
 
   <h3 style="margin-top:44px">2. 医疗 MyData 服务方式</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>项目</th><th>运营方式</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>“我的健康记录”应用</b></td><td>健康信息高速公路 · 提供数据的医疗机构 1,269 家（含上级综合医院 47 家，2025 年 12 月）<br>诊断·处方·检查·手术记录的查询·保存·共享 · FHIR 标准云（以首尔峨山医院为据点）</td><td>由本人选择所获记录存入 Hi Coffer 保险库</td></tr>
-      <tr><td><b>传输请求权</b></td><td>2025 年 3 月起 · 保健医疗领域先行（疾病管理厅 · 国民健康保险公团 · 健康保险审查评价院 · 上级综合医院）</td><td>仅依本人请求获取</td></tr>
-      <tr><td><b>本人信息下载权</b></td><td>由医疗·通信扩大至全领域（2026 年 2 月施行令） · 从公共机构网站直接下载（2026 年 8 月起） · 民间（2027 年 2 月起）</td><td>下载的文件原样存入保险库</td></tr>
-      <tr><td><b>传输通道</b></td><td>本人传输或第三方传输 · 经中介专门机构 · 仅允许 API 方式，禁止网页抓取</td><td>具备登记要件后作为正式接收方接入（分阶段推进）</td></tr>
+      <tr><td data-label="项目"><b>“我的健康记录”应用</b></td><td data-label="运营方式">健康信息高速公路 · 提供数据的医疗机构 1,269 家（含上级综合医院 47 家，2025 年 12 月）<br>诊断·处方·检查·手术记录的查询·保存·共享 · FHIR 标准云（以首尔峨山医院为据点）</td><td data-label="Hi Silver AI">由本人选择所获记录存入 Hi Coffer 保险库</td></tr>
+      <tr><td data-label="项目"><b>传输请求权</b></td><td data-label="运营方式">2025 年 3 月起 · 保健医疗领域先行（疾病管理厅 · 国民健康保险公团 · 健康保险审查评价院 · 上级综合医院）</td><td data-label="Hi Silver AI">仅依本人请求获取</td></tr>
+      <tr><td data-label="项目"><b>本人信息下载权</b></td><td data-label="运营方式">由医疗·通信扩大至全领域（2026 年 2 月施行令） · 从公共机构网站直接下载（2026 年 8 月起） · 民间（2027 年 2 月起）</td><td data-label="Hi Silver AI">下载的文件原样存入保险库</td></tr>
+      <tr><td data-label="项目"><b>传输通道</b></td><td data-label="运营方式">本人传输或第三方传输 · 经中介专门机构 · 仅允许 API 方式，禁止网页抓取</td><td data-label="Hi Silver AI">具备登记要件后作为正式接收方接入（分阶段推进）</td></tr>
     </tbody>
   </table>
 
   <h3 style="margin-top:44px">3. 社区照护 · 临终 · 殡葬</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>项目</th><th>运营现状</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>整合照护</b></td><td>《医疗·养老等社区照护整合支援法》施行（2026 年 3 月 27 日）<br>出院前评估照护需求 → 连接地方政府专门窗口</td><td>出院后接续服药·日程·监护人报告</td></tr>
-      <tr><td><b>长期护理居家医疗中心</b></td><td>195 个市·郡·区 344 处（2026 年 1 月） · 医生每月 1 次、护士每月 2 次上门</td><td>整理上门日程·记录 · 与家人共享</td></tr>
-      <tr><td><b>居家型安宁疗护</b></td><td>40 家医疗机构 · 2,042 人使用（2025 年 9 月）</td><td>记录维持生命治疗意愿 · 希望的临终地点</td></tr>
-      <tr><td><b>殡葬</b></td><td>2024 年死亡 358,569 人 · 火化炉 400 座 · 火化率 94.4%</td><td>火化预约顺序 · 传达殡葬意愿</td></tr>
+      <tr><td data-label="项目"><b>整合照护</b></td><td data-label="运营现状">《医疗·养老等社区照护整合支援法》施行（2026 年 3 月 27 日）<br>出院前评估照护需求 → 连接地方政府专门窗口</td><td data-label="Hi Silver AI">出院后接续服药·日程·监护人报告</td></tr>
+      <tr><td data-label="项目"><b>长期护理居家医疗中心</b></td><td data-label="运营现状">195 个市·郡·区 344 处（2026 年 1 月） · 医生每月 1 次、护士每月 2 次上门</td><td data-label="Hi Silver AI">整理上门日程·记录 · 与家人共享</td></tr>
+      <tr><td data-label="项目"><b>居家型安宁疗护</b></td><td data-label="运营现状">40 家医疗机构 · 2,042 人使用（2025 年 9 月）</td><td data-label="Hi Silver AI">记录维持生命治疗意愿 · 希望的临终地点</td></tr>
+      <tr><td data-label="项目"><b>殡葬</b></td><td data-label="运营现状">2024 年死亡 358,569 人 · 火化炉 400 座 · 火化率 94.4%</td><td data-label="Hi Silver AI">火化预约顺序 · 传达殡葬意愿</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">数值以标注时点为准，官方发布更新后将随之修改。</span></p>
@@ -375,17 +376,17 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="st"><b class="n">5</b><h3>记录结果</h3><p>谁在何时获取了什么，均记录在保险库中，日后用作凭证。</p></div>
   </div>
   <h3 style="margin-top:44px">产生交汇的时刻</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>时刻</th><th>存入 Hi Coffer AI 的内容</th><th class="hs">Hi Silver AI 做的事</th></tr></thead>
     <tbody>
-      <tr><td><b>获取记录时</b></td><td>通过“我的健康记录”应用·传输请求权获取的病历原件</td><td>仅获取清单，制作就诊摘要 · 监护人报告</td></tr>
-      <tr><td><b>看完医院后</b></td><td>医疗费收据 · 明细单 · 诊断书 · 回转单</td><td>与保险合同核对 · 理赔准备</td></tr>
-      <tr><td><b>保存期限结束前</b></td><td>医院将在 10 年·5 年后删除的记录的本人副本</td><td>到期提醒 · 副本申请指引</td></tr>
-      <tr><td><b>出院 · 居家医疗 · 安宁疗护</b></td><td>出院摘要 · 上门记录 · 维持生命治疗意愿</td><td>出院后接续日程·服药 · 与家人共享</td></tr>
-      <tr><td><b>认知尚存时</b></td><td>信托 · 监护 · 遗嘱 · 殡葬互助合同 · 人生终章笔记</td><td>准备痴呆应对咨询 · 确定指定人</td></tr>
-      <tr><td><b>整理电脑 · 手机 · USB</b></td><td>用 Hi DAM 分类的数字资产 · 数字遗产清单</td><td>遗产联系人指定指引 · 记录处理方式</td></tr>
-      <tr><td><b>出现危险征兆时</b></td><td>紧急联系顺序 · 同意范围</td><td>核实危险征兆，迅速采取预防/应对措施 · 连接 109·119</td></tr>
-      <tr><td><b>临终 · 殡葬 · 身后</b></td><td>仅向指定人开放的记录 · 凭证包</td><td>通知指定人 · 传达殡葬意愿 · 身后事项清单</td></tr>
+      <tr><td data-label="时刻"><b>获取记录时</b></td><td data-label="存入 Hi Coffer AI 的内容">通过“我的健康记录”应用·传输请求权获取的病历原件</td><td data-label="Hi Silver AI 做的事">仅获取清单，制作就诊摘要 · 监护人报告</td></tr>
+      <tr><td data-label="时刻"><b>看完医院后</b></td><td data-label="存入 Hi Coffer AI 的内容">医疗费收据 · 明细单 · 诊断书 · 回转单</td><td data-label="Hi Silver AI 做的事">与保险合同核对 · 理赔准备</td></tr>
+      <tr><td data-label="时刻"><b>保存期限结束前</b></td><td data-label="存入 Hi Coffer AI 的内容">医院将在 10 年·5 年后删除的记录的本人副本</td><td data-label="Hi Silver AI 做的事">到期提醒 · 副本申请指引</td></tr>
+      <tr><td data-label="时刻"><b>出院 · 居家医疗 · 安宁疗护</b></td><td data-label="存入 Hi Coffer AI 的内容">出院摘要 · 上门记录 · 维持生命治疗意愿</td><td data-label="Hi Silver AI 做的事">出院后接续日程·服药 · 与家人共享</td></tr>
+      <tr><td data-label="时刻"><b>认知尚存时</b></td><td data-label="存入 Hi Coffer AI 的内容">信托 · 监护 · 遗嘱 · 殡葬互助合同 · 人生终章笔记</td><td data-label="Hi Silver AI 做的事">准备痴呆应对咨询 · 确定指定人</td></tr>
+      <tr><td data-label="时刻"><b>整理电脑 · 手机 · USB</b></td><td data-label="存入 Hi Coffer AI 的内容">用 Hi DAM 分类的数字资产 · 数字遗产清单</td><td data-label="Hi Silver AI 做的事">遗产联系人指定指引 · 记录处理方式</td></tr>
+      <tr><td data-label="时刻"><b>出现危险征兆时</b></td><td data-label="存入 Hi Coffer AI 的内容">紧急联系顺序 · 同意范围</td><td data-label="Hi Silver AI 做的事">核实危险征兆，迅速采取预防/应对措施 · 连接 109·119</td></tr>
+      <tr><td data-label="时刻"><b>临终 · 殡葬 · 身后</b></td><td data-label="存入 Hi Coffer AI 的内容">仅向指定人开放的记录 · 凭证包</td><td data-label="Hi Silver AI 做的事">通知指定人 · 传达殡葬意愿 · 身后事项清单</td></tr>
     </tbody>
   </table>
   <h3 style="margin-top:44px">协作方式 · 使用的数据 · 线上与线下的连接</h3>
@@ -432,18 +433,18 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Landscape · Bridge</div>
   <h2>把已有的服务，一直连接到最后</h2>
   <p class="lead"><span class="ln">公共·民间服务在各个阶段各自独立。</span><span class="ln">Hi Silver AI 不取而代之，而是经本人同意连接其间的空白。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>阶段</th><th>已有服务</th><th>仍存在的空白</th><th class="hs">Hi Silver AI 连接的内容</th></tr></thead>
     <tbody>
-      <tr><td><b>关照</b></td><td>应急安全安心服务（火灾·活动感知、连接 119，约 27 万户）<br>AI 问候电话（地方政府·通信运营商·Naver CLOVA CareCall 等）</td><td>记录分散在各机构，未与家人·医院连通</td><td>问候·服药·变化记录集中一处 · 仅在同意范围内向监护人汇总</td></tr>
-      <tr><td><b>危机</b></td><td>109 自杀预防咨询电话 · 精神健康福利中心<br>警察·消防 → 向自杀预防中心提供信息（2022.8 起）</td><td>本人难以主动联系</td><td>核实危险征兆，迅速采取预防/应对措施 · 经同意后连接 109</td></tr>
-      <tr><td><b>孤立</b></td><td>《孤独死预防法》（2024.3 起） · 地方政府发掘孤独死高危人群</td><td>50·60 多岁中年人容易落在发掘网之外</td><td>从中年·初老期开始使用 · 对接地方政府项目（B2G）</td></tr>
-      <tr><td><b>痴呆应对</b></td><td>痴呆安心中心 · 痴呆安心信托 · 成年监护</td><td>认知尚存时未能提前整理</td><td>记录日常变化 · 准备筛查·信托·监护咨询</td></tr>
-      <tr><td><b>医疗</b></td><td>“我的健康记录”应用（提供数据的医疗机构 1,269 家，2025 年 12 月）<br>个人信息传输请求权（2025.3 起）</td><td>获取的记录难以用于就诊·保险·家人</td><td>就诊一页摘要 · 保险理赔准备 · 监护人报告</td></tr>
-      <tr><td><b>保险</b></td><td>实损保险理赔电子化（医院 2024.10 起，诊所·药店 2025.10 起）</td><td>与合同·附加条款核对需由本人完成</td><td>核对合同与文件 · 可理赔项目指引</td></tr>
-      <tr><td><b>殡葬</b></td><td>殡葬互助 · 殡仪馆 · 无人认领逝者公营殡葬</td><td>家人不掌握逝者的意愿·联系人·文件</td><td>提前整理殡葬意愿·需联系的人 · 通知指定人</td></tr>
-      <tr><td><b>继承·行政</b></td><td>安心继承一站式服务（金融·债务·税金·年金·不动产·汽车统一查询）</td><td>不了解申请期限·顺序</td><td>指引在死亡申报时一并申请 · 期限提醒</td></tr>
-      <tr><td><b>数字遗产</b></td><td>指定三星·苹果遗产联系人 · Kakao 纪念·删除处理</td><td>未提前指定则遗属无法打开 · 韩国国内法无依据</td><td>生前指定指引 · 数字遗产清单 · 存入 Hi Coffer 保险库</td></tr>
+      <tr><td data-label="阶段"><b>关照</b></td><td data-label="已有服务">应急安全安心服务（火灾·活动感知、连接 119，约 27 万户）<br>AI 问候电话（地方政府·通信运营商·Naver CLOVA CareCall 等）</td><td data-label="仍存在的空白">记录分散在各机构，未与家人·医院连通</td><td data-label="Hi Silver AI 连接的内容">问候·服药·变化记录集中一处 · 仅在同意范围内向监护人汇总</td></tr>
+      <tr><td data-label="阶段"><b>危机</b></td><td data-label="已有服务">109 自杀预防咨询电话 · 精神健康福利中心<br>警察·消防 → 向自杀预防中心提供信息（2022.8 起）</td><td data-label="仍存在的空白">本人难以主动联系</td><td data-label="Hi Silver AI 连接的内容">核实危险征兆，迅速采取预防/应对措施 · 经同意后连接 109</td></tr>
+      <tr><td data-label="阶段"><b>孤立</b></td><td data-label="已有服务">《孤独死预防法》（2024.3 起） · 地方政府发掘孤独死高危人群</td><td data-label="仍存在的空白">50·60 多岁中年人容易落在发掘网之外</td><td data-label="Hi Silver AI 连接的内容">从中年·初老期开始使用 · 对接地方政府项目（B2G）</td></tr>
+      <tr><td data-label="阶段"><b>痴呆应对</b></td><td data-label="已有服务">痴呆安心中心 · 痴呆安心信托 · 成年监护</td><td data-label="仍存在的空白">认知尚存时未能提前整理</td><td data-label="Hi Silver AI 连接的内容">记录日常变化 · 准备筛查·信托·监护咨询</td></tr>
+      <tr><td data-label="阶段"><b>医疗</b></td><td data-label="已有服务">“我的健康记录”应用（提供数据的医疗机构 1,269 家，2025 年 12 月）<br>个人信息传输请求权（2025.3 起）</td><td data-label="仍存在的空白">获取的记录难以用于就诊·保险·家人</td><td data-label="Hi Silver AI 连接的内容">就诊一页摘要 · 保险理赔准备 · 监护人报告</td></tr>
+      <tr><td data-label="阶段"><b>保险</b></td><td data-label="已有服务">实损保险理赔电子化（医院 2024.10 起，诊所·药店 2025.10 起）</td><td data-label="仍存在的空白">与合同·附加条款核对需由本人完成</td><td data-label="Hi Silver AI 连接的内容">核对合同与文件 · 可理赔项目指引</td></tr>
+      <tr><td data-label="阶段"><b>殡葬</b></td><td data-label="已有服务">殡葬互助 · 殡仪馆 · 无人认领逝者公营殡葬</td><td data-label="仍存在的空白">家人不掌握逝者的意愿·联系人·文件</td><td data-label="Hi Silver AI 连接的内容">提前整理殡葬意愿·需联系的人 · 通知指定人</td></tr>
+      <tr><td data-label="阶段"><b>继承·行政</b></td><td data-label="已有服务">安心继承一站式服务（金融·债务·税金·年金·不动产·汽车统一查询）</td><td data-label="仍存在的空白">不了解申请期限·顺序</td><td data-label="Hi Silver AI 连接的内容">指引在死亡申报时一并申请 · 期限提醒</td></tr>
+      <tr><td data-label="阶段"><b>数字遗产</b></td><td data-label="已有服务">指定三星·苹果遗产联系人 · Kakao 纪念·删除处理</td><td data-label="仍存在的空白">未提前指定则遗属无法打开 · 韩国国内法无依据</td><td data-label="Hi Silver AI 连接的内容">生前指定指引 · 数字遗产清单 · 存入 Hi Coffer 保险库</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">各项服务的使用条件以运营机构标准为准。</span></p>
@@ -481,14 +482,14 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Plan</div>
   <h2>使用方式</h2>
   <p class="lead"><span class="ln">基本功能免费。</span><span class="ln">生活困难者可免费使用全部功能。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>类别</th><th>提供内容</th><th>方式</th></tr></thead>
     <tbody>
-      <tr><td><b>试用版</b></td><td>测试（β）版全部功能</td><td>免费</td></tr>
-      <tr><td><b>基本</b></td><td>问候 · 服药提醒 · 就诊准备摘要 · 人生整理清单</td><td>免费</td></tr>
-      <tr><td class="sc"><b>弱势群体</b><span class="sq">（支援）</span></td><td>含订阅功能在内的全部功能</td><td>免费</td></tr>
-      <tr><td class="sc"><b>订阅</b><span class="sq">（定期）</span></td><td>监护人报告 · Hi Coffer 保险库 · MyData 联动 · 保险理赔准备</td><td>付费</td></tr>
-      <tr><td class="sc"><b>机构</b><span class="sq">（合同）</span></td><td>医院·养老机构·殡葬互助·银行用管理界面</td><td>协商</td></tr>
+      <tr><td data-label="类别"><b>试用版</b></td><td data-label="提供内容">测试（β）版全部功能</td><td data-label="方式">免费</td></tr>
+      <tr><td data-label="类别"><b>基本</b></td><td data-label="提供内容">问候 · 服药提醒 · 就诊准备摘要 · 人生整理清单</td><td data-label="方式">免费</td></tr>
+      <tr><td class="sc" data-label="类别"><b>弱势群体</b><span class="sq">（支援）</span></td><td data-label="提供内容">含订阅功能在内的全部功能</td><td data-label="方式">免费</td></tr>
+      <tr><td class="sc" data-label="类别"><b>订阅</b><span class="sq">（定期）</span></td><td data-label="提供内容">监护人报告 · Hi Coffer 保险库 · MyData 联动 · 保险理赔准备</td><td data-label="方式">付费</td></tr>
+      <tr><td class="sc" data-label="类别"><b>机构</b><span class="sq">（合同）</span></td><td data-label="提供内容">医院·养老机构·殡葬互助·银行用管理界面</td><td data-label="方式">协商</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>由 HIVEN 供应·提供。</li></ul>

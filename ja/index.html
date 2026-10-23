@@ -140,6 +140,7 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
 .chain li.hc i{color:var(--c1)}.chain li.hs{background:var(--grad);color:#fff}.chain li.hs i{color:#E8ECFF}
 .chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
 @media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
+@media (max-width:600px){table.stk thead{display:none}table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}table.stk tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:12px;background:var(--bg)}table.stk td{border:0;padding:6px 0;text-align:left!important;white-space:normal}table.stk td:first-child{font-size:16px;padding-top:2px}table.stk td:not(:first-child):before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}table.stk td.sc b,table.stk td.sc .sq{display:inline;margin-right:4px}}
 </style>
 </head>
 <body>
@@ -185,14 +186,14 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Funeral · Bridge</div>
   <h2>葬儀、最後まで共に</h2>
   <p class="lead"><span class="ln">予告のない臨終と死を前にしても、誰かが葬儀と遺品整理をしなければなりません。</span><span class="ln">故人が処分しきれなかった情報やデータが遺品の中に残ります。</span><span class="ln">だからこそ、遺言・信託・委託などの事前の備えと、その記録・証拠が重要です。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>段階</th><th>オフライン</th><th>オンライン · Hi Coffer</th></tr></thead>
     <tbody>
-      <tr><td><b>事前の備え</b></td><td>遺言・信託・委託の書類<br>葬儀の意向・延命医療の意向</td><td>写し・証拠を金庫に保管<br>原本のフィンガープリントで真正性を確認</td></tr>
-      <tr><td><b>臨終</b></td><td>死亡診断・安置</td><td>指定者への通知<br>やることリスト</td></tr>
-      <tr><td><b>葬儀</b></td><td>葬儀場・葬儀ディレクター・火葬・納骨</td><td>故人の意思の伝達<br>手続き・費用の案内</td></tr>
-      <tr><td><b>遺品整理</b></td><td>遺品の分類・保管・処分</td><td>スマートフォン・PC・USB のデジタル遺品整理<br>処分できなかった情報の一覧</td></tr>
-      <tr><td><b>死後の処分</b></td><td>行政・相続・信託の執行</td><td>証拠資料のまとめ<br>指定者による閲覧</td></tr>
+      <tr><td data-label="段階"><b>事前の備え</b></td><td data-label="オフライン">遺言・信託・委託の書類<br>葬儀の意向・延命医療の意向</td><td data-label="オンライン · Hi Coffer">写し・証拠を金庫に保管<br>原本のフィンガープリントで真正性を確認</td></tr>
+      <tr><td data-label="段階"><b>臨終</b></td><td data-label="オフライン">死亡診断・安置</td><td data-label="オンライン · Hi Coffer">指定者への通知<br>やることリスト</td></tr>
+      <tr><td data-label="段階"><b>葬儀</b></td><td data-label="オフライン">葬儀場・葬儀ディレクター・火葬・納骨</td><td data-label="オンライン · Hi Coffer">故人の意思の伝達<br>手続き・費用の案内</td></tr>
+      <tr><td data-label="段階"><b>遺品整理</b></td><td data-label="オフライン">遺品の分類・保管・処分</td><td data-label="オンライン · Hi Coffer">スマートフォン・PC・USB のデジタル遺品整理<br>処分できなかった情報の一覧</td></tr>
+      <tr><td data-label="段階"><b>死後の処分</b></td><td data-label="オフライン">行政・相続・信託の執行</td><td data-label="オンライン · Hi Coffer">証拠資料のまとめ<br>指定者による閲覧</td></tr>
     </tbody>
   </table>
   <div class="grid g3">
@@ -202,40 +203,40 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   </div>
   <h3 style="margin-top:48px">葬儀の前後に押さえておく制度</h3>
   <p class="lead"><span class="ln">散らばった制度を前もってまとめ、その時になって探さずに済むようにします。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>制度</th><th>現状</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>事前延命医療意向書</b></td><td>登録者 300 万人超（2025 年 8 月、国立延命医療管理機関）</td><td>登録の有無をエンディングノートに記録 · 登録機関の案内</td></tr>
-      <tr><td><b>互助会の契約</b></td><td>契約者 1,131 万人 · 前受金 11 兆 3,544 億ウォン（2026 年 3 月末、公正取引委員会）<br>事業者は前受金の半分以上を保全しなければならない</td><td>契約書を金庫に保管 · 家族が知らない互助会契約がないよう指定者に伝達</td></tr>
-      <tr><td><b>火葬の予約</b></td><td>e 空 葬祭情報システムでのオンライン予約</td><td>予約の順序を案内 · 故人の意思（火葬・納骨・自然葬）を伝達</td></tr>
-      <tr><td><b>葬祭給付 · 緊急福祉の葬祭費</b></td><td>受給者の死亡時に約 80 万ウォン（2026 年） · 行政福祉センターで申請</td><td>対象かどうかと書類の案内</td></tr>
-      <tr><td><b>公営葬儀</b></td><td>2024 年の無縁死 6,139 人、そのうち 76% は家族がいながら葬儀を委任</td><td>葬儀の意向・連絡する人を前もって残し、ひとりで旅立たないよう準備</td></tr>
+      <tr><td data-label="制度"><b>事前延命医療意向書</b></td><td data-label="現状">登録者 300 万人超（2025 年 8 月、国立延命医療管理機関）</td><td data-label="Hi Silver AI">登録の有無をエンディングノートに記録 · 登録機関の案内</td></tr>
+      <tr><td data-label="制度"><b>互助会の契約</b></td><td data-label="現状">契約者 1,131 万人 · 前受金 11 兆 3,544 億ウォン（2026 年 3 月末、公正取引委員会）<br>事業者は前受金の半分以上を保全しなければならない</td><td data-label="Hi Silver AI">契約書を金庫に保管 · 家族が知らない互助会契約がないよう指定者に伝達</td></tr>
+      <tr><td data-label="制度"><b>火葬の予約</b></td><td data-label="現状">e 空 葬祭情報システムでのオンライン予約</td><td data-label="Hi Silver AI">予約の順序を案内 · 故人の意思（火葬・納骨・自然葬）を伝達</td></tr>
+      <tr><td data-label="制度"><b>葬祭給付 · 緊急福祉の葬祭費</b></td><td data-label="現状">受給者の死亡時に約 80 万ウォン（2026 年） · 行政福祉センターで申請</td><td data-label="Hi Silver AI">対象かどうかと書類の案内</td></tr>
+      <tr><td data-label="制度"><b>公営葬儀</b></td><td data-label="現状">2024 年の無縁死 6,139 人、そのうち 76% は家族がいながら葬儀を委任</td><td data-label="Hi Silver AI">葬儀の意向・連絡する人を前もって残し、ひとりで旅立たないよう準備</td></tr>
     </tbody>
   </table>
   <h3 style="margin-top:48px">死後のチェックリスト（1 か月～1 年）</h3>
   <p class="lead"><span class="ln">残されたご家族が見落としやすいことを、期限と根拠に沿って案内します。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>やること</th><th>期限 · 要件</th><th>根拠</th><th>Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>死亡届</b></td><td>死亡の事実を知った日から 1 か月以内<br>届出義務：同居の親族</td><td>家族関係登録法 第 84 条・第 85 条</td><td>期限の通知 · 書類の案内</td></tr>
-      <tr><td><b>診療記録の発行</b></td><td>家族が患者の同意書・親族関係証明書などを揃えて請求</td><td>医療法 第 21 条</td><td>必要書類の一覧 · 発行先の案内</td></tr>
-      <tr><td><b>実損保険の請求</b></td><td>病院・医院・薬局から保険会社へ電子送信</td><td>実損保険請求の電算化（2024.10～、医院・薬局 2025.10～）</td><td>契約・領収書の照合 · 請求準備</td></tr>
-      <tr><td><b>相続財産の一括照会</b></td><td>死亡日が属する月の末日から 1 年以内<br>死亡届と同時に申請可能</td><td>安心相続ワンストップサービス</td><td>申請の順序・期限の通知</td></tr>
-      <tr><td><b>遺言・信託・委託の確認</b></td><td>指定者による閲覧</td><td>ご本人が事前に残した記録</td><td>Hi Coffer の金庫から証拠一式を提供</td></tr>
-      <tr><td><b>遺品・デジタル遺品の整理</b></td><td>スマートフォン・PC・USB・アカウント<br>Samsung・Apple の故人アカウント管理連絡先 · Kakao の追悼・削除</td><td>ご本人が事前に決めた処分方法 · メーカー・プラットフォームの手続き</td><td>処分できなかった情報の一覧 · 整理の順序</td></tr>
+      <tr><td data-label="やること"><b>死亡届</b></td><td data-label="期限 · 要件">死亡の事実を知った日から 1 か月以内<br>届出義務：同居の親族</td><td data-label="根拠">家族関係登録法 第 84 条・第 85 条</td><td data-label="Hi Silver AI">期限の通知 · 書類の案内</td></tr>
+      <tr><td data-label="やること"><b>診療記録の発行</b></td><td data-label="期限 · 要件">家族が患者の同意書・親族関係証明書などを揃えて請求</td><td data-label="根拠">医療法 第 21 条</td><td data-label="Hi Silver AI">必要書類の一覧 · 発行先の案内</td></tr>
+      <tr><td data-label="やること"><b>実損保険の請求</b></td><td data-label="期限 · 要件">病院・医院・薬局から保険会社へ電子送信</td><td data-label="根拠">実損保険請求の電算化（2024.10～、医院・薬局 2025.10～）</td><td data-label="Hi Silver AI">契約・領収書の照合 · 請求準備</td></tr>
+      <tr><td data-label="やること"><b>相続財産の一括照会</b></td><td data-label="期限 · 要件">死亡日が属する月の末日から 1 年以内<br>死亡届と同時に申請可能</td><td data-label="根拠">安心相続ワンストップサービス</td><td data-label="Hi Silver AI">申請の順序・期限の通知</td></tr>
+      <tr><td data-label="やること"><b>遺言・信託・委託の確認</b></td><td data-label="期限 · 要件">指定者による閲覧</td><td data-label="根拠">ご本人が事前に残した記録</td><td data-label="Hi Silver AI">Hi Coffer の金庫から証拠一式を提供</td></tr>
+      <tr><td data-label="やること"><b>遺品・デジタル遺品の整理</b></td><td data-label="期限 · 要件">スマートフォン・PC・USB・アカウント<br>Samsung・Apple の故人アカウント管理連絡先 · Kakao の追悼・削除</td><td data-label="根拠">ご本人が事前に決めた処分方法 · メーカー・プラットフォームの手続き</td><td data-label="Hi Silver AI">処分できなかった情報の一覧 · 整理の順序</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">法律・行政の手続きは代行せず、期限と書類を案内します。</span></p>
   <h3 style="margin-top:48px">遺品整理、オフラインとオンラインを一緒に</h3>
   <p class="lead"><span class="ln">家の中の物とスマートフォン・PC の記録は別々に整理されますが、故人の意思は一つです。</span><span class="ln">生前に残した一覧をもとに、現場とデジタルを同じ順序で整理します。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>段階</th><th>オフライン（現場）</th><th>オンライン（デジタル）</th><th class="hs">Hi Silver AI · Hi Coffer AI</th></tr></thead>
     <tbody>
-      <tr><td><b>生前の準備</b></td><td>貴重品・通帳・証券・契約書の場所<br>保存・寄贈・廃棄の意向</td><td>スマートフォンの故人アカウント管理連絡先の指定（Samsung 最大 5 人 · Apple）<br>アカウントごとの追悼・削除の意向</td><td>遺品一覧とデジタル遺産一覧を金庫に保管 · Hi DAM で PC・USB を分類</td></tr>
-      <tr><td><b>確認</b></td><td>賃貸・持ち家の別 · 相続の承認・放棄・限定承認の確認</td><td>ロックされたスマートフォン · 指定がないと遺族でも開けにくい</td><td>指定者に一覧を渡す · 確認の順序を案内</td></tr>
-      <tr><td><b>分類・捜索</b></td><td>相談・現場確認 → 保存・寄贈・廃棄に分類<br>遺言書・貴重品・書類を探す</td><td>写真・連絡先・文書のバックアップ · 支払い・サブスクリプションの解約</td><td>一覧と照合して足りない物・書類を表示 · 引き渡しの写真を証拠として保管</td></tr>
-      <tr><td><b>整理・清掃</b></td><td>特殊清掃 · 原状回復（ワンルームでも 1,000 万ウォンに達した事例）</td><td>PC・USB・クラウドの処分 · アカウントの追悼・削除</td><td>故人が決めた処分方法どおりに進んだかを記録</td></tr>
-      <tr><td><b>身寄りがない場合</b></td><td>自治体の遺品整理支援（身寄りのない受給者に最大 100 万ウォンの事例）<br>裁判所の手続き中の遺品保管</td><td>デジタル遺品の処理には法的根拠がない</td><td>前もって指定者を置き、身寄りのない状態にならないよう準備</td></tr>
+      <tr><td data-label="段階"><b>生前の準備</b></td><td data-label="オフライン（現場）">貴重品・通帳・証券・契約書の場所<br>保存・寄贈・廃棄の意向</td><td data-label="オンライン（デジタル）">スマートフォンの故人アカウント管理連絡先の指定（Samsung 最大 5 人 · Apple）<br>アカウントごとの追悼・削除の意向</td><td data-label="Hi Silver AI · Hi Coffer AI">遺品一覧とデジタル遺産一覧を金庫に保管 · Hi DAM で PC・USB を分類</td></tr>
+      <tr><td data-label="段階"><b>確認</b></td><td data-label="オフライン（現場）">賃貸・持ち家の別 · 相続の承認・放棄・限定承認の確認</td><td data-label="オンライン（デジタル）">ロックされたスマートフォン · 指定がないと遺族でも開けにくい</td><td data-label="Hi Silver AI · Hi Coffer AI">指定者に一覧を渡す · 確認の順序を案内</td></tr>
+      <tr><td data-label="段階"><b>分類・捜索</b></td><td data-label="オフライン（現場）">相談・現場確認 → 保存・寄贈・廃棄に分類<br>遺言書・貴重品・書類を探す</td><td data-label="オンライン（デジタル）">写真・連絡先・文書のバックアップ · 支払い・サブスクリプションの解約</td><td data-label="Hi Silver AI · Hi Coffer AI">一覧と照合して足りない物・書類を表示 · 引き渡しの写真を証拠として保管</td></tr>
+      <tr><td data-label="段階"><b>整理・清掃</b></td><td data-label="オフライン（現場）">特殊清掃 · 原状回復（ワンルームでも 1,000 万ウォンに達した事例）</td><td data-label="オンライン（デジタル）">PC・USB・クラウドの処分 · アカウントの追悼・削除</td><td data-label="Hi Silver AI · Hi Coffer AI">故人が決めた処分方法どおりに進んだかを記録</td></tr>
+      <tr><td data-label="段階"><b>身寄りがない場合</b></td><td data-label="オフライン（現場）">自治体の遺品整理支援（身寄りのない受給者に最大 100 万ウォンの事例）<br>裁判所の手続き中の遺品保管</td><td data-label="オンライン（デジタル）">デジタル遺品の処理には法的根拠がない</td><td data-label="Hi Silver AI · Hi Coffer AI">前もって指定者を置き、身寄りのない状態にならないよう準備</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>遺品整理は、まだ資格基準・指針のない分野です。現場では近所の人が先に物を持ち去ることもあります。</li><li>身寄りのない孤独死の遺品整理・特殊清掃を国・自治体が支援する孤独死予防法の改正案が発議されました（2026 年 6 月）。</li></ul>
@@ -278,25 +279,25 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">MyData</div>
   <h2>マイデータ</h2>
   <p class="lead"><span class="ln">保健（相談記録）・医療・金融のマイデータを扱います。</span><span class="ln">原本は Hi Coffer の金庫に置き、Hi Silver AI はどこに提供・委託するかを管理します。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>区分</th><th>データ</th><th>使い道</th></tr></thead>
     <tbody>
-      <tr><td class="sc"><b>保健</b><span class="sq">（相談記録）</span></td><td>うつ・不安・パニック障害・睡眠・依存症・認知症など<br>メンタルヘルスの相談・受診歴・予定・機関の連絡先<br>検診で受けたうつ・認知機能のスクリーニング結果<br>福祉相談の履歴</td><td>危険兆候の検証 · 109・精神健康福祉センターへの連携<br>初老期・認知症への備え · 認知症安心センターへの連携<br>ご家族との連携（ご本人の同意）</td></tr>
-      <tr><td class="sc"><b>医療</b><span class="sq">（マイデータ）</span></td><td>受診・診断・処方・検査の履歴<br>服薬・予防接種の履歴</td><td>受診の準備 · ご家族への要約</td></tr>
-      <tr><td class="sc"><b>医療</b><span class="sq">（書類）</span></td><td>診療費の領収書・明細書・診断書</td><td>保険請求の準備</td></tr>
-      <tr><td class="sc"><b>金融</b><span class="sq">（マイデータ）</span></td><td>保険契約・年金・口座の一覧<br>信託・後見の書類</td><td>請求の案内 · 認知症への備え · 人生の整理</td></tr>
+      <tr><td class="sc" data-label="区分"><b>保健</b><span class="sq">（相談記録）</span></td><td data-label="データ">うつ・不安・パニック障害・睡眠・依存症・認知症など<br>メンタルヘルスの相談・受診歴・予定・機関の連絡先<br>検診で受けたうつ・認知機能のスクリーニング結果<br>福祉相談の履歴</td><td data-label="使い道">危険兆候の検証 · 109・精神健康福祉センターへの連携<br>初老期・認知症への備え · 認知症安心センターへの連携<br>ご家族との連携（ご本人の同意）</td></tr>
+      <tr><td class="sc" data-label="区分"><b>医療</b><span class="sq">（マイデータ）</span></td><td data-label="データ">受診・診断・処方・検査の履歴<br>服薬・予防接種の履歴</td><td data-label="使い道">受診の準備 · ご家族への要約</td></tr>
+      <tr><td class="sc" data-label="区分"><b>医療</b><span class="sq">（書類）</span></td><td data-label="データ">診療費の領収書・明細書・診断書</td><td data-label="使い道">保険請求の準備</td></tr>
+      <tr><td class="sc" data-label="区分"><b>金融</b><span class="sq">（マイデータ）</span></td><td data-label="データ">保険契約・年金・口座の一覧<br>信託・後見の書類</td><td data-label="使い道">請求の案内 · 認知症への備え · 人生の整理</td></tr>
     </tbody>
   </table>
   <h3 style="margin-top:48px">保健（メンタルヘルス）連携網</h3>
   <p class="lead"><span class="ln">パニック障害・うつ・不安・依存症・認知症まで、ひとりで抱え込まないよう公共サービスにつなぎます。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>公共サービス</th><th>現状</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>109 自殺予防相談電話</b></td><td>2024 年 1 月に統合 · 2024 年の相談 182,725 件<br>かかってきた電話の約半分しか相談につながらなかった（2025 年）</td><td>危険な兆候を検証し迅速な予防/備えの措置 · ご本人の同意後に連携</td></tr>
-      <tr><td><b>メンタルヘルス危機相談 1577-0199</b></td><td>24 時間 · 精神健康福祉センターと連携</td><td>地域センターの連絡先 · 相談予定の記録</td></tr>
-      <tr><td><b>国の健康診断のメンタルヘルス検査</b></td><td>20～34 歳のうつ病検査を 2 年ごと · 早期精神病検査を追加（2025 年～）</td><td>スクリーニング結果はご本人が選んで金庫に保管</td></tr>
-      <tr><td><b>全国民こころ投資支援事業</b></td><td>専門心理カウンセリング 8 回（必要時 8 回延長） · 受給者・次上位層は自己負担なし</td><td>推薦経路・申請書類の案内 · 相談予定の管理</td></tr>
-      <tr><td><b>認知症安心センター</b></td><td>市・郡・区の認知症検診・相談</td><td>日常の変化の記録 · 検診予約の準備</td></tr>
+      <tr><td data-label="公共サービス"><b>109 自殺予防相談電話</b></td><td data-label="現状">2024 年 1 月に統合 · 2024 年の相談 182,725 件<br>かかってきた電話の約半分しか相談につながらなかった（2025 年）</td><td data-label="Hi Silver AI">危険な兆候を検証し迅速な予防/備えの措置 · ご本人の同意後に連携</td></tr>
+      <tr><td data-label="公共サービス"><b>メンタルヘルス危機相談 1577-0199</b></td><td data-label="現状">24 時間 · 精神健康福祉センターと連携</td><td data-label="Hi Silver AI">地域センターの連絡先 · 相談予定の記録</td></tr>
+      <tr><td data-label="公共サービス"><b>国の健康診断のメンタルヘルス検査</b></td><td data-label="現状">20～34 歳のうつ病検査を 2 年ごと · 早期精神病検査を追加（2025 年～）</td><td data-label="Hi Silver AI">スクリーニング結果はご本人が選んで金庫に保管</td></tr>
+      <tr><td data-label="公共サービス"><b>全国民こころ投資支援事業</b></td><td data-label="現状">専門心理カウンセリング 8 回（必要時 8 回延長） · 受給者・次上位層は自己負担なし</td><td data-label="Hi Silver AI">推薦経路・申請書類の案内 · 相談予定の管理</td></tr>
+      <tr><td data-label="公共サービス"><b>認知症安心センター</b></td><td data-label="現状">市・郡・区の認知症検診・相談</td><td data-label="Hi Silver AI">日常の変化の記録 · 検診予約の準備</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>ご本人の送信要求（個人情報保護法 第 35 条の 2）に基づき、法が定めた経路（API）でのみ取得します。スクレイピングは行いません。</li><li>「私の健康記録」アプリで受け取った診療記録も、ご本人が選んで金庫に入れられます。</li><li>相談内容は、ご本人が選んだものだけを金庫に保管します。</li><li>パスワード・証明書・カード番号は保存しません。</li></ul>
@@ -308,51 +309,51 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <p class="lead"><span class="ln">実際の制度とシステムの上で動きます。</span><span class="ln">新たに作らず、すでにある経路に合わせてつなぎます。</span></p>
 
   <h3 style="margin-top:40px">病院の中：病院情報システム（HIS）が記録を作ります</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>システム</th><th>病院の中での役割</th><th class="hs">Hi Silver AI との接点</th></tr></thead>
     <tbody>
-      <tr><td><b>HIS</b><br><small>病院情報システム</small></td><td>オーダリングシステム（OCS）を中心に、医事・診療・看護・検査を束ねた統合システム</td><td>直接接続しない · 病院が発行する書類と標準の経路でのみ受け取る</td></tr>
-      <tr><td><b>OCS</b><br><small>オーダリングシステム</small></td><td>医師の指示を検査・薬剤・看護部門に伝達 · 会計・投薬の待ち時間を短縮</td><td>処方・投薬の履歴 → 服薬リマインダー · 受診用要約</td></tr>
-      <tr><td><b>EMR</b><br><small>電子カルテ</small></td><td>診療記録の電子化 · 保険請求の自動化 · 画像システムとカルテの連携</td><td>診断・検査の履歴 → 医療マイデータとして受信</td></tr>
-      <tr><td><b>PACS</b><br><small>医用画像の保存・通信</small></td><td>画像機器の画像をすぐに読影・保存 · フィルムレス診療</td><td>画像読影所見書の写し → 金庫に保管</td></tr>
-      <tr><td><b>P-HIS</b><br><small>クラウド病院情報システム</small></td><td>高麗大学医療院など 14 の医療機関・ICT 企業が開発（科学技術情報通信部・保健福祉部）<br>標準モジュール 38 個 · 臨床用語・コード 89,004 個を標準化 · 相互運用性の国際標準認証<br>高麗大学病院 3 か所で移行、一次医療機関約 90 か所に普及（2021 年 12 月）</td><td>標準コードを使うクラウド病院が増えるほど病院との提携連携が容易に · 優先提携候補</td></tr>
-      <tr><td><b>公共医療院のクラウド HIS</b></td><td>科学技術情報通信部 · 2026 年 150 億ウォン · 2027 年まで開発・実証<br>2028 年に国立中央医療院から、2030 年までに地方医療院 37 か所の EMR・OCS・PACS を SaaS に置き換え</td><td>公共病院の標準データ · B2G 連携候補</td></tr>
-      <tr><td><b>医事</b></td><td>受付・会計・診療費計算・証明書発行</td><td>領収書・明細書・診断書 → 保険請求の準備</td></tr>
+      <tr><td data-label="システム"><b>HIS</b><br><small>病院情報システム</small></td><td data-label="病院の中での役割">オーダリングシステム（OCS）を中心に、医事・診療・看護・検査を束ねた統合システム</td><td data-label="Hi Silver AI との接点">直接接続しない · 病院が発行する書類と標準の経路でのみ受け取る</td></tr>
+      <tr><td data-label="システム"><b>OCS</b><br><small>オーダリングシステム</small></td><td data-label="病院の中での役割">医師の指示を検査・薬剤・看護部門に伝達 · 会計・投薬の待ち時間を短縮</td><td data-label="Hi Silver AI との接点">処方・投薬の履歴 → 服薬リマインダー · 受診用要約</td></tr>
+      <tr><td data-label="システム"><b>EMR</b><br><small>電子カルテ</small></td><td data-label="病院の中での役割">診療記録の電子化 · 保険請求の自動化 · 画像システムとカルテの連携</td><td data-label="Hi Silver AI との接点">診断・検査の履歴 → 医療マイデータとして受信</td></tr>
+      <tr><td data-label="システム"><b>PACS</b><br><small>医用画像の保存・通信</small></td><td data-label="病院の中での役割">画像機器の画像をすぐに読影・保存 · フィルムレス診療</td><td data-label="Hi Silver AI との接点">画像読影所見書の写し → 金庫に保管</td></tr>
+      <tr><td data-label="システム"><b>P-HIS</b><br><small>クラウド病院情報システム</small></td><td data-label="病院の中での役割">高麗大学医療院など 14 の医療機関・ICT 企業が開発（科学技術情報通信部・保健福祉部）<br>標準モジュール 38 個 · 臨床用語・コード 89,004 個を標準化 · 相互運用性の国際標準認証<br>高麗大学病院 3 か所で移行、一次医療機関約 90 か所に普及（2021 年 12 月）</td><td data-label="Hi Silver AI との接点">標準コードを使うクラウド病院が増えるほど病院との提携連携が容易に · 優先提携候補</td></tr>
+      <tr><td data-label="システム"><b>公共医療院のクラウド HIS</b></td><td data-label="病院の中での役割">科学技術情報通信部 · 2026 年 150 億ウォン · 2027 年まで開発・実証<br>2028 年に国立中央医療院から、2030 年までに地方医療院 37 か所の EMR・OCS・PACS を SaaS に置き換え</td><td data-label="Hi Silver AI との接点">公共病院の標準データ · B2G 連携候補</td></tr>
+      <tr><td data-label="システム"><b>医事</b></td><td data-label="病院の中での役割">受付・会計・診療費計算・証明書発行</td><td data-label="Hi Silver AI との接点">領収書・明細書・診断書 → 保険請求の準備</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>医院 34,958 か所（2023 年 3 月）が複数ベンダーの EMR を使っています。公式のシェア統計はありません。</li><li>EMR はベンダーごとに構造が異なり病院内でも連携が難しく、最近は API でやり取りする方向に変わりつつあります。</li><li>医師が EMR との連携を望むサービスは、予約・受付・決済（26.35%）、血糖・血圧測定機器（20.35%）、他院の検査結果の確認（15.93%）の順でした（2023 年、医師 1,030 人調査）。Hi Silver AI の病院提携（B2B）が入る場所です。</li></ul>
 
   <h3 style="margin-top:40px">1. 診療記録の管理（病院記録管理システム · EMR）</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>項目</th><th>運営方式</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>保存期間</b></td><td>診療録・手術記録 10 年 · 患者名簿・検査所見・画像・看護記録 5 年<br>診断書の控え 3 年 · 処方箋 2 年（医療法施行規則 第 15 条）</td><td>期間が過ぎて病院の記録が消える前に、ご本人の写しを金庫に保管</td></tr>
-      <tr><td><b>電子カルテ（EMR）</b></td><td>認証医療機関 4,057 か所、全 36,234 か所の 11%（2025 年 9 月）</td><td>病院ごとに異なるシステムではなく、標準の経路で受け取った記録だけを整理</td></tr>
-      <tr><td><b>病院の廃業時</b></td><td>保健所へ移管 · 診療記録保管システムが正式運用（2025 年 7 月 21 日～）</td><td>通っていた病院が閉じても、探す先を記録しておく</td></tr>
-      <tr><td><b>病院間の連携</b></td><td>診療情報交流：紹介状 · 返書 · 診療記録要約 · 画像読影所見書</td><td>転院・退院時に受け取った文書を受診用 1 枚要約に反映</td></tr>
-      <tr><td><b>ご本人の閲覧・写し</b></td><td>患者本人は閲覧・写しを請求でき、家族は同意書・証明書類が必要（医療法 第 21 条）</td><td>請求書類の一覧 · 指定者への委任の準備</td></tr>
+      <tr><td data-label="項目"><b>保存期間</b></td><td data-label="運営方式">診療録・手術記録 10 年 · 患者名簿・検査所見・画像・看護記録 5 年<br>診断書の控え 3 年 · 処方箋 2 年（医療法施行規則 第 15 条）</td><td data-label="Hi Silver AI">期間が過ぎて病院の記録が消える前に、ご本人の写しを金庫に保管</td></tr>
+      <tr><td data-label="項目"><b>電子カルテ（EMR）</b></td><td data-label="運営方式">認証医療機関 4,057 か所、全 36,234 か所の 11%（2025 年 9 月）</td><td data-label="Hi Silver AI">病院ごとに異なるシステムではなく、標準の経路で受け取った記録だけを整理</td></tr>
+      <tr><td data-label="項目"><b>病院の廃業時</b></td><td data-label="運営方式">保健所へ移管 · 診療記録保管システムが正式運用（2025 年 7 月 21 日～）</td><td data-label="Hi Silver AI">通っていた病院が閉じても、探す先を記録しておく</td></tr>
+      <tr><td data-label="項目"><b>病院間の連携</b></td><td data-label="運営方式">診療情報交流：紹介状 · 返書 · 診療記録要約 · 画像読影所見書</td><td data-label="Hi Silver AI">転院・退院時に受け取った文書を受診用 1 枚要約に反映</td></tr>
+      <tr><td data-label="項目"><b>ご本人の閲覧・写し</b></td><td data-label="運営方式">患者本人は閲覧・写しを請求でき、家族は同意書・証明書類が必要（医療法 第 21 条）</td><td data-label="Hi Silver AI">請求書類の一覧 · 指定者への委任の準備</td></tr>
     </tbody>
   </table>
 
   <h3 style="margin-top:44px">2. 医療マイデータサービスの方式</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>項目</th><th>運営方式</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>「私の健康記録」アプリ</b></td><td>健康情報ハイウェイ · 提供医療機関 1,269 か所（上級総合病院 47 か所を含む、2025 年 12 月）<br>診断・処方・検査・手術履歴の照会・保存・共有 · FHIR 標準クラウド（ソウル峨山病院が拠点）</td><td>受け取った記録をご本人が選んで Hi Coffer の金庫に入れる</td></tr>
-      <tr><td><b>送信要求権</b></td><td>2025 年 3 月～ · 保健医療分野が先行（疾病管理庁 · 国民健康保険公団 · 健康保険審査評価院 · 上級総合病院）</td><td>ご本人の請求があったときだけ受け取る</td></tr>
-      <tr><td><b>本人情報ダウンロード権</b></td><td>医療・通信から全分野へ拡大（2026 年 2 月施行令） · 公共機関のウェブサイトから直接ダウンロード（2026 年 8 月～） · 民間（2027 年 2 月～）</td><td>ダウンロードしたファイルをそのまま金庫に保管</td></tr>
-      <tr><td><b>送信経路</b></td><td>本人送信または第三者送信 · 中継専門機関を経由 · API 方式のみ許可、スクレイピング禁止</td><td>登録要件を満たした後、正式な受信者として接続（段階的に推進）</td></tr>
+      <tr><td data-label="項目"><b>「私の健康記録」アプリ</b></td><td data-label="運営方式">健康情報ハイウェイ · 提供医療機関 1,269 か所（上級総合病院 47 か所を含む、2025 年 12 月）<br>診断・処方・検査・手術履歴の照会・保存・共有 · FHIR 標準クラウド（ソウル峨山病院が拠点）</td><td data-label="Hi Silver AI">受け取った記録をご本人が選んで Hi Coffer の金庫に入れる</td></tr>
+      <tr><td data-label="項目"><b>送信要求権</b></td><td data-label="運営方式">2025 年 3 月～ · 保健医療分野が先行（疾病管理庁 · 国民健康保険公団 · 健康保険審査評価院 · 上級総合病院）</td><td data-label="Hi Silver AI">ご本人の請求があったときだけ受け取る</td></tr>
+      <tr><td data-label="項目"><b>本人情報ダウンロード権</b></td><td data-label="運営方式">医療・通信から全分野へ拡大（2026 年 2 月施行令） · 公共機関のウェブサイトから直接ダウンロード（2026 年 8 月～） · 民間（2027 年 2 月～）</td><td data-label="Hi Silver AI">ダウンロードしたファイルをそのまま金庫に保管</td></tr>
+      <tr><td data-label="項目"><b>送信経路</b></td><td data-label="運営方式">本人送信または第三者送信 · 中継専門機関を経由 · API 方式のみ許可、スクレイピング禁止</td><td data-label="Hi Silver AI">登録要件を満たした後、正式な受信者として接続（段階的に推進）</td></tr>
     </tbody>
   </table>
 
   <h3 style="margin-top:44px">3. 地域ケア · 臨終 · 葬祭</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>項目</th><th>運営状況</th><th class="hs">Hi Silver AI</th></tr></thead>
     <tbody>
-      <tr><td><b>統合ケア</b></td><td>医療・介護など地域ケアの統合支援に関する法律の施行（2026 年 3 月 27 日）<br>退院前にケアの必要度を把握 → 自治体の専任窓口につなぐ</td><td>退院後の服薬・予定・ご家族への報告を引き継ぐ</td></tr>
-      <tr><td><b>長期療養在宅医療センター</b></td><td>195 市・郡・区に 344 か所（2026 年 1 月） · 医師は月 1 回、看護師は月 2 回訪問</td><td>訪問予定・記録の整理 · 家族と共有</td></tr>
-      <tr><td><b>在宅ホスピス</b></td><td>40 医療機関 · 2,042 人が利用（2025 年 9 月）</td><td>延命医療の意向 · 希望する臨終の場所を記録</td></tr>
-      <tr><td><b>葬祭</b></td><td>2024 年の死亡者 358,569 人 · 火葬炉 400 基 · 火葬率 94.4%</td><td>火葬予約の順序 · 葬儀の意向を伝達</td></tr>
+      <tr><td data-label="項目"><b>統合ケア</b></td><td data-label="運営状況">医療・介護など地域ケアの統合支援に関する法律の施行（2026 年 3 月 27 日）<br>退院前にケアの必要度を把握 → 自治体の専任窓口につなぐ</td><td data-label="Hi Silver AI">退院後の服薬・予定・ご家族への報告を引き継ぐ</td></tr>
+      <tr><td data-label="項目"><b>長期療養在宅医療センター</b></td><td data-label="運営状況">195 市・郡・区に 344 か所（2026 年 1 月） · 医師は月 1 回、看護師は月 2 回訪問</td><td data-label="Hi Silver AI">訪問予定・記録の整理 · 家族と共有</td></tr>
+      <tr><td data-label="項目"><b>在宅ホスピス</b></td><td data-label="運営状況">40 医療機関 · 2,042 人が利用（2025 年 9 月）</td><td data-label="Hi Silver AI">延命医療の意向 · 希望する臨終の場所を記録</td></tr>
+      <tr><td data-label="項目"><b>葬祭</b></td><td data-label="運営状況">2024 年の死亡者 358,569 人 · 火葬炉 400 基 · 火葬率 94.4%</td><td data-label="Hi Silver AI">火葬予約の順序 · 葬儀の意向を伝達</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">数値は表記した時点のもので、公式発表が更新されたら書き換えます。</span></p>
@@ -376,17 +377,17 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
     <div class="st"><b class="n">5</b><h3>結果の記録</h3><p>誰がいつ何を受け取ったかを金庫に残し、後で証拠として使います。</p></div>
   </div>
   <h3 style="margin-top:44px">接点が生まれる瞬間</h3>
-  <table>
+  <table class="stk">
     <thead><tr><th>瞬間</th><th>Hi Coffer AI に入るもの</th><th class="hs">Hi Silver AI がすること</th></tr></thead>
     <tbody>
-      <tr><td><b>記録を受け取るとき</b></td><td>「私の健康記録」アプリ・送信要求権で受け取った診療記録の原本</td><td>一覧だけを受け取り受診用要約 · ご家族への報告</td></tr>
-      <tr><td><b>病院に行った後</b></td><td>診療費の領収書 · 明細書 · 診断書 · 返書</td><td>保険契約と照合 · 請求準備</td></tr>
-      <tr><td><b>保存期間が終わる前</b></td><td>病院が 10 年・5 年後に消す記録のご本人の写し</td><td>期限の通知 · 写しの請求案内</td></tr>
-      <tr><td><b>退院 · 在宅医療 · ホスピス</b></td><td>退院要約 · 訪問記録 · 延命医療の意向</td><td>退院後の予定・服薬を引き継ぐ · 家族と共有</td></tr>
-      <tr><td><b>認知機能があるうちに</b></td><td>信託 · 後見 · 遺言 · 互助会の契約書 · エンディングノート</td><td>認知症への備えの相談準備 · 指定者を決める</td></tr>
-      <tr><td><b>PC · スマートフォン · USB の整理</b></td><td>Hi DAM で分類したデジタル資産 · デジタル遺産の一覧</td><td>故人アカウント管理連絡先の指定案内 · 処分方法の記録</td></tr>
-      <tr><td><b>危険な兆候があるとき</b></td><td>緊急連絡の順番 · 同意の範囲</td><td>危険な兆候を検証し迅速な予防/備えの措置 · 109・119 への連携</td></tr>
-      <tr><td><b>臨終 · 葬儀 · 死後</b></td><td>指定者にだけ開かれる記録 · 証拠一式</td><td>指定者への通知 · 葬儀の意向を伝達 · 死後のチェックリスト</td></tr>
+      <tr><td data-label="瞬間"><b>記録を受け取るとき</b></td><td data-label="Hi Coffer AI に入るもの">「私の健康記録」アプリ・送信要求権で受け取った診療記録の原本</td><td data-label="Hi Silver AI がすること">一覧だけを受け取り受診用要約 · ご家族への報告</td></tr>
+      <tr><td data-label="瞬間"><b>病院に行った後</b></td><td data-label="Hi Coffer AI に入るもの">診療費の領収書 · 明細書 · 診断書 · 返書</td><td data-label="Hi Silver AI がすること">保険契約と照合 · 請求準備</td></tr>
+      <tr><td data-label="瞬間"><b>保存期間が終わる前</b></td><td data-label="Hi Coffer AI に入るもの">病院が 10 年・5 年後に消す記録のご本人の写し</td><td data-label="Hi Silver AI がすること">期限の通知 · 写しの請求案内</td></tr>
+      <tr><td data-label="瞬間"><b>退院 · 在宅医療 · ホスピス</b></td><td data-label="Hi Coffer AI に入るもの">退院要約 · 訪問記録 · 延命医療の意向</td><td data-label="Hi Silver AI がすること">退院後の予定・服薬を引き継ぐ · 家族と共有</td></tr>
+      <tr><td data-label="瞬間"><b>認知機能があるうちに</b></td><td data-label="Hi Coffer AI に入るもの">信託 · 後見 · 遺言 · 互助会の契約書 · エンディングノート</td><td data-label="Hi Silver AI がすること">認知症への備えの相談準備 · 指定者を決める</td></tr>
+      <tr><td data-label="瞬間"><b>PC · スマートフォン · USB の整理</b></td><td data-label="Hi Coffer AI に入るもの">Hi DAM で分類したデジタル資産 · デジタル遺産の一覧</td><td data-label="Hi Silver AI がすること">故人アカウント管理連絡先の指定案内 · 処分方法の記録</td></tr>
+      <tr><td data-label="瞬間"><b>危険な兆候があるとき</b></td><td data-label="Hi Coffer AI に入るもの">緊急連絡の順番 · 同意の範囲</td><td data-label="Hi Silver AI がすること">危険な兆候を検証し迅速な予防/備えの措置 · 109・119 への連携</td></tr>
+      <tr><td data-label="瞬間"><b>臨終 · 葬儀 · 死後</b></td><td data-label="Hi Coffer AI に入るもの">指定者にだけ開かれる記録 · 証拠一式</td><td data-label="Hi Silver AI がすること">指定者への通知 · 葬儀の意向を伝達 · 死後のチェックリスト</td></tr>
     </tbody>
   </table>
   <h3 style="margin-top:44px">協働の方式 · 使うデータ · オンラインとオフラインのつながり</h3>
@@ -433,18 +434,18 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Landscape · Bridge</div>
   <h2>すでにあるサービスを、最後までつなぎます</h2>
   <p class="lead"><span class="ln">公共・民間のサービスは段階ごとに別々に存在します。</span><span class="ln">Hi Silver AI は代行せず、ご本人の同意でその間をつなぎます。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>段階</th><th>既存のサービス</th><th>残るすき間</th><th class="hs">Hi Silver AI がつなぐもの</th></tr></thead>
     <tbody>
-      <tr><td><b>見守り</b></td><td>緊急安全安心サービス（火災・活動の感知、119 への連携、約 27 万世帯）<br>AI 安否確認電話（自治体・通信会社・Naver CLOVA CareCall など）</td><td>記録が機関ごとに散らばり、家族・病院とつながらない</td><td>安否・服薬・変化の記録を一か所に · 同意範囲のみご家族に要約</td></tr>
-      <tr><td><b>危機</b></td><td>109 自殺予防相談電話 · 精神健康福祉センター<br>警察・消防 → 自殺予防センターへの情報提供（2022.8～）</td><td>ご本人から先に連絡するのは難しい</td><td>危険な兆候を検証し迅速な予防/備えの措置 · 同意後に 109 へ連携</td></tr>
-      <tr><td><b>孤立</b></td><td>孤独死予防法（2024.3～） · 自治体による孤独死リスク者の発掘</td><td>50・60 代の中高年は発掘の網から漏れやすい</td><td>中高年・初老期から利用 · 自治体事業との連携（B2G）</td></tr>
-      <tr><td><b>認知症への備え</b></td><td>認知症安心センター · 認知症安心信託 · 成年後見</td><td>認知機能があるうちに前もって整理できない</td><td>日常の変化の記録 · 検診・信託・後見の相談準備</td></tr>
-      <tr><td><b>医療</b></td><td>「私の健康記録」アプリ（提供医療機関 1,269 か所、2025 年 12 月）<br>個人情報送信要求権（2025.3～）</td><td>受け取った記録を受診・保険・家族に活かしにくい</td><td>受診用 1 枚要約 · 保険請求の準備 · ご家族への報告</td></tr>
-      <tr><td><b>保険</b></td><td>実損保険請求の電算化（病院 2024.10～、医院・薬局 2025.10～）</td><td>契約・特約との照合はご本人任せ</td><td>契約と書類の照合 · 請求可能な項目の案内</td></tr>
-      <tr><td><b>葬儀</b></td><td>互助会 · 葬儀場 · 身寄りのない死亡者の公営葬儀</td><td>故人の意思・連絡先・書類が家族の手元にない</td><td>葬儀の意向・連絡する人を事前に整理 · 指定者への通知</td></tr>
-      <tr><td><b>相続・行政</b></td><td>安心相続ワンストップサービス（金融・負債・税金・年金・不動産・自動車の一括照会）</td><td>申請の期限・順序がわからない</td><td>死亡届と一緒に申請するよう案内 · 期限の通知</td></tr>
-      <tr><td><b>デジタル遺産</b></td><td>Samsung・Apple の故人アカウント管理連絡先の指定 · Kakao の追悼・削除</td><td>事前に指定しないと遺族が開けない · 韓国国内法に根拠がない</td><td>生前の指定案内 · デジタル遺産の一覧 · Hi Coffer の金庫に保管</td></tr>
+      <tr><td data-label="段階"><b>見守り</b></td><td data-label="既存のサービス">緊急安全安心サービス（火災・活動の感知、119 への連携、約 27 万世帯）<br>AI 安否確認電話（自治体・通信会社・Naver CLOVA CareCall など）</td><td data-label="残るすき間">記録が機関ごとに散らばり、家族・病院とつながらない</td><td data-label="Hi Silver AI がつなぐもの">安否・服薬・変化の記録を一か所に · 同意範囲のみご家族に要約</td></tr>
+      <tr><td data-label="段階"><b>危機</b></td><td data-label="既存のサービス">109 自殺予防相談電話 · 精神健康福祉センター<br>警察・消防 → 自殺予防センターへの情報提供（2022.8～）</td><td data-label="残るすき間">ご本人から先に連絡するのは難しい</td><td data-label="Hi Silver AI がつなぐもの">危険な兆候を検証し迅速な予防/備えの措置 · 同意後に 109 へ連携</td></tr>
+      <tr><td data-label="段階"><b>孤立</b></td><td data-label="既存のサービス">孤独死予防法（2024.3～） · 自治体による孤独死リスク者の発掘</td><td data-label="残るすき間">50・60 代の中高年は発掘の網から漏れやすい</td><td data-label="Hi Silver AI がつなぐもの">中高年・初老期から利用 · 自治体事業との連携（B2G）</td></tr>
+      <tr><td data-label="段階"><b>認知症への備え</b></td><td data-label="既存のサービス">認知症安心センター · 認知症安心信託 · 成年後見</td><td data-label="残るすき間">認知機能があるうちに前もって整理できない</td><td data-label="Hi Silver AI がつなぐもの">日常の変化の記録 · 検診・信託・後見の相談準備</td></tr>
+      <tr><td data-label="段階"><b>医療</b></td><td data-label="既存のサービス">「私の健康記録」アプリ（提供医療機関 1,269 か所、2025 年 12 月）<br>個人情報送信要求権（2025.3～）</td><td data-label="残るすき間">受け取った記録を受診・保険・家族に活かしにくい</td><td data-label="Hi Silver AI がつなぐもの">受診用 1 枚要約 · 保険請求の準備 · ご家族への報告</td></tr>
+      <tr><td data-label="段階"><b>保険</b></td><td data-label="既存のサービス">実損保険請求の電算化（病院 2024.10～、医院・薬局 2025.10～）</td><td data-label="残るすき間">契約・特約との照合はご本人任せ</td><td data-label="Hi Silver AI がつなぐもの">契約と書類の照合 · 請求可能な項目の案内</td></tr>
+      <tr><td data-label="段階"><b>葬儀</b></td><td data-label="既存のサービス">互助会 · 葬儀場 · 身寄りのない死亡者の公営葬儀</td><td data-label="残るすき間">故人の意思・連絡先・書類が家族の手元にない</td><td data-label="Hi Silver AI がつなぐもの">葬儀の意向・連絡する人を事前に整理 · 指定者への通知</td></tr>
+      <tr><td data-label="段階"><b>相続・行政</b></td><td data-label="既存のサービス">安心相続ワンストップサービス（金融・負債・税金・年金・不動産・自動車の一括照会）</td><td data-label="残るすき間">申請の期限・順序がわからない</td><td data-label="Hi Silver AI がつなぐもの">死亡届と一緒に申請するよう案内 · 期限の通知</td></tr>
+      <tr><td data-label="段階"><b>デジタル遺産</b></td><td data-label="既存のサービス">Samsung・Apple の故人アカウント管理連絡先の指定 · Kakao の追悼・削除</td><td data-label="残るすき間">事前に指定しないと遺族が開けない · 韓国国内法に根拠がない</td><td data-label="Hi Silver AI がつなぐもの">生前の指定案内 · デジタル遺産の一覧 · Hi Coffer の金庫に保管</td></tr>
     </tbody>
   </table>
   <p class="note"><span class="ln">各サービスの利用条件は運営機関の基準に従います。</span></p>
@@ -482,14 +483,14 @@ footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;
   <div class="kicker">Plan</div>
   <h2>ご利用形態</h2>
   <p class="lead"><span class="ln">基本機能は無料です。</span><span class="ln">生活が困難な方はすべての機能を無料で利用できます。</span></p>
-  <table>
+  <table class="stk">
     <thead><tr><th>区分</th><th>提供内容</th><th>形態</th></tr></thead>
     <tbody>
-      <tr><td><b>試験版</b></td><td>ベータ（β）版の全機能</td><td>無料</td></tr>
-      <tr><td><b>基本</b></td><td>安否確認 · 服薬リマインダー · 受診準備の要約 · 人生整理の一覧</td><td>無料</td></tr>
-      <tr><td class="sc"><b>社会的弱者</b><span class="sq">（支援）</span></td><td>サブスクリプション機能を含む全機能</td><td>無料</td></tr>
-      <tr><td class="sc"><b>サブスクリプション</b><span class="sq">（定期）</span></td><td>ご家族への報告 · Hi Coffer 金庫 · マイデータ連携 · 保険請求の準備</td><td>有料</td></tr>
-      <tr><td class="sc"><b>機関</b><span class="sq">（契約）</span></td><td>病院・介護施設・互助会・銀行向け管理画面</td><td>要相談</td></tr>
+      <tr><td data-label="区分"><b>試験版</b></td><td data-label="提供内容">ベータ（β）版の全機能</td><td data-label="形態">無料</td></tr>
+      <tr><td data-label="区分"><b>基本</b></td><td data-label="提供内容">安否確認 · 服薬リマインダー · 受診準備の要約 · 人生整理の一覧</td><td data-label="形態">無料</td></tr>
+      <tr><td class="sc" data-label="区分"><b>社会的弱者</b><span class="sq">（支援）</span></td><td data-label="提供内容">サブスクリプション機能を含む全機能</td><td data-label="形態">無料</td></tr>
+      <tr><td class="sc" data-label="区分"><b>サブスクリプション</b><span class="sq">（定期）</span></td><td data-label="提供内容">ご家族への報告 · Hi Coffer 金庫 · マイデータ連携 · 保険請求の準備</td><td data-label="形態">有料</td></tr>
+      <tr><td class="sc" data-label="区分"><b>機関</b><span class="sq">（契約）</span></td><td data-label="提供内容">病院・介護施設・互助会・銀行向け管理画面</td><td data-label="形態">要相談</td></tr>
     </tbody>
   </table>
   <ul class="ticks"><li>HIVEN が供給・提供します。</li></ul>

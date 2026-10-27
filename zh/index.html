@@ -116,6 +116,9 @@ footer .wrap>a{justify-self:end}
 .motto-ko span{display:block}
 .tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
 .card.off h3,.card.off p{color:#B8BCC6}
+.card .go.off{color:#B8BCC6;cursor:default}
+.card.pair{grid-column:1/-1;border:2px solid #F29AD0}
+.card.off h3 .tag{color:#B8BCC6;border-color:#D8DBE3}
 .stat .num{font-size:44px;font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat .num small{font-size:20px}
 .day{margin-top:36px;border-left:3px solid var(--c2);padding-left:22px}
@@ -414,7 +417,7 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
       <tr><td data-label="项目"><b>殡葬</b></td><td data-label="运营现状">2024 年死亡 358,569 人 · 火化炉 400 座 · 火化率 94.4%</td><td class="nl" data-label=""><span class="mlab"><span class=\"bn\">Hi Silver AI Agent</span></span>火化预约顺序 · 传达殡葬意愿</td></tr>
     </tbody>
   </table>
-  <p class="note"><span class="ln">数值以标注时点为准，官方发布更新后将随之修改。</span></p>
+  <p class="note"><span class="ln">数值以标注时点为准，官方数据发布后将予以更新。</span></p>
 </div></section>
 <section class="sec" id="link"><div class="wrap">
   <div class="kicker">Hi Silver × Hi Coffer</div>
@@ -492,18 +495,19 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
 <section class="sec" id="how"><div class="wrap">
   <div class="kicker">How it works</div>
   <h2>使用流程</h2>
-  <p class="lead"><span class="ln">第 1~6 步是开始·记录，</span><span class="ln">第 7~12 步是准备·保管。</span><span class="ln">所有过程均遵从本人的同意与决定。</span></p>
+  <p class="lead"><span class="ln">第 1~6 步是开始·记录，</span><span class="ln">第 7~12 步是准备·保管。</span><span class="ln">第 #4、#11、#12 步需订阅 Hi Coffer AI Agent 方可使用。</span><span class="ln">所有过程均遵从本人的同意与决定。</span></p>
   <ol class="flow">
-    <li>安装·同意</li><li>指定监护人</li><li>开始问候</li><li>导入记录<br><small>MyData</small></li><li>服药提醒</li><li>变化检查</li>
+    <li>安装·同意</li><li>指定监护人</li><li>开始问候</li><li class="v">导入记录<br><small>mydata</small><br><small><span class="hcs">Hi Coffer</span>（监管沙盒）</small></li><li>服药提醒</li><li>变化检查</li>
     <li>就诊准备</li><li>保险·福利指引</li><li>人生整理</li><li>人生终章笔记<br><small>殡葬·紧急联系</small></li><li class="v">存入保险库<br><small class="hcs">Hi Coffer</small></li><li class="v">指定人<br><small><span class="hcs">Hi Coffer</span> (每年检查 1 次)</small></li>
   </ol>
   <div class="grid g3">
-    <div class="card"><h3>不做诊断</h3><p><span>不判断病名或数值。</span><span>指引向医生·药剂师确认。</span></p></div>
+    <div class="card"><h3>不做诊断</h3><p><span>不判断病名或数值。</span><span>指引向医生·药剂师就诊·取得处方。</span></p></div>
     <div class="card"><h3>危险征兆核实·预防</h3><p><span>核实危险征兆，</span><span>迅速制定预防/应对措施。</span></p></div>
     <div class="card"><h3>不代为办理</h3><p><span>不代办法律·金融·行政事务。</span><span>说明程序与文件。</span></p></div>
     <div class="card"><h3>记录留在我的设备内</h3><p><span>健康·金融记录保存在设备内保险库。</span><span>不向外部发送原件。</span></p></div>
     <div class="card"><h3>本人同意优先</h3><p><span>仅与监护人共享同意范围内的内容。</span><span>同意可随时撤回。</span></p></div>
     <div class="card"><h3>AI 只做指引</h3><p><span>标明由 AI 生成的回答。</span><span>由本人作决定。</span></p></div>
+    <div class="card pair"><h3>Hi Coffer AI Agent · <a href="https://hicoffer.ai/zh/">hicoffer.ai</a></h3><p><span>可独立使用。</span><span>※ Hi Silver AI Agent 的特定功能（#4、#11、#12）须与 Hi Coffer AI Agent 联动，</span><span>两者同用，才能一路延续到人生终点。</span></p></div>
   </div>
 </div></section>
 <section class="sec alt" id="plan"><div class="wrap">
@@ -524,7 +528,7 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
 </div></section>
 <section class="sec" id="road"><div class="wrap">
   <div class="kicker">Roadmap</div>
-  <h2>服务日程</h2>
+  <h2>发布日程</h2>
   <div class="grid g3">
     <div class="card"><h3>第 1 阶段 · <span class="tag">2027 年下半年</span></h3><p><span>就诊准备 · 保险理赔准备 · 人生整理</span><span>免费发布试用版。</span></p></div>
     <div class="card"><h3>第 2 阶段 · <span class="tag">2027 年内</span></h3><p><span>问候 · 防诈骗保护 · 在监护人之间试运行。</span></p></div>
@@ -536,18 +540,18 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
   <div class="kicker">Join</div>
   <h2>加入我们</h2>
   <div class="grid g3">
-    <div class="card"><h3>本人·家人</h3><p><span>监护人预先登记</span><span>抢先获取试用版发布消息。</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%E7%9B%91%E6%8A%A4%E4%BA%BA%E9%A2%84%E5%85%88%E7%99%BB%E8%AE%B0">预先登记 →</a></div>
-    <div class="card"><h3>医院·养老机构</h3><p><span>出院后衔接 · 监护人报告</span><span>衔接实损保险理赔准备</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%E6%9C%BA%E6%9E%84%E5%90%88%E4%BD%9C">合作咨询 →</a></div>
-    <div class="card"><h3>地方政府·公共机构</h3><p><span>对接孤独死预防项目</span><span>弱势群体全部功能免费</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%E5%85%AC%E5%85%B1%E5%90%88%E4%BD%9C">公共合作咨询 →</a></div>
+    <div class="card"><h3>本人·家人</h3><p><span>监护人预先登记</span><span>抢先获取试用版发布消息。</span></p><span class="go off">预先登记 →</span></div>
+    <div class="card"><h3>医院·养老机构</h3><p><span>出院后衔接 · 监护人报告</span><span>衔接实损保险理赔准备</span></p><span class="go off">合作咨询 →</span></div>
+    <div class="card"><h3>地方政府·公共机构</h3><p><span>对接孤独死预防项目</span><span>弱势群体全部功能免费</span></p><span class="go off">公共合作咨询 →</span></div>
   </div>
 </div></section>
 <section class="sec alt" id="team"><div class="wrap">
   <div class="kicker">Why HIVEN</div>
   <h2>既懂医院系统、又懂殡葬现场的团队</h2>
   <div class="grid g3">
-    <div class="card"><h3>公共/医疗 IT·ICT 经历</h3><p><span>医院·诊所病历信息管理/运营</span><span>了解医疗数据的流向。</span></p></div>
+    <div class="card"><h3>公共/医疗 IT·ICT 经历</h3><p><span>医院·诊所病历信息处理/管理/运营</span><span>国民参与团·政府/协议体推进（实证项目）</span><span>了解医疗数据的记录/保管/联动流程。</span></p></div>
     <div class="card"><h3>殡葬指导师</h3><p><span>临终·殡葬·遗物处理情境的现场经验</span><span>以真诚的姿态与庄重的态度应对。</span></p></div>
-    <div class="card"><h3>与 Hi Coffer 一体</h3><p><span>信息/记录原件存于 Hi Coffer 保险库，</span><span>连接与执行由 Hi Silver AI Agent 负责。</span></p></div>
+    <div class="card"><h3>HIVEN 一体化体系</h3><p><span>信息/记录原件存于 Hi Coffer 保险库，</span><span>由 Hi Silver AI Agent 负责，HIVEN 统管线上线下。</span></p></div>
   </div>
 </div></section>
 <section class="sec dl" id="download"><div class="wrap">

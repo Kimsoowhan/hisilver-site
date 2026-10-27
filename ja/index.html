@@ -117,6 +117,9 @@ footer .wrap>a{justify-self:end}
 .dim{color:var(--faint)}
 .tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
 .card.off h3,.card.off p{color:#B8BCC6}
+.card .go.off{color:#B8BCC6;cursor:default}
+.card.pair{grid-column:1/-1;border:2px solid #F29AD0}
+.card.off h3 .tag{color:#B8BCC6;border-color:#D8DBE3}
 .stat .num{font-size:44px;font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat .num small{font-size:20px}
 .day{margin-top:36px;border-left:3px solid var(--c2);padding-left:22px}
@@ -416,7 +419,7 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
       <tr><td data-label="項目"><b>葬祭</b></td><td data-label="運営状況">2024 年の死亡者 358,569 人 · 火葬炉 400 基 · 火葬率 94.4%</td><td class="nl" data-label=""><span class="mlab"><span class=\"bn\">Hi Silver AI Agent</span></span>火葬予約の順序 · 葬儀の意向を伝達</td></tr>
     </tbody>
   </table>
-  <p class="note"><span class="ln">数値は表記した時点のもので、公式発表が更新されたら書き換えます。</span></p>
+  <p class="note"><span class="ln">数値は表記した時点のもので、公式データが発表されたら更新します。</span></p>
 </div></section>
 <section class="sec" id="link"><div class="wrap">
   <div class="kicker">Hi Silver × Hi Coffer</div>
@@ -494,18 +497,19 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
 <section class="sec" id="how"><div class="wrap">
   <div class="kicker">How it works</div>
   <h2>ご利用の流れ</h2>
-  <p class="lead"><span class="ln">1～6 段階は開始・記録、</span><span class="ln">7～12 段階は準備・保管です。</span><span class="ln">すべての過程はご本人の同意と決定に従います。</span></p>
+  <p class="lead"><span class="ln">1～6 段階は開始・記録、</span><span class="ln">7～12 段階は準備・保管です。</span><span class="ln">#4・#11・#12 は Hi Coffer AI Agent の購読時に利用できます。</span><span class="ln">すべての過程はご本人の同意と決定に従います。</span></p>
   <ol class="flow">
-    <li>インストール・同意</li><li>ご家族の指定</li><li>安否確認の開始</li><li>記録の取り込み<br><small>マイデータ</small></li><li>服薬リマインダー</li><li>変化のチェック</li>
+    <li>インストール・同意</li><li>ご家族の指定</li><li>安否確認の開始</li><li class="v">記録の取り込み<br><small>mydata</small><br><small><span class="hcs">Hi Coffer</span>（規制サンドボックス）</small></li><li>服薬リマインダー</li><li>変化のチェック</li>
     <li>受診の準備</li><li>保険・福祉の案内</li><li>人生の整理</li><li>エンディングノート<br><small>葬儀・緊急連絡</small></li><li class="v">金庫に保管<br><small class="hcs">Hi Coffer</small></li><li class="v">指定者<br><small><span class="hcs">Hi Coffer</span> (年 1 回の点検)</small></li>
   </ol>
   <div class="grid g3">
-    <div class="card"><h3>診断しない</h3><p><span>病名や数値を判断しません。</span><span>医師・薬剤師に確認するよう案内します。</span></p></div>
+    <div class="card"><h3>診断しない</h3><p><span>病名や数値を判断しません。</span><span>医師・薬剤師から診療・処方を受けるよう案内します。</span></p></div>
     <div class="card"><h3>危険兆候の検証・予防</h3><p><span>危険な兆候を検証し、</span><span>迅速な予防/備えの措置を講じます。</span></p></div>
     <div class="card"><h3>代行しない</h3><p><span>法律・金融・行政は代行しません。</span><span>手続きと書類を案内します。</span></p></div>
     <div class="card"><h3>記録は自分の端末の中に</h3><p><span>健康・金融の記録は端末内の金庫に置きます。</span><span>原本を外部に送りません。</span></p></div>
     <div class="card"><h3>ご本人の同意が先</h3><p><span>同意した範囲だけをご家族と共有します。</span><span>同意はいつでも撤回できます。</span></p></div>
     <div class="card"><h3>AI は案内だけ</h3><p><span>AI が作成した回答であることを表示します。</span><span>決定はご本人が行います。</span></p></div>
+    <div class="card pair"><h3>Hi Coffer AI Agent · <a href="https://hicoffer.ai/ja/">hicoffer.ai</a></h3><p><span>単独で利用できます。</span><span>※ Hi Silver AI Agent の特定機能（#4・#11・#12）は Hi Coffer AI Agent との連携が必要なため、</span><span>併用すれば人生の最期まで一つの流れでつながります。</span></p></div>
   </div>
 </div></section>
 <section class="sec alt" id="plan"><div class="wrap">
@@ -526,7 +530,7 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
 </div></section>
 <section class="sec" id="road"><div class="wrap">
   <div class="kicker">Roadmap</div>
-  <h2>サービス日程</h2>
+  <h2>配布日程</h2>
   <div class="grid g3">
     <div class="card"><h3>第 1 段階 · <span class="tag">2027 年下半期</span></h3><p><span>受診の準備 · 保険請求の準備 · 人生の整理</span><span>試験版を無料で配布します。</span></p></div>
     <div class="card"><h3>第 2 段階 · <span class="tag">2027 年内</span></h3><p><span>安否確認 · 詐欺対策 · 保護者間で試験運用します。</span></p></div>
@@ -538,18 +542,18 @@ footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-po
   <div class="kicker">Join</div>
   <h2>ご参加</h2>
   <div class="grid g3">
-    <div class="card"><h3>ご本人・ご家族</h3><p><span>ご家族の事前登録</span><span>試験版リリースのお知らせをいち早く受け取れます。</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%E3%81%94%E5%AE%B6%E6%97%8F%E3%81%AE%E4%BA%8B%E5%89%8D%E7%99%BB%E9%8C%B2">事前登録 →</a></div>
-    <div class="card"><h3>病院・介護施設</h3><p><span>退院後の連携 · ご家族への報告</span><span>実損保険請求準備の連携</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%E6%A9%9F%E9%96%A2%E6%8F%90%E6%90%BA">提携のお問い合わせ →</a></div>
-    <div class="card"><h3>自治体・公共機関</h3><p><span>孤独死予防事業との連携</span><span>社会的弱者はすべての機能が無料</span></p><a class="go" href="mailto:contact@hiven.co.kr?subject=Hi%20Silver%20AI%20%E5%85%AC%E5%85%B1%E9%80%A3%E6%90%BA">公共連携のお問い合わせ →</a></div>
+    <div class="card"><h3>ご本人・ご家族</h3><p><span>ご家族の事前登録</span><span>試験版リリースのお知らせをいち早く受け取れます。</span></p><span class="go off">事前登録 →</span></div>
+    <div class="card"><h3>病院・介護施設</h3><p><span>退院後の連携 · ご家族への報告</span><span>実損保険請求準備の連携</span></p><span class="go off">提携のお問い合わせ →</span></div>
+    <div class="card"><h3>自治体・公共機関</h3><p><span>孤独死予防事業との連携</span><span>社会的弱者はすべての機能が無料</span></p><span class="go off">公共連携のお問い合わせ →</span></div>
   </div>
 </div></section>
 <section class="sec alt" id="team"><div class="wrap">
   <div class="kicker">Why HIVEN</div>
   <h2>病院システムと葬儀の現場の両方を知るチーム</h2>
   <div class="grid g3">
-    <div class="card"><h3>公共/医療 IT・ICT の経歴</h3><p><span>病院・医院の診療録情報の管理/運用</span><span>医療データの流れを知っています。</span></p></div>
+    <div class="card"><h3>公共/医療 IT・ICT の経歴</h3><p><span>病院・医院の診療録情報の処理/管理/運用</span><span>国民参加団・政府/協議体の推進（実証事業）</span><span>医療データの記録/保管/連携の流れを知っています。</span></p></div>
     <div class="card"><h3>葬儀ディレクター</h3><p><span>臨終・葬儀・遺品処理の状況での現場経験</span><span>誠実な姿勢と厳粛な態度で対応します。</span></p></div>
-    <div class="card"><h3>Hi Coffer と一体</h3><p><span>情報/記録の原本は Hi Coffer の金庫に、</span><span>連携と実行は Hi Silver AI Agent が担います。</span></p></div>
+    <div class="card"><h3>HIVEN 一元化体制</h3><p><span>情報/記録の原本は Hi Coffer の金庫に、</span><span>Hi Silver AI Agent が担い、HIVEN がオン・オフラインをすべて統制します。</span></p></div>
   </div>
 </div></section>
 <section class="sec dl" id="download"><div class="wrap">

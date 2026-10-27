@@ -1,8 +1,192 @@
-<!doctype html><html lang="ko"><head><meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>이용약관 및 정책 · HIVEN</title>
-<style>body{font-family:"Pretendard",-apple-system,"Malgun Gothic",sans-serif;color:#1b2140;background:#fff;margin:0;line-height:1.75}main{max-width:820px;margin:0 auto;padding:40px 16px 64px}h1{color:#10184A;font-size:1.7rem}h2{color:#10184A;font-size:1.15rem;margin-top:2em}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border:1px solid #d9dcea;padding:8px;text-align:left;vertical-align:top}th{background:#f3f4fa}a{color:#2343D7}.note{color:#555;font-size:.9rem}nav.pol{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 8px}nav.pol a{border:1px solid #D8DCEB;border-radius:999px;padding:6px 12px;font-size:14px;color:#2343D7;text-decoration:none}section{scroll-margin-top:16px;border-top:1px solid #E3E6F0;padding-top:8px;margin-top:28px}h3{color:#10184A;font-size:1.02rem;margin-top:1.4em}.top{position:fixed;right:16px;bottom:16px;background:#2343D7;color:#fff;border-radius:999px;padding:10px 14px;text-decoration:none;font-size:14px}</style></head><body id="top"><main>
-<p><a href="./">← Hi Silver AI Agent</a></p>
-<h1>이용약관 및 정책</h1><p class="note">HIVEN의 모든 웹사이트에 공통으로 적용됩니다.</p>
-<nav class="pol"><a href="#terms">이용약관</a><a href="#privacy">개인정보 처리방침</a><a href="#usage">이용 정책</a><a href="#ai">AI 이용 원칙</a><a href="#cookies">쿠키·추적</a><a href="#security">보안·취약점 신고</a><a href="#regions">이용 대상·지역</a><a href="#contact">문의·변경 안내</a></nav><section id="terms"><h2>1. 이용약관</h2><p class="note">시행일 2026-10-27 · 적용 대상: HIVEN이 운영하는 웹사이트(hiven.co.kr · hicoffer.ai · hisilver.ai · hiven.ai.kr)와 베타(테스트) 버전으로 배포되는 AI 에이전트</p>
+<!doctype html>
+<html lang="ko">
+<head><meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>이용약관 및 정책 · HIVEN</title>
+<meta name="description" content="Hi Silver AI Agent는 노령층·초로기·가족이 의료·금융 마이데이터를 스스로 관리하고, 진료·보험 청구·치매 대비·생애 정리에 필요한 곳에만 제공하도록 돕는 AI 에이전트입니다.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="alternate" hreflang="ko" href="https://hisilver.ai/">
+<link rel="alternate" hreflang="en" href="https://hisilver.ai/en/">
+<link rel="alternate" hreflang="ru" href="https://hisilver.ai/ru/">
+<link rel="alternate" hreflang="zh-Hans" href="https://hisilver.ai/zh/">
+<link rel="alternate" hreflang="ja" href="https://hisilver.ai/ja/">
+<link rel="alternate" hreflang="x-default" href="https://hisilver.ai/">
+<style>
+@font-face{font-family:"HanjaMotto";font-weight:400 800;font-display:swap;src:url(assets/fonts/hanja-motto.woff2) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url(assets/fonts/Pretendard-Regular.woff2?v=20261024f) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:600;font-display:swap;src:url(assets/fonts/Pretendard-SemiBold.woff2?v=20261024f) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url(assets/fonts/Pretendard-Bold.woff2?v=20261024f) format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:800;font-display:swap;src:url(assets/fonts/Pretendard-ExtraBold.woff2?v=20261024f) format("woff2")}
+:root{--navy:#10184A;--ink:#1A1F36;--sub:#4A5070;--faint:#7A8099;--line:#E3E6F0;--bg:#fff;--bg2:#F5F7FC;--c1:#088CF5;--c2:#2343D7;--c3:#7711FC;--grad:linear-gradient(120deg,var(--c1),var(--c2) 55%,var(--c3));--w:1120px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#E6E9F5;--sub:#B4BAD3;--faint:#8A90AA;--line:#2A3160;--bg:#0B1036;--bg2:#121947}}
+:root[data-theme="dark"]{--ink:#E6E9F5;--sub:#B4BAD3;--faint:#8A90AA;--line:#2A3160;--bg:#0B1036;--bg2:#121947}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:"Pretendard",system-ui,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;z-index:10;background:rgba(16,24,74,.94);backdrop-filter:blur(10px);color:#fff}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}
+.brand img{height:30px;width:30px}
+.brand .bt{line-height:1.1}.brand .nw{white-space:nowrap;color:var(--faint)}
+nav{display:flex;gap:24px;font-size:15px;font-weight:600;color:#C9D2F5}
+nav a:hover{color:#fff}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;text-align:center}
+.hero:before{content:"";position:absolute;inset:auto -10% -40% 40%;height:120%;background:radial-gradient(closest-side,rgba(119,17,252,.32),transparent);pointer-events:none}
+.hero-in{position:relative;padding:88px 24px 96px}
+.halo{position:relative;display:block;width:100%;max-width:240px;margin:0 auto 40px}
+.halo img{position:relative;z-index:1;width:100%;filter:drop-shadow(0 20px 60px rgba(8,140,245,.35))}
+.halo:before,.halo:after{content:"";position:absolute;pointer-events:none;z-index:0;border-radius:50%}
+.halo:before{inset:-45%;background:radial-gradient(closest-side,rgba(120,190,255,.30),rgba(8,140,245,.19) 30%,rgba(35,67,215,.11) 56%,rgba(119,17,252,.05) 80%,rgba(119,17,252,0) 100%)}
+.halo:after{inset:-70%;background:repeating-conic-gradient(from 6deg,rgba(170,200,255,.08) 0deg 4deg,rgba(170,200,255,0) 4deg 16deg);-webkit-mask:radial-gradient(closest-side,#000 20%,rgba(0,0,0,.4) 46%,transparent 88%);mask:radial-gradient(closest-side,#000 20%,rgba(0,0,0,.4) 46%,transparent 88%);filter:blur(6px)}
+.halo{isolation:isolate}
+.halo:after{z-index:-1}
+/* 심볼 바로 뒤 진한 원판 층(후광과 심볼 사이) - 대표님 선택 18:43 */
+.halo:before{background:radial-gradient(closest-side,rgba(3,5,22,.82) 36%,rgba(3,5,22,.55) 46%,rgba(3,5,22,0) 56%),radial-gradient(closest-side,rgba(120,190,255,.30),rgba(8,140,245,.19) 30%,rgba(35,67,215,.11) 56%,rgba(119,17,252,.05) 80%,rgba(119,17,252,0) 100%)}
+@media (max-width:600px){.card p span{white-space:normal}.st{grid-template-columns:44px 1fr}.st p{grid-column:2}.halo{max-width:150px}}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9FB4FF}
+.motto-ko{margin-top:22px;font-size:46px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.motto-ko span{display:inline-block}
+.motto-ko b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.motto-en{margin-top:18px;font-size:24px;font-weight:600;color:#C9D2F5}
+.motto-hj{margin-top:10px;font-size:24px;font-weight:600;color:var(--faint);letter-spacing:.12em;font-family:"Pretendard","HanjaMotto",sans-serif}
+.hero p.lead{margin:30px auto 0;max-width:36em;color:#C9D2F5;font-size:18px}
+.cta{display:flex;gap:12px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;font-weight:700}
+.btn.p{background:var(--grad);color:#fff}
+.btn.g{border:1px solid rgba(255,255,255,.4);color:#fff}.btn.d{border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.38);cursor:default;pointer-events:none}
+.sec{padding:88px 0}
+.sec.alt{background:var(--bg2)}
+.kicker{font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--c1);margin-bottom:10px}
+h2{font-size:32px;line-height:1.3;font-weight:800}
+h3{font-size:19px;font-weight:700}
+.lead{margin-top:14px;font-size:18px;color:var(--sub)}.ln{display:block;white-space:nowrap}
+.grid{display:grid;gap:18px;margin-top:36px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:24px}
+.sec.alt .card{background:var(--bg)}a.card{border:2px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,var(--grad) border-box}a.card:hover{filter:brightness(1.04)}
+.card p{margin-top:8px;color:var(--sub);font-size:16px}.card p span{display:block;white-space:nowrap}
+.card b.n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#fff;align-items:center;justify-content:center;font-size:15px;margin-bottom:12px}
+
+.motto3 .card p{margin-top:14px}.motto3 .card .en{color:var(--c2);font-weight:600;font-size:16px;margin-top:2px}
+.steps{margin-top:36px;border-top:1px solid var(--line)}.st{display:grid;grid-template-columns:44px 96px 1fr;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}.st .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#fff;align-items:center;justify-content:center;font-size:16px}.st p{color:var(--sub);font-size:16px}
+.flow{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:32px;counter-reset:s}
+.flow li{border:1px solid var(--line);border-radius:12px;padding:14px;font-size:16px;background:var(--bg)}
+.flow li{position:relative}.flow li:after{content:"#";position:absolute;top:14px;left:14px;width:.7em;font-weight:800;font-size:18px;line-height:1.7;color:#B8BCC6}
+.flow li:before{counter-increment:s;content:counter(s);display:block;padding-left:.7em;font-weight:800;color:var(--c2);font-size:18px}
+.flow li.v{border-color:var(--c3)}
+.note{margin-top:14px;font-size:14px;color:var(--faint)}
+.arch{margin-top:36px;border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--bg)}
+.arch .row{display:grid;gap:12px;margin-top:12px}
+.arch .lab{font-size:14px;font-weight:700;color:var(--faint);letter-spacing:.08em}
+.box{border-radius:10px;padding:12px 14px;font-size:16px;border:1px solid var(--line)}
+.box.core{background:var(--grad);color:#fff;border:0;font-weight:700;text-align:center}
+.box small{display:block;color:var(--sub);font-size:14px}
+.box.core small{color:#E8ECFF}
+table{width:100%;border-collapse:collapse;margin-top:32px;font-size:16px}
+th,td{border-bottom:1px solid var(--line);padding:14px 12px;text-align:left;vertical-align:top}
+th{font-size:14px;color:var(--faint);font-weight:700}
+td b{color:var(--ink)}
+.tag{display:inline-block;font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:999px;border:1px solid var(--c2);color:var(--c2);margin-left:6px;vertical-align:2px}
+.ticks{list-style:none;margin-top:10px}
+.ticks li{padding-left:22px;position:relative;margin-top:6px;color:var(--sub);font-size:16px}
+.ticks li:before{content:"";position:absolute;left:4px;top:.7em;top:calc(.5lh - 5px);width:8px;height:8px;border-radius:50%;background:var(--grad)}
+.dl{background:var(--navy);color:#fff;text-align:center}
+.dl h2{color:#fff}.dl .lead{color:#C9D2F5;margin-left:auto;margin-right:auto}
+footer{padding:36px 0;font-size:14px;color:var(--faint);border-top:1px solid var(--line)}
+footer .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+footer .fm{font-size:21px;font-weight:700;text-align:center;color:#B8BCC6}
+footer .wrap>a{justify-self:end}
+@media(max-width:600px){footer .wrap{grid-template-columns:1fr;justify-items:center;text-align:center}footer .wrap>a{justify-self:center}}
+@media (max-width:900px){.g4,.g5{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(3,1fr)}nav{display:none}}
+@media (max-width:600px){.card p span{white-space:normal}.st{grid-template-columns:44px 1fr}.st p{grid-column:2}.wrap{padding:0 16px}.g3,.g4,.g5{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}.motto-ko{font-size:32px}.motto-en,.motto-hj{font-size:18px}h2{font-size:26px}.sec{padding:64px 0}table{font-size:14px}th,td{padding:10px 6px}}
+@media (max-width:1100px){.ln,.card p span{white-space:normal}}
+@media (max-width:600px){.arch .row{grid-template-columns:1fr !important}}
+.motto-en .one{font-size:2em;font-weight:800;color:#7fe3ff;line-height:1;vertical-align:-.12em}
+@media(max-width:600px){.motto-en .s{display:block}}
+.langs{margin-left:14px;font-size:14px;color:var(--faint);white-space:nowrap}.langs a{margin:0!important}.langs b{color:#fff}
+.dim{color:var(--faint)}
+.tag.tbd{border-color:#C9D8FF;color:#A9C1F5;background:transparent;cursor:default}
+.card.off h3,.card.off p{color:#B8BCC6}
+.card .go.off{color:#B8BCC6;cursor:default}
+.card.pair{grid-column:1/-1;border:2px solid #F29AD0}
+.card.off h3 .tag{color:#B8BCC6;border-color:#D8DBE3}
+.stat .num{font-size:44px;font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .num small{font-size:20px}
+.day{margin-top:36px;border-left:3px solid var(--c2);padding-left:22px}
+.day .t{position:relative;padding:4px 0 18px}
+.day .t:before{content:"";position:absolute;left:-30px;top:11px;width:13px;height:13px;border-radius:50%;background:var(--grad)}
+.day .t b{display:block;font-size:14px;color:var(--c2);letter-spacing:.06em}
+.day .t h3{margin-top:2px}.day .t p{color:var(--sub);font-size:16px}
+.day .t.alert:before{background:#E5484D}.day .t.alert b{color:#E5484D}
+td.mk{text-align:center;font-weight:800;font-size:18px}td.mk.y{color:var(--c2)}td.mk.n{color:#B8BCC6}
+th.hs{color:var(--c2)}
+.card .go{display:inline-block;margin-top:14px;font-weight:700;color:var(--c2)}
+td.sc{text-align:center;vertical-align:top;line-height:1.3;white-space:nowrap}td.sc b,td.sc .sq{display:block}td.sc .sq{color:#B8BCC6;font-weight:700}
+footer .fr{justify-self:end;text-align:right;display:flex;flex-direction:column;gap:6px}footer .fmail{color:#D3D6DE}
+@media(max-width:600px){footer .fr{justify-self:center;text-align:center;align-items:center}}
+.chains{display:grid;gap:14px;margin-top:28px}
+.chain{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg)}
+.chain ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.chain li{position:relative;border-radius:10px;padding:10px 12px;font-size:15px;line-height:1.5;background:var(--bg2);color:var(--sub)}
+.chain li i{display:block;font-style:normal;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--faint);margin-bottom:2px}
+.chain li.off{border:1px dashed var(--faint);background:transparent}
+.chain li.hc i{color:var(--c1)}.chain li.hs{background:var(--grad);color:#fff}.chain li.hs i{color:#E8ECFF}
+.chain li:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--c2);z-index:1}
+@media(max-width:900px){.chain ol{grid-template-columns:1fr}.chain li:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px;transform:none}}
+@media (max-width:960px){table.stk thead{display:none}table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}table.stk tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:12px;background:var(--bg)}table.stk td{border:0;padding:6px 0;text-align:left!important;white-space:normal}table.stk td:first-child{font-size:16px;padding-top:2px}table.stk td:not(:first-child):before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}table.stk td.sc b,table.stk td.sc .sq{display:inline;margin-right:4px}}
+.rel{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(8px,2vw,18px);align-items:stretch;margin-top:24px}
+.rel .node{border-radius:16px;padding:clamp(14px,2.4vw,24px);color:#fff;text-align:center}
+.rel .node h4{font-size:clamp(17px,2.2vw,22px);font-weight:800}
+.rel .node p{margin-top:6px;font-size:clamp(13px,1.6vw,15px);line-height:1.55;color:#E8ECFF}
+.rel .hc{background:linear-gradient(120deg,#088CF5,#2343D7)}.rel .hs{background:linear-gradient(120deg,#7711FC,#2343D7)}
+.rel .mid{display:flex;flex-direction:column;justify-content:center;gap:6px;min-width:clamp(90px,16vw,170px)}
+.rel .mid span{display:block;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:clamp(12px,1.4vw,13.5px);text-align:center;background:var(--bg);color:var(--sub);white-space:nowrap}
+.rel .mid span.r{color:var(--c3)}.rel .mid span.l{color:var(--c1)}
+@media(max-width:640px){.rel{grid-template-columns:1fr}.rel .mid{flex-direction:row;flex-wrap:wrap;justify-content:center}}
+.relfig{margin-top:22px;border:1px solid var(--line);border-radius:16px;background:var(--bg);padding:clamp(10px,2vw,22px)}
+.relsvg{display:block;width:100%;height:auto;font-family:inherit}
+.relsvg .c{fill:var(--bg2);stroke:var(--line)}.relsvg .u{fill:var(--bg);stroke:#2343D7;stroke-width:1.5}
+.relsvg .t{fill:var(--ink)}.relsvg .l{fill:var(--faint)}.relsvg .a{fill:#2343D7}
+.relsvg .al{stroke:#2343D7;stroke-width:2.5;fill:none}.relsvg .dl{stroke:#7A8099;stroke-width:1.6;stroke-dasharray:5 5;fill:none}
+.relsvg.tall{display:none;max-width:420px;margin:0 auto}
+@media(max-width:640px){.relsvg.wide{display:none}.relsvg.tall{display:block}}
+.top .wrap{max-width:1400px}
+nav{flex:1;justify-content:center;gap:clamp(10px,1.3vw,22px);font-size:14.5px;white-space:nowrap;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrollbar{display:none}
+nav a{flex:none}
+@media(max-width:1100px){nav{display:none}}
+.halolink{display:inline-block;cursor:pointer;position:relative;z-index:2}.halo{pointer-events:auto}
+.sec:not(.dark):not(.dl) h2{color:#10184A}.sec:not(.dark):not(.dl) h3{color:#10184A}.sec:not(.dark):not(.dl) .wrap>h3{color:#3949AB}
+th .bn{color:#2343D7}
+.mlab{display:none}.mlab .bn,td .bn{color:#2343D7}@media (max-width:960px){table.stk td.nl:before{content:none}.mlab{display:block;font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.04em}}
+h2 .nb{font-weight:400}
+th .bn.hc,.mlab .bn.hc,td .bn.hc{color:#5BB8F0}
+.flow .hcs{color:#5BB8F0}.flow li:nth-child(-n+6):before{color:#9CC9EF}.flow li:nth-child(n+7):nth-child(-n+10):before{color:#6FA9E6}.flow li:nth-child(n+11):before{color:#4A86DB}
+#plan table{table-layout:fixed}#plan thead th:first-child{width:15%}#plan thead th:last-child{width:9.5%}.card p span{overflow-wrap:anywhere}.grid .card p span{white-space:normal}#link .grid .card p,#silver .grid .card p{font-size:14px;letter-spacing:-.02em}</style>
+<style id="hfoot-css">
+footer.hfoot{padding:32px 0;border-top:1px solid rgba(128,136,160,.25);color:#8A90A0;font-size:14px}
+footer.hfoot .wrap.hf{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+footer.hfoot a{color:inherit;text-decoration:none}footer.hfoot a:hover{text-decoration:underline}
+footer.hfoot .hf-l{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+footer.hfoot .hf-r{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right}
+footer.hfoot .hf-m{font-size:21px;font-weight:700;color:#B8BCC6;text-align:center}
+footer.hfoot .hf-brand{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+footer.hfoot .hf-logo{display:block;width:79px;height:22px;background:currentColor;-webkit-mask:url(/assets/img/hiven-logo-h.png) no-repeat left center/contain;mask:url(/assets/img/hiven-logo-h.png) no-repeat left center/contain}
+footer.hfoot .hf-brand .kn{font-size:15px;line-height:1}
+@media (max-width:760px){footer.hfoot .wrap.hf{grid-template-columns:1fr;justify-items:center;text-align:center;gap:10px}
+footer.hfoot .hf-l,footer.hfoot .hf-r{display:contents}
+footer.hfoot .hf-brand{order:1}footer.hfoot .hf-copy{order:2}footer.hfoot .hf-pol{order:3}footer.hfoot .hf-m{order:4}footer.hfoot .hf-site{order:5}footer.hfoot .hf-mail{order:6}}
+</style>
+<style id="polw-css">.polw h1{font-size:clamp(1.6rem,3vw,2.2rem);margin:.2em 0 .4em}.polw h2{font-size:1.2rem;margin-top:1.8em}.polw h3{font-size:1.02rem;margin-top:1.3em}.polw table{border-collapse:collapse;width:100%;font-size:.95rem}.polw th,.polw td{border:1px solid #d9dcea;padding:8px;text-align:left;vertical-align:top}.polw .note{opacity:.75;font-size:.92rem}.polw nav.pol{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 8px}.polw nav.pol a{border:1px solid #D8DCEB;border-radius:999px;padding:6px 12px;font-size:14px;text-decoration:none}.polw section{scroll-margin-top:90px;border-top:1px solid #E3E6F0;padding-top:8px;margin-top:28px}.polw .pbtns{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 0}</style></head>
+<body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="./#top"><img src="assets/img/hiven-symbol.webp" alt=""><span class="bt">Hi Silver <span class="nw">AI Agent</span></span></a>
+  <nav><a href="./#funeral">장례</a><a href="./#service">서비스</a><a href="./#agent">에이전트</a><a href="./#data">마이데이터</a><a href="./#link">Hi Coffer 연동</a><a href="./#plan">이용 형태</a><a href="./#road">일정</a><a href="./#with">함께하기</a></nav><span class="langs"><b>한글</b> · <a href="/en/policies.html" hreflang="en" lang="en">EN</a> · <a href="/ru/policies.html" hreflang="ru" lang="ru">РУ</a> · <a href="/zh/policies.html" hreflang="zh-Hans" lang="zh-Hans">中文</a> · <a href="/ja/policies.html" hreflang="ja" lang="ja">日本</a></span>
+</div></header>
+<main id="main"><section class="sec polw" id="policy-top"><div class="wrap"><h1>이용약관 및 정책</h1><p class="note">HIVEN의 모든 웹사이트에 공통으로 적용됩니다.</p><nav class="pol"><a href="#terms">이용약관</a><a href="#privacy">개인정보 처리방침</a><a href="#usage">이용 정책</a><a href="#ai">AI 이용 원칙</a><a href="#cookies">쿠키·추적</a><a href="#security">보안·취약점 신고</a><a href="#regions">이용 대상·지역</a><a href="#contact">문의·변경 안내</a></nav><section id="terms"><h2>1. 이용약관</h2><p class="note">시행일 2026-10-27 · 적용 대상: HIVEN이 운영하는 웹사이트(hiven.co.kr · hicoffer.ai · hisilver.ai · hiven.ai.kr)와 베타(테스트) 버전으로 배포되는 AI 에이전트</p>
 <h3>1. 서비스의 성격</h3><p>현재 제공되는 AI 에이전트는 모두 베타(테스트) 버전입니다.</p><p>베타 버전은 무료로 제공되며, 기능·일정은 시험 결과에 따라 바뀔 수 있습니다.</p>
 <h3>2. 회원가입</h3><p>베타 버전은 회원가입 없이 이용합니다.</p><p>상용(정식) 버전의 가입·결제 조건은 출시 전에 별도로 공지합니다.</p>
 <h3>3. 이용자의 책임</h3><p>파일 이동·삭제·보관 등 이용자가 선택·결정한 작업의 결과는 이용자에게 귀속됩니다.</p><p>앱은 작업 전 상태로 되돌리는 복원 기능과 작업 기록을 제공합니다.</p>
@@ -37,4 +221,7 @@
 <p>Claude와의 대화는 HIVEN이 수집하지 않습니다. 비밀번호·복구 QR·신분 서류는 어디에도 올리지 마십시오.</p>
 <h3>11. 방침의 변경</h3><p>이 방침이 바뀌면 시행 7일 전에 이 페이지에서 알립니다.</p>
 </section><section id="usage"><h2>3. 이용 정책</h2><h3>허용되지 않는 이용</h3><ul><li>타인의 기기·계정·데이터에 권한 없이 접근하는 데 쓰는 행위</li><li>앱을 변조·역설계해 재배포하거나 다른 서비스로 위장하는 행위</li><li>불법 정보의 보관·유통, 타인의 권리를 침해하는 행위</li><li>사이트와 서비스의 정상 운영을 방해하는 행위</li></ul><p>위 행위가 확인되면 지원과 배포를 중단할 수 있습니다.</p></section><section id="ai"><h2>4. AI 이용 원칙</h2><ul><li>AI는 안내만 하며, 결정은 이용자가 합니다.</li><li>AI가 만든 답변임을 표시합니다.</li><li>진단·법률·금융 판단을 대신하지 않고, 전문가에게 확인하도록 안내합니다.</li><li>이용자의 원본 데이터는 기기 안에서만 처리하며 AI 학습에 쓰지 않습니다.</li></ul></section><section id="cookies"><h2>5. 쿠키·추적</h2><p>HIVEN 웹사이트는 방문자 분석·광고용 쿠키와 추적 도구를 쓰지 않습니다.</p><p>사이트 보호를 위해 Cloudflare가 보안 목적의 기술적 쿠키를 둘 수 있습니다.</p></section><section id="security"><h2>6. 보안·취약점 신고</h2><p>보안 취약점을 발견하시면 contact@hiven.co.kr로 알려 주십시오.</p><p>확인 후 조치하고, 제보자에게 처리 결과를 회신합니다.</p><p>제보 과정에서 다른 이용자의 데이터에 접근하거나 서비스를 방해하지 마십시오.</p></section><section id="regions"><h2>7. 이용 대상·지역</h2><p>현재 사이트와 베타 버전은 대한민국에서만 제공합니다.</p><p>상용 버전은 만 19세 이상을 대상으로 제공할 예정입니다.</p></section><section id="contact"><h2>8. 문의·변경 안내</h2><p>문의: contact@hiven.co.kr</p><p>이 페이지의 내용이 바뀌면 시행 7일 전에 이 페이지에서 알립니다.</p><p>참고: 각 정책은 베타 운영 기준이며, HIVEN 법인 설립 후 처리 주체가 HIVEN으로 이전됩니다.</p></section>
-<a class="top" href="#top">▲ 위로</a></main></body></html>
+<div class="pbtns"><a class="btn p" href="./">홈으로</a><a class="btn g" href="https://hiven.co.kr/">HIVEN 바로가기</a></div></div></section></main>
+<footer class="hfoot"><div class="wrap hf"><div class="hf-l"><a class="hf-brand" href="https://hiven.co.kr/#top" aria-label="HIVEN"><img src="/assets/img/hiven-footer-logo.png" alt="HIVEN · 하이븐" width="116" height="19" style="display:block;height:19px;width:auto"></a><a class="hf-pol" href="https://hisilver.ai/policies.html">이용약관 및 정책</a></div><div class="hf-m"><a href="https://hicoffer.ai/">Hi Coffer</a> · <a href="https://hisilver.ai/">Hi Silver</a></div><div class="hf-r"><span class="hf-copy">© 2026 HIVEN · HIVE-Group</span><a class="hf-site" href="https://hiven.co.kr/">hiven.co.kr</a><a class="hf-mail" href="mailto:contact@hiven.co.kr">contact@hiven.co.kr</a></div></div></footer>
+</body>
+</html>
